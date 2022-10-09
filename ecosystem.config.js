@@ -6,7 +6,7 @@
 module.exports = {
   apps: [
     {
-      name: "setup-service",
+      name: "pkc-service-resources",
       script: "dist/server.js",
       watch: false,
       instances: 1,
