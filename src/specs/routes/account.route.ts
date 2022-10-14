@@ -17,21 +17,23 @@ export default {
         consumes,
         parameters: [
           {
-            name: "body",
             in: "body",
-            required: true,
-            properties: {
-              name: {
-                type: "string",
-                required: true,
-                example: "用户1",
-                description: "用户名",
-              },
-              password: {
-                type: "string",
-                required: true,
-                example: "12345678",
-                description: "登录密码",
+            name: "body",
+            schema: {
+              type: "object",
+              properties: {
+                name: {
+                  type: "string",
+                  required: true,
+                  example: "用户1",
+                  description: "用户名",
+                },
+                password: {
+                  type: "string",
+                  required: true,
+                  example: "12345678",
+                  description: "登录密码",
+                },
               },
             },
           },
