@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>预备知识 - PSI/SI专题 | OneLib智库,为您定制私人智库</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/onelib.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<link href="../images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	</head>
+	
+	
+	<body class="subpage" data-spy="scroll" data-target="#myScrollspy">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Logo -->
+								<h1>
+									<a href="#" id="logo">
+										<img alt="Brand" src="../images/structure/logo.ico" style='height:30px; margin-top:-3px;'>
+										<span style='font-family:orbitron-bold; color:#2298DB;'> OneLib</span>
+										<span style='font-family:banhei; color:#2298DB;'>智库</span>
+									</a>
+								</h1>
+
+								<!-- Nav -->
+								<nav id="nav">
+									<a href="../index.html">首页</a>
+									<a href="../psisi.html">PSI/SI教程</a>
+									<a href="../knowledge.html">机顶盒知识点</a>
+									<a href="../appendix/index.html">资料快查</a>
+								</nav>
+
+							</div>
+						</div>
+					</header>
+				</div>
+
+			<!-- Content -->
+				<div id="content-wrapper">
+					<div id="content">
+						<div class="container">
+							<div class="row">
+								<div class="3u 12u(mobile)">
+
+									<!-- Sidebar -->
+										
+										<section>
+											<header>
+												<h2>教程目录</h2>
+												<p class='light-text'>PSI/SI教程</p>
+											</header>
+											<a class="feature-image"><img src="../images/pic05.jpg" alt="" /></a>
+											<p>
+												如果你是PSI/SI的初学者，
+												那么就让一切都从这里开始吧...
+											</p>
+											<ul class="link-list">
+												<li><a href="../psisi.html"><span class='fa fa-book'></span> 索引</a></li>
+												<li><a href="prereading.html"><span class='fa fa-book'></span> 第一章：预备知识</a></li>
+												<li><a href="begin.html"><span class='fa fa-book'></span> 第二章：从TS到PAT和PMT</a></li>
+												<li><a href="psi.html"><span class='fa fa-book'></span> 第三章：深入学习PSI</a></li>
+												<li><a href="si.html"><span class='fa fa-book'></span> 第四章：深入学习SI</a></li>
+												<li><a href="../appendix/index.html"><span class='fa fa-book'></span> 附录：资料快查</a></li>
+												<li><a href="../index.html"><span class='fa fa-chevron-right'></span> 返回首页</a></li>
+											</ul>
+											
+											<br>
+											<p class='author'>
+												<br>
+												本资料集由 林晓州 收集和整理，并提供共享。
+												<br>邮箱： 1139904786@qq.com
+												<br>网址： <a href='http://120.25.83.13' target='_blank'>http://120.25.83.13</a>
+											</p>
+											<br>
+											<p class='copyright'>
+												<span style='font-weight:bold;'>版权声明</span>：未经许可，请勿转载！
+											</p>
+											<br>
+											<p class='website'>
+												<br>
+												©2016 · OneLib智库 · 挖掘自己的财富
+											</p>
+										</section>
+										
+										
+										<section id="myScrollspy" style='padding: 5px;'>
+											<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+												
+												<header style='padding-top:15px; margin:0;'>
+													<h2>本页导航</h2>
+													<p class='light-text'>PSI/SI教程</p>
+												</header>
+												
+												<ul class="nav bs-docs-sidenav">
+													<li class="">
+														<a href="#part1"><span class='fa fa-tags'></span> TS、PS、PES和ES都是什么</a>
+													</li>
+													<li>
+														<a href="#part2"><span class='fa fa-tags'></span> TS流是如何产生的？</a>
+													</li>
+													<li>
+														<a href="#part3"><span class='fa fa-tags'></span> TS流的格式是怎样的？</a>
+													</li>
+													<li>
+														<a href="#part4"><span class='fa fa-tags'></span> PSI/SI缩略语</a>
+													</li>
+													<li>
+														<a href="#part5"><span class='fa fa-tags'></span> 业务与事件</a>
+													</li>
+													<li>
+														<a href="#party"><span class='fa fa-tags'></span> 参考文档</a>
+													</li>
+													<li>
+														<a href="#partx"><span class='fa fa-tags'></span> 版本信息</a>
+													</li>
+												</ul>
+											</nav>
+										</section>
+										
+								</div>
+								<div class="9u 12u(mobile) important(mobile)">
+
+									<!-- Main Content -->
+										<section>
+											<header>
+												<h2>第一章：预备知识</h2>
+												<p class='light-text'>关于PSI/SI你不能不知道的事</p>
+											</header>
+											<p class='paper'>
+												最近开始学习数字电视机顶盒的开发，从MPEG-2到DVB，看着看着突然就出现了一大堆表格，
+												什么PAT、PMT、CAT……如此多的表该怎样深入了解呢？
+											</p>
+											<p class='paper'>
+												我们知道，数字电视机顶盒接收到的是一段段的码流，我们称之为TS（Transport Stream，传输流），
+												每个TS流都携带一些信息，如Video、Audio以及我们需要学习的PAT、PMT等信息。
+												因此，我们首先需要了解TS流是什么，以及TS流是怎样形成、有着怎样的结构。
+											</p>
+										</section>
+										
+											
+										<section id='part1'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>TS流、PS流、PES流和ES流都是什么</span></a></h2>
+												<p class='light-text'>Brief Introduction Of TS, PS, PES and ES</p>
+											</header>
+											<p>
+												<span class='strong'>ES流（Elementary Stream）</span> 基本码流，不分段的音频、视频或其他信息的连续码流。
+												<br>
+												<span class='strong'>PES流</span> 把基本流ES分割成段，并加上相应头文件打包成形的打包基本码流。
+												<br>
+												<span class='strong'>PS流（Program Stream）</span> 节目流，将具有共同时间基准的一个或多个PES组合（复合）而成的单一数据流（用于播放或编辑系统，如m2p）。
+												<br>
+												<span class='strong'>TS流（Transport Stream）</span> 传输流，将具有共同时间基准<span class='strong'>或独立时间基准</span>的一个或多个PES组合（复合）而成的单一数据流（用于数据传输）。
+											</p>
+											<p>
+												<span class='strong'>*NOTE:</span><br>
+												&nbsp;&nbsp;&nbsp;&nbsp;TS流和PS流的区别：TS流的包结构是长度是固定的；PS流的包结构是可变长度的。
+												这导致了 <span class='strong'>TS流的抵抗传输误码的能力强于PS流</span> （TS码流由于采用了固定长度的包结构，
+												当传输误码破坏了某一TS包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。
+												而PS包由于长度是变化的，一旦某一 PS包的同步信息丢失，
+												接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
+												因此，在信道环境较为恶劣，传输误码较高时，一般采用TS码流；而在信道环境较好，传输误码较低时，一般采用PS码流。）
+											</p>
+											<p class='paper'>
+												由于TS码流具有较强的抵抗传输误码的能力，因此目前在传输媒体中进行传输的MPEG-2码流基本上都采用了TS码流的包格。
+											</p>
+										</section>
+										
+										
+										<section id='part2'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>TS流是如何产生的？</span></a></h2>
+												<p class='light-text'>How to generate a Transport Stream</p>
+											</header>
+											<a class="bordered-feature-image"><img src="images/01.jpg" alt="" /></a>
+											<p>
+												从上图可以看出，视频ES和音频ES通过打包器和共同或独立的系统时间基准形成一个个PES，
+												通过TS复用器复用形成的传输流。
+												注意这里的TS流是 <span class='strong'>位流格式</span>（分析Packet的时候会解释），也即是说TS流是可以按位读取的。
+											</p>
+										</section>
+										
+										
+										<section id='part3'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>TS流的格式是怎样的？</span></a></h2>
+												<p class='light-text'>What's the structure of Transport Stream</p>
+											</header>
+											<p class='paper'>
+												TS流是基于Packet的位流格式，即由n个包组成；每个包是188个字节（或204个字节，在188个字节后加上了16字节的CRC校验数据，其他格式一样）。
+												下图是一个TS流，以第k个包(Package)为例：
+											</p>
+											<a class="feature-image"><img src="images/02.jpg" alt="" /></a>
+											<table class='table table-striped' style='margin-top:-26px; font-size:70%;' id='part3_t1'>
+												<tr><td colspan='4' style='text-align:center; font-weight:bold;'>Packet Header（包头）信息说明</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td>#</td><td>标识</td><td>位数</td><td>说明</td></tr>
+												<tr style='text-align:center;'><td>0</td><td>sync_byte</td><td>8 bits</td><td>同步字节，固定是0x47</td></tr>
+												<tr style='text-align:center;'><td>1</td><td>transport_error_indicator</td><td>1 bits</td><td>错误指示信息（1：该包至少有1bits传输错误）</td></tr>
+												<tr style='text-align:center;'><td>2</td><td>payload_unit_start_indicator</td><td>1 bits</td><td>负载单元开始标志（packet不满188字节时需填充）</td></tr>
+												<tr style='text-align:center;'><td>3</td><td>transport_priority</td><td>1 bits</td><td>传输优先级标志（1：优先级高）</td></tr>
+												<tr style='text-align:center;' class='strong'><td>4</td><td>PID</td><td>13 bits</td><td>Packet ID号码，唯一的号码对应不同的包</td></tr>
+												<tr style='text-align:center;'><td>5</td><td>transport_scrambling_control</td><td>2 bits</td><td>加密标志（00：未加密；其他表示已加密）</td></tr>
+												<tr style='text-align:center;'><td>6</td><td>adaptation_field_control</td><td>2 bits</td><td>附加区域控制</td></tr>
+												<tr style='text-align:center;'><td>7</td><td>continuity_counter</td><td>4 bits</td><td>包递增计数器</td></tr>
+											</table>
+											<p class='paper'>
+												上面表格是一个包(Package)的头(Header)的说明，其中需要注意的是：<span class='strong'>PID是TS流中唯一识别标志，Packet Data是什么内容就是由PID决定的</span>。
+												如果一个TS流中的一个Packet的Packet Header中的PID是0x0000，那么这个Packet的Packet Data就是DVB的PAT表而非其他类型数据（如Video、Audio或其他业务信息）。
+											</p>
+											<p class='paper'>
+												下表给出了一些表的PID值，这些值是固定的，不允许更改。
+											</p>
+											<table class='table table-striped' style='margin-top:-6px; font-size:70%;'>
+												<tr><td colspan='3' style='text-align:center; font-weight:bold;'>TS流中PID的分配</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td>表</td><td>PID值</td><td>说明</td></tr>
+												<tr style='text-align:center;'><td>PAT</td><td>0x0000</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>CAT</td><td>0x0001</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>TSDT</td><td>0x0002</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>预留</td><td>0x0003 至0x000F</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>NIT, ST</td><td>0x0010</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>SDT , BAT, ST</td><td>0x0011</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>EIT, ST</td><td>0x0012</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>RST, ST</td><td>0x0013</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>TDT, TOT, ST</td><td>0x0014</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>网络同步</td><td>0x0015</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>预留使用</td><td>0x0016 至 0x001B</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>带内信令</td><td>0x001C</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>DIT</td><td>0x001E</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>SIT</td><td>0x001F</td><td>无</td></tr>
+											</table>
+											<p class='paper'>
+												下面以一个TS流的其中一个Packet中的Packet Header为例进行说明：
+											</p>
+											<div class='table-responsive long-table'>
+												<table class='table table-striped table-bordered' style='margin-top:-6px; font-size:70%; background-color:#fff;'>
+													<tr style='text-align:center;'>
+														<td>位号</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+														<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+														<td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+														<td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+														<td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Packet（二进制）</td>
+														<td>0</td><td>1</td><td>0</td><td>0</td>    <td>0</td><td>1</td><td>1</td><td>1</td>
+														<td>0</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>1</td><td>1</td><td>1</td>
+														<td>1</td><td>1</td><td>1</td><td>0</td>    <td>0</td><td>1</td><td>0</td><td>1</td>
+														<td>0</td><td>0</td><td>0</td><td>1</td>    <td>0</td><td>0</td><td>1</td><td>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Packet（十六进制）</td>
+														<td colspan='4'>4</td><td colspan='4'>7</td>
+														<td colspan='4'>0</td><td colspan='4'>7</td>
+														<td colspan='4'>E</td><td colspan='4'>5</td>
+														<td colspan='4'>1</td><td colspan='4'>2</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>Packet Header信息</td>
+														<td colspan='8'>0: sync_byte=0x47</td>
+														<td>1</td><td>2</td><td>3</td><td colspan='13'>4: PID (这里是0x07e5)</td>
+														<td colspan='2'>5</td><td colspan='2'>6</td>
+														<td colspan='4'>7</td>
+														<td>...</td>
+													</tr>
+												</table>
+												<p class='light-text not-select text-right'>拖动可显示更多数据 <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span></p>
+											</div>
+											<p class='paper'>
+												上表中，第一行为表头的位号（0-31，共32位），
+												第二行为每位的二进制数值，
+												第三行为每个字节的16进制数值，
+												最后一行对应上面的表格<a href='#part3_t1'>《Packet Header（包头）信息说明》</a>的数据。下表是<a href='#part3_t1'>《Packet Header（包头）信息说明》的Demo数据</a>。
+											</p>
+											<table class='table table-striped' style='margin-top:-6px; font-size:70%;'>
+												<tr><td colspan='4' style='text-align:center; font-weight:bold;'>Packet Header（包头）信息Demo</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td>#</td><td>标识</td><td>位数</td><td>说明</td></tr>
+												<tr style='text-align:center;'><td>0</td><td>sync_byte</td><td>8 bits</td><td style='text-align:left;'>固定是0x47</td></tr>
+												<tr style='text-align:center;'><td>1</td><td>transport_error_indicator</td><td>1 bits</td><td style='text-align:left;'>值为0，表示当前包没有发生传输错误。<span class='light-text'>错误指示信息（1：该包至少有1bits传输错误）</span></td></tr>
+												<tr style='text-align:center;'><td>2</td><td>payload_unit_start_indicator</td><td>1 bits</td><td style='text-align:left;'>值为0，含义参考ISO13818-1标准文档。<span class='light-text'>负载单元开始标志（packet不满188字节时需填充）</span></td></tr>
+												<tr style='text-align:center;'><td>3</td><td>transport_priority</td><td>1 bits</td><td style='text-align:left;'>值为0，表示当前包是低优先级。<span class='light-text'>传输优先级标志（1：优先级高）</span></td></tr>
+												<tr style='text-align:center;'><td>4</td><td>PID</td><td>13 bits</td><td style='text-align:left;'>PID=00111 11100101即0x07e5,是Video PID。<span class='light-text'>Packet ID号码，唯一的号码对应不同的包</span></td></tr>
+												<tr style='text-align:center;'><td>5</td><td>transport_scrambling_control</td><td>2 bits</td><td style='text-align:left;'>值为0x00，表示节目没有加密。<span class='light-text'>加密标志（00：未加密；其他表示已加密）</span></td></tr>
+												<tr style='text-align:center;'><td>6</td><td>adaptation_field_control</td><td>2 bits</td><td style='text-align:left;'>值为0x01,具体含义请参考ISO13818-1。<span class='light-text'>附加区域控制</span></td></tr>
+												<tr style='text-align:center;'><td>7</td><td>continuity_counter</td><td>4 bits</td><td style='text-align:left;'>值为0x02,表示当前传送的相同类型的包是第3个。<span class='light-text'>包递增计数器</span></td></tr>
+											</table>
+											
+											<p class='paper'>
+												回顾一下，TS流是一种位流（当然就是数字的），
+												它是由ES流分割成PES后复用而成的；它经过网络传输被机顶盒接收到；
+												数字电视机顶盒接收到TS流后将解析TS流。
+											</p>
+											<p class='paper'>
+												TS流是由一个个Packet（包）构成的，
+												每个包都是由Packet Header（包头）和Packet Data（包数据）组成的。
+												其中Packet Header指示了该Packet是什么属性的，并给出了该Packet Data的数据的唯一网络标识符PID。
+											</p>
+										</section>
+										
+										
+										<section id='part4'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>PSI/SI缩略语</span></a></h2>
+												<p class='light-text'>Abbreviations in PSI/SI</p>
+											</header>
+											<table class='table table-striped' style='margin-top:-6px; font-size:70%;'>
+												<tr><td colspan='4' style='text-align:center; font-weight:bold;'>PSI/SI缩略语（简版）</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td>关键字</td><td>全称</td><td>中文翻译</td><td>备注</td></tr>
+												<tr style='text-align:center;'><td>PSI</td><td>Program Specific Information</td><td>节目引导信息</td><td>对单一码流的描述</td></tr>
+												<tr style='text-align:center;'><td>SI</td><td>Service Information</td><td>业务信息</td><td>对系统中所有码流的描述</td></tr>
+												<tr style='text-align:center;'><td>TS</td><td>Transport Stream</td><td>传输流<br>（常称为TS流）</td><td>一个频道（多个节目及业务）的TS包复用后称TS流</td></tr>
+												<tr style='text-align:center;'><td>TS包</td><td>Transport Packet</td><td>传输包</td><td>数字视音频、图文数据打包成TS包</td></tr>
+												<tr class='success' style='text-align:center;'><td>PAT</td><td>Program Association Table</td><td>节目关联表</td><td>将节目号码和节目映射表PID相关联，获取数据的开始</td></tr>
+												<tr class='success' style='text-align:center;'><td>PMT</td><td>Program Map Table</td><td>节目映射表</td><td>指定一个或多个节目的PID</td></tr>
+												<tr class='success' style='text-align:center;'><td>CAT</td><td>Conditional Access Table</td><td>条件接收表</td><td>将一个或多个专用EMM流分别与唯一的PID相关联</td></tr>
+												<tr class='success' style='text-align:center;'><td>NIT</td><td>Network Information Table</td><td>网络信息表</td><td>描述整个网络，如多少TS流、频点和调制方式等信息</td></tr>
+												<tr class='info' style='text-align:center;'><td>SDT</td><td>Service Description Table</td><td>业务描述表</td><td>包含业务数据（如业务名称、起始时间、持续时间等）</td></tr>
+												<tr class='info' style='text-align:center;'><td>BAT</td><td>Bouquet Association Table</td><td>业务群关联表</td><td>给出业务群的名称及其业务列表等信息</td></tr>
+												<tr class='info' style='text-align:center;'><td>EIT</td><td>Event Information Table</td><td>事件信息表</td><td>包含事件或节目相关数据，是生成EPG的主要表</td></tr>
+												<tr class='info' style='text-align:center;'><td>RST</td><td>Running Status Table</td><td>运行状态表</td><td>给出事件的状态（运行/非运行）</td></tr>
+												<tr class='info' style='text-align:center;'><td>TDT</td><td>Time&Date Table</td><td>时间和日期表</td><td>给出当前事件和日期相关信息，更新频繁</td></tr>
+												<tr class='info' style='text-align:center;'><td>TOT</td><td>Time Offset Table</td><td>时间偏移表</td><td>给出了当前时间日期与本地时间偏移的信息</td></tr>
+												<tr class='info' style='text-align:center;'><td>ST</td><td>Stuffing Table</td><td>填充表</td><td>用于使现有的段无效，如在一个传输系统的边界</td></tr>
+												<tr class='info' style='text-align:center;'><td>SIT</td><td>Selection Information Table</td><td>选择信息表</td><td>仅用于码流片段中，如记录的一段码流，包含描述该码流片段业务信息段的地方</td></tr>
+												<tr class='info' style='text-align:center;'><td>DIT</td><td>Discontinuity Information Table DVB</td><td>间断信息表</td><td>仅用于码流片段，如记录的一段码流中，它将插入到码流片段业务信息间断的地方</td></tr>
+											</table>
+											<p class=''>
+												注：绿色背景为PSI信息，蓝色背景为SI信息。
+											</p>
+											<p class='bold'>
+												详细列表请移步：<a href="../appendix/dictionary.html" target='_blank'><span class='fa fa-book'></span> PSI/SI名词速查</a>
+											</p>
+										</section>
+									
+										
+										<section id='part5'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>业务与事件</span></a></h2>
+												<p class='light-text'>Service and Event</p>
+											</header>
+											<p class='paper'>
+												关于业务（Service）、事件（Event），我们要弄清楚其准确意义，避免混淆。
+											</p>
+											<p class='paper'>
+												那么什么是“业务”，什么是“事件”呢？
+												按照普通人的习惯来说，“业务”就是指“频道”，“事件”就是“节目”。
+												举个例子：CCTV1是一个频道，其标准说法应该是“业务（Service）”；
+												《新闻联播》是一个节目，其标准说法应该是“事件”。
+											</p>
+											<p class='paper'>
+												在实际中，我们经常将“频道(Channel)”代指“业务(Service)”，比如上面的说明。
+												但事实上，在正式的场合，尤其翻译回英语后，“Channel”和我们认知中的“频道”是完全不同的概念。
+												从下图可以看出，<span class='strong'>“Channel”指的是“频点”或者“信道”，而每个“Channel”里会有一个或多个的“Service”</span>。
+											</p>
+											<p class='paper'>
+												因此，务必要养成良好的习惯，在交流中才能准确地描述 <span class='strong'>业务(Service)</span> 、 <span class='strong'>事件(Event)</span> 和 <span class='strong'>频道(Channel)</span> 。
+											</p>
+											<a class="feature-image"><img src="images/03.jpg" alt="" /></a>
+										</section>
+									
+										
+										<section id='party'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>参考文档</span></a></h2>
+												<p class='light-text'>References</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style=' font-size:70%;'>
+												<thead>
+													<tr style='background:#ED391B; color:snow; text-align:center;'><td>#</td><td>文档名称</td><td>作者</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td><a href='http://blog.csdn.net/kkdestiny/article/details/9850587' target='_blank'>《1.从TS流到PAT和PMT》</a></td><td>林晓州</td></tr>
+													<tr><td>2</td><td><a href='http://blog.csdn.net/kkdestiny/article/details/12993971' target='_blank'>《PSI/SI深入学习》</a></td><td>林晓州</td></tr>
+													<tr><td>3</td><td><a href='../doc/En300468.V1.7.1_Specification for SI in DVB Systems.pdf' target='_blank'>《En300468.V1.7.1_Specification for SI in DVB Systems.pdf》</a></td><td>European Standard</td></tr>
+													<tr><td>4</td><td><a href='../doc/中文SI版本1.0.doc' target='_blank'>《数字视频广播中文业务信息规范》</a></td><td>国家广播电影电视总局</td></tr>
+												</tbody>
+											</table>
+										</section>
+									
+										
+										<section id='partx'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>版本信息</span></a></h2>
+												<p class='light-text'>Version Information</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style=' font-size:70%;'>
+												<thead>
+													<tr style='background:#ED391B; color:snow; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td>2013年08月09日</td><td>V1.0</td><td>文档<a href='http://blog.csdn.net/kkdestiny/article/details/9850587' target='_blank'>《1.从TS流到PAT和PMT》</a></td><td>林晓州</td><td>——</td></tr>
+													<tr><td>2</td><td>2016年02月18日</td><td>V2.0</td><td>整合了多个文档资料，对PSI/SI学习所需的知识进行系统的总结。</td><td>林晓州</td><td>——</td></tr>
+												</tbody>
+											</table>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="6u 12u(mobile)">
+
+							<!-- Links -->
+								<section>
+									<h2>友情链接</h2>
+									<div>
+										<div class="row">
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://120.25.83.13/konka">海外软件研发资料库</a></li>
+													<li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://120.25.83.13/">OneLib智库</a></li>
+													<li><a href="http://120.25.83.13/OneLib/TaskManager/">OneLib Work</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://html5up.net/">HTML5UP</a></li>
+													<li><a href="http://html5up.net/halcyonic">本页模板：Halcyonic</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+						<div class="6u 12u(mobile)">
+
+							<!-- Blurb -->
+								<section>
+									<h2>PSI/SI专题 简介</h2>
+									<p>
+										此专题根据我在2013年自学PSI/SI相关资料所做的学习笔记(参考<a href='http://blog.csdn.net/kkdestiny' target='_blank'>KKDestiny的博客</a>)，
+										并在2016年2月17日开始再次深入学习。
+										在本次学习过程中，对以前的笔记做了勘误和补充，并增加了2013年至今(2016年)工作中的一些理解。
+										<br><span class='not-select'>——</span> 林晓州，2016年02月17日 于深圳
+									</p>
+								</section>
+
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			
+			<!-- Copyright -->
+			<div id="copyright">
+				&copy;<a href="http://120.25.83.13">OneLib智库</a> · 挖掘自己的财富</a>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/skel-viewport.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			
+			<script src="../assets/js/bootstrap.min.js"></script>
+			
+			<script>
+				$(document).ready(function () {
+					$("#ol_tasklist_guide").affix({
+						offset: {
+							top: 1000
+						}
+					});
+
+				});
+			</script>
+
+	</body>
+</html>

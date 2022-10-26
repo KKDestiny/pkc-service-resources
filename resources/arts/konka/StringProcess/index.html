@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>字符串文件生成工具</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="机顶盒菜单字符串生成工具Web版" />
+		<meta name="keywords" content="机顶盒，菜单，字符串" />
+		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
+		<link href="onelib.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="assets/css/skel.css" />
+			<link rel="stylesheet" href="assets/css/style.css" />
+			<link rel="stylesheet" href="assets/css/style-xlarge.css" />
+		</noscript>
+		
+		<link rel="stylesheet" href="assets/css/onelib.css" />
+		<link rel="stylesheet" href="assets/css/carousel.css" />
+		<script src="assets/js/carousel.js"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie/v8.css" /><![endif]-->
+		
+		<!-- 配置文件 -->
+		<script src="config/public.js"></script>
+		<script src="config/dictionary.js"></script>
+		<script src="config/search.js"></script>
+		<script src="config/rebuild.js"></script>
+		
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="http://www.onelib.biz/konka/" class="image avatar"><img src="assets/images/outseahead.png" alt="" /></a>
+				<h1><strong>海外软件研发</strong><br />
+				机顶盒菜单字符串生成工具Web版
+				</h1>
+				
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+					<h1>机顶盒菜单字符串生成工具Web版</h1>
+					<p>提供多种方案提取和转换字符串</p>
+					
+					<p class='paper'><a href="#func1">1.直接生成字符串文件</a></p>
+					<p class='paper'><a href="#func2">2.补充翻译</a></p>
+					<p class='paper'><a href="#func3">3.提取字符串</a></p>
+					<p class='paper'><a href="#funcx">x.数据库维护</a></p>
+					
+					<section id="func1">
+						<h2>1.直接生成字符串文件</h2>
+						
+						<div class="row">
+							<div class="12u$">
+								选择要生成的语言
+								<div class="select-wrapper">
+									<select name="ol_new_language" id="ol_new_language" style=" cursor:pointer;">
+										<option value="">请选择语言</option>
+										<!-- <option value="english">英文</option> -->
+										<option value="french">法语</option>
+										<option value="chinese">中文</option>
+										<option value="russian">俄语</option>
+										<option value="spanish">西班牙语</option>
+										<option value="mongolian">蒙古语</option>
+										<option value="german">德语</option>
+										<option value="indonesia">印尼语</option>
+										<option value="arbic">阿拉伯语</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row uniform">
+							<div class="12u$">
+								将ui_txtlang.h文件粘贴进下方输入框中：
+								<textarea name="ol_str_src" id="ol_str_src" placeholder="粘贴完整的ui_txtlang.h文件到此处" rows="4" style="font-size:70%;"></textarea>
+								<br>
+								
+								<ul class="actions">
+									<li><a onclick=OL_ReplaceSourceString() class="button special">生成</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<h3>提示</h3>
+						<div id='' style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px;'>
+							<p>1.点击【生成】后，转换好的文件内容将在下一个虚线框中显示</p>
+							<p>2.转换完成后，将框内数据直接替换原文件即可</p>
+							<p>3.转换原则：如果某一字符串存在于数据库中，这里会将该字符串转换成指定语言的字符串十六进制编码；如“Channels”会被转换为“Cha\xeenes”（实际显示为“Chaînes”）</p>
+							<p>4.<span style='color:#EF0000; font-weight:bold;'>红色部分</span>为未找到翻译的词汇</p>
+							<p>5.<b>特别注意</b>：字符串文件中，每一个字符串都必须在同一行，如果有换行，可能会出错；不允许出现“\"”，在制作前请先批量</p>
+						</div>
+						
+						<h3>未找到词汇的英文字符串
+							<br><span style='font-size:70%; color:#ccc;'>请复制下面的英文词汇到Excel，并给客户翻译</span>
+						</h3>
+						
+						<div id='ol_replace_failed' style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px; max-height:300px; overflow-y:auto;'>
+							<p>点击【生成】后，如果有英文词汇没有对应的语言翻译，这些词汇会列出于此</p>
+						</div>
+						
+						<h3>结果</h3>
+						<div id='ol_replace_result' style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px;'>
+							<p>点击【生成】后，转换好的文件内容将显示在此处</p>
+						</div>
+
+					</section>
+					
+					
+					
+					
+					<section>
+						<h2 id="func2">2.补充翻译</h2>
+						<p>应用场景：其他语言文件中，大部分已经翻译好，需要补充少量的词汇时。</p>
+						<div class="row uniform">
+							<div class="12u$">
+								将ui_txtlang_xxxx.h文件（即对应的其他语言文件，如ui_txtlang_russian.h）粘贴进下方输入框中：
+								<textarea name="ol_str_add" id="ol_str_add" placeholder="粘贴完整的ui_txtlang_xxxx.h文件到此处" rows="4" style="font-size:70%;"></textarea>
+							</div>
+							<div class="6u">
+								将要替换的英文词汇粘贴进下方输入框中（一个英文单词一行）：
+								<textarea name="ol_str_add_en" id="ol_str_add_en" placeholder="将要替换的英文词汇粘贴进下方输入框中（一个英文单词一行）" rows="4" style="font-size:70%;"></textarea>
+							</div>
+							<div class="6u">
+								将要英文词汇对应的词汇粘贴进下方输入框中（一个单词一行）：
+								<textarea name="ol_str_add_other" id="ol_str_add_other" placeholder="将要英文词汇对应的词汇粘贴进下方输入框中（一个单词一行）" rows="4" style="font-size:70%;"></textarea>
+							</div>
+							<div class="12u$">
+								<ul class="actions">
+									<li><a onclick=OL_AddStr2Txtlang() class="button special">生成</a></li>
+								</ul>
+								
+								<h3>提示信息</h3>
+								<div id='ol_addstr2txtlang_process' style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px;'>
+									<p>1.点击【生成】后，转换好的文件内容将显示在下方虚线框内</p>
+								</div>
+								
+								<h3>结果</h3>
+								<div id='ol_addstr2txtlang_result_db' style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px;'>
+									<p>1.点击【生成】后，转换好的文件内容将显示在此处</p>
+								</div>
+							</div>
+						</div>
+					
+					</section>
+					
+					
+					
+					
+					<section>
+						<h2 id="func3">3.提取字符串</h2>
+						<div class="row uniform">
+							<div class="12u$">
+								将ui_txtlang.h文件粘贴进下方输入框中：
+								<textarea name="ol_str_extract" id="ol_str_extract" placeholder="粘贴完整的ui_txtlang.h或ui_txtlang_xxxx.h文件到此处" rows="4" style="font-size:70%;"></textarea>
+								<br>
+								
+								<ul class="actions">
+									<li><a onclick=OL_ExtractString() class="button special">生成</a></li>
+								</ul>
+							</div>
+						</div>
+						<br>
+						
+						
+						<h3>提取结果</h3>
+						<div id='ol_extract_process' style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px;'>
+							<p>1.点击【生成】后，提取出的内容将显示在下方虚线框内</p>
+						</div>
+						<div id='ol_extract_result' style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px; max-height:300px; overflow-y:auto;'>
+							<p>点击【生成】后，词汇会被提取出来</p>
+						</div>
+					</section>
+					
+					
+					
+					
+					<section>
+						<h2 id="funcx">x.数据库维护</h2>
+						<p>提供更新数据库方法</p>
+						<p class='small'>
+							在维护之前，有一些注意事项务必逐一检查，否则会出现字符串错乱的问题：
+							<ul class='small'>
+								<li>不要出现“|”分隔符，导入前先检查并删除</li>
+								<li>不要出现“0”，必须完整的“\0”</li>
+								<li>如果ui_txtlang.h中有字符串，则ui_txtlang_xxx.h不要出现“""”（空字符串）、“0”或“\0”，否则会错位。如：<br>OSDLANG(VERSIONOLD,OSD_TIMESET_HINT_1," ")和OSDLANG(VERSIONOLD,OSD_TIMESET_HINT_1,"0")</li>
+							</ul>
+						</p>
+						<div class="row uniform">
+							<div class="12u$">
+								将ui_txtlang.h文件粘贴进下方输入框中：
+								<textarea name="ol_str_src_db0" id="ol_str_src_db0" placeholder="粘贴完整的ui_txtlang.h文件到此处" rows="4" style="font-size:70%;"></textarea>
+								<br>
+								
+								将ui_txtlang_xxxx.h文件（即对应的其他语言文件，如ui_txtlang_russian.h）粘贴进下方输入框中：
+								<textarea name="ol_str_src_db1" id="ol_str_src_db1" placeholder="粘贴完整的ui_txtlang_xxxx.h文件到此处" rows="4" style="font-size:70%;"></textarea>
+								<br>
+								
+								是否替换原数据库字符串翻译
+								<div class="select-wrapper">
+									<select name="ol_replace_db" id="ol_replace_db" style=" cursor:pointer;">
+										<option value="yes">是</option>
+										<option value="no">否</option>
+									</select>
+								</div>
+								<br>
+								
+								是否要转码<span style='font-size:75%; color:#ccc;'>(如果选择“是”，一些语言可能会出现乱码，如俄语)</span>
+								<div class="select-wrapper">
+									<select name="ol_encoding_db" id="ol_encoding_db" style=" cursor:pointer;">
+										<option value="yes">是</option>
+										<option selected value="no">否</option>
+									</select>
+								</div>
+								<br>
+								
+								选择要添加的语言
+								<div class="select-wrapper">
+									<select name="ol_rebuild_new_language" id="ol_rebuild_new_language" style=" cursor:pointer;">
+										<option value="">请选择语言</option>
+										<option value="french">法语</option>
+										<option value="chinese">中文</option>
+										<option value="russian">俄语</option>
+										<option value="spanish">西班牙语</option>
+										<option value="mongolian">蒙古语</option>
+										<option value="german">德语</option>
+										<option value="indonesia">印尼语</option>
+										<option value="arbic">阿拉伯语</option>
+									</select>
+								</div>
+								<br>
+								
+								<ul class="actions">
+									<li><a onclick=OL_RebuildDatabase() class="button special">生成</a></li>
+								</ul>
+							</div>
+						</div>
+						<br>
+						
+						<div style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px;'>
+							<h4>提示信息</h4>
+							<div id='ol_rebuild_process'>
+								<p>点击【生成】后，重构的数据库内容会在下方虚线框中显示</p>
+							</div>
+						</div>
+						<br>
+						
+						<h3>数据库重构结果</h3>
+						<div id='ol_rebuild_result_db' style='font-size:70%; line-height:25px; border:1px #ccc dashed; padding:15px;'>
+							<p>1.点击【生成】后，重构后的数据库将显示在此处</p>
+							<p>2.将新生成的数据库直接替换dictionary.js文件里的数组内容即可</p>
+						</div>
+					
+					</section>
+					
+
+			</div>
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-wechat"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-qq"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; <a href='http://www.onelib.biz' target='_blank'>OneLib智库</a></li><li><a href='http://www.konka.com' target='_blank'>康佳集团</a> · 数字网络事业部 · 海外软件研发资料库</li>
+				</ul>
+			</footer>
+
+	</body>
+</html>

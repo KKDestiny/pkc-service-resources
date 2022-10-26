@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KONKA STB Manual Guide</title>
+	
+	<link href="img/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	
+	<!-- Flow CSS/JS -->	
+    <link href="css/flow.css" rel="stylesheet">
+	<script src="js/flow_model.js"></script>
+	
+	<!-- Flow Data Config File -->	
+	<script src="js/config_v1/Config.js"></script>
+	
+	<script src="js/config_v1/doc_data_stbmenu2_0_introduct.js"></script>
+	<script src="js/config_v1/doc_data_stbmenu2_1_detail.js"></script> 
+	
+	<script src="js/config_v1/doc_data_stbmenu2_2_cable_instal.js"></script>
+	<script src="js/config_v1/doc_data_stbmenu2_2_terristrial_instal.js"></script>
+	<script src="js/config_v1/doc_data_stbmenu2_2_satellite_instal.js"></script>
+
+	<script src="js/config_v1/doc_data_stbmenu2_3_mainmenu.js"></script>
+	
+	<script src="js/config_v1/doc_data_stbmenu2_4_basicoperation.js"></script>
+	
+	<script src="js/config_v1/doc_data_stbmenu2_5_troubleshooting.js"></script>
+	
+	<script src="js/config_v1/doc_data_stbmenu2_6_generalsafety.js"></script>
+	
+	<script src="js/config_v1/doc_data_stbmenu2_7_technical.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		
+	<style>
+		.scrollspy {
+		  position: relative;
+		  max-height: 200px;
+		  overflow: auto;
+		}
+		
+		.scrollspy-leftbar {
+		  position:fixed;
+		  left:20;
+		  top:20px;
+		  border-radius: 3px;
+		  height: 95%;
+		  overflow: auto;
+		}
+	</style>
+
+  </head>
+  
+  
+  <body style="margin-left:20px; color:#999">
+  
+	  
+	  <div class="col-md-3 scrollspy-leftbar" style="z-index:1000;">
+		<div class="list-group fixed">
+		  <a href="#" class="list-group-item disabled">
+			<b><span class="glyphicon glyphicon-list-alt"></span> CATALOG</b>
+		  </a>
+		  <a id="flow0" onclick=changeFlow(0) class="list-group-item active" style="cursor:pointer"><span class="glyphicon glyphicon-chevron-right"></span> Ⅰ.Product Introduction<span id="submenu0"></span></a>
+		  <a id="flow1" onclick=changeFlow(1) class="list-group-item" style="cursor:pointer"><span class="glyphicon glyphicon-chevron-right"></span> Ⅱ.Product Details<span id="submenu1"></span></a>
+		  <a id="flow2" onclick=changeFlow(2) class="list-group-item" style="cursor:pointer"><span class="glyphicon glyphicon-chevron-right"></span> Ⅲ.Installation Guide<span id="submenu2"></span></a>
+		  <a id="flow3" onclick=changeFlow(3) class="list-group-item" style="cursor:pointer"><span class="glyphicon glyphicon-chevron-right"></span> 1.Main Menu<span id="submenu3"></span></a>
+		  <a id="flow4" onclick=changeFlow(4) class="list-group-item" style="cursor:pointer"><span class="glyphicon glyphicon-chevron-right"></span> 2.Basic Operation<span id="submenu4"></span></a>
+		  <a id="flow5" onclick=changeFlow(5) class="list-group-item" style="cursor:pointer"><span class="glyphicon glyphicon-chevron-right"></span> 3.Trouble Shooting<span id="submenu5"></span></a>
+		  <a id="flow6" onclick=changeFlow(6) class="list-group-item" style="cursor:pointer"><span class="glyphicon glyphicon-chevron-right"></span> 4.General Safety<span id="submenu6"></span></a>
+		  <a id="flow7" onclick=changeFlow(7) class="list-group-item" style="cursor:pointer"><span class="glyphicon glyphicon-chevron-right"></span> 5.Technical Specifications<span id="submenu7"></span></a>
+		</div>  
+		
+		<div class="list-group fixed">
+		  <span id="otherType"></span>
+		</div>
+	  </div>
+	  
+	  
+	  <div class="col-md-offset-3 col-md-9">
+	
+		<br>
+		
+		  <div class="col-md-12">
+			  <div class="page-header">
+				<h1><font color="#37aef2"><span id="flow_title"></span> </font></h1>
+			  </div>
+		  </div>
+
+	    
+		<div class="panel panel-default" id="step_panel">
+		  <div class="panel-body">
+			<div id="step_detail">
+			
+			</div>
+		  </div>
+		  <div class="panel-footer"><span class="glyphicon glyphicon-bullhorn"></span> Last Update: <span id="last_update"></span></div>
+		</div>
+	  </div>
+	  
+	  <div class="col-md-offset-3 col-md-9">
+		<br>
+		<hr>
+		<p class="text-center">© 2014~2016 · <a href="http://www.onelib.biz" target="blank">OneLib智库</a> · 分享知识和经验，打造精品智库平台</p>
+		<br>
+	  </div>
+  
+	<script>
+		var PROCESS_TYPE_ARR = ["introduct","detail","instal","mainmenu","basicoperation","trouble","safety","tech"];
+		
+		var PROCESS_TYPE = "introduct";
+		
+		var LAST_UPDATE = "";
+		var FLOW_TITLE = "";
+		var FLOW_TITLE_DESC = "";
+		var FLOW_DETAIL = "";
+		var FLOW_STEPS = "";
+
+		var totalStep = 0;
+		var currIndex = 0;
+		
+		function changeFlow(index)
+		{
+			if(index==currIndex)	return 0;
+			
+			PROCESS_TYPE = PROCESS_TYPE_ARR[index];			
+			if(""==PROCESS_TYPE)
+				PROCESS_TYPE = PROCESS_TYPE_ARR[0];
+
+			PageInit();
+			dropFocusList();
+			fucosList(index);
+			
+			returnToTop();
+		}
+		
+		function initParams()
+		{
+			LAST_UPDATE = "";
+			FLOW_TITLE = "";
+			FLOW_TITLE_DESC = "";
+			FLOW_DETAIL = "";
+			FLOW_STEPS = "";
+
+			totalStep = 0;
+			currIndex = 0;
+			
+			if(PROCESS_TYPE == PROCESS_TYPE_ARR[0])	// Introduction
+			{
+				LAST_UPDATE = INTRODUCT_LAST_UPDATE;
+				FLOW_TITLE = INTRODUCT_TITLE;
+				FLOW_TITLE_DESC = INTRODUCT_TITLE_DESC;
+				currIndex = 0;
+			}
+			else if(PROCESS_TYPE == PROCESS_TYPE_ARR[1])	//detail
+			{
+				LAST_UPDATE = DETAIL_LAST_UPDATE;
+				FLOW_TITLE = DETAIL_TITLE;
+				FLOW_TITLE_DESC = DETAIL_TITLE_DESC;
+				currIndex = 1;
+			}
+			else if(PROCESS_TYPE == PROCESS_TYPE_ARR[2])	//instal
+			{
+				if("cable"==instal_type)
+				{
+					LAST_UPDATE = INSTAL_CABLE_LAST_UPDATE;
+					FLOW_TITLE = INSTAL_CABLE_TITLE;
+					FLOW_TITLE_DESC = INSTAL_CABLE_TITLE_DESC;
+				}
+				else if("terrestrial"==instal_type)
+				{
+					LAST_UPDATE = INSTAL_TERRESTRIAL_LAST_UPDATE;
+					FLOW_TITLE = INSTAL_TERRESTRIAL_TITLE;
+					FLOW_TITLE_DESC = INSTAL_TERRESTRIAL_TITLE_DESC;
+				}
+				else if("satellite"==instal_type)
+				{
+					LAST_UPDATE = INSTAL_SATELLITE_LAST_UPDATE;
+					FLOW_TITLE = INSTAL_SATELLITE_TITLE;
+					FLOW_TITLE_DESC = INSTAL_SATELLITE_TITLE_DESC;
+				}
+				currIndex = 2;
+			}
+			else if(PROCESS_TYPE == PROCESS_TYPE_ARR[3])	//mainmenu
+			{
+				LAST_UPDATE = MAINMENU_LAST_UPDATE;
+				FLOW_TITLE = MAINMENU_TITLE;
+				FLOW_TITLE_DESC = MAINMENU_TITLE_DESC;
+				currIndex = 3;
+			}
+			else if(PROCESS_TYPE == PROCESS_TYPE_ARR[4])	//Basic Operation
+			{
+				LAST_UPDATE = BASICOP_LAST_UPDATE;
+				FLOW_TITLE = BASICOP_TITLE;
+				FLOW_TITLE_DESC = BASICOP_TITLE_DESC;
+				currIndex = 4;
+			}
+			else if(PROCESS_TYPE == PROCESS_TYPE_ARR[5])	// Trouble shooting
+			{
+				LAST_UPDATE = SHOOT_LAST_UPDATE;
+				FLOW_TITLE = SHOOT_TITLE;
+				FLOW_TITLE_DESC = SHOOT_TITLE_DESC;
+				currIndex = 5;
+			}
+			else if(PROCESS_TYPE == PROCESS_TYPE_ARR[6])	// General Safety
+			{
+				LAST_UPDATE = SAFE_LAST_UPDATE;
+				FLOW_TITLE = SAFE_TITLE;
+				FLOW_TITLE_DESC = SAFE_TITLE_DESC;
+				currIndex = 6;
+			}
+			else if(PROCESS_TYPE == PROCESS_TYPE_ARR[7])	// Technical
+			{
+				LAST_UPDATE = TECH_LAST_UPDATE;
+				FLOW_TITLE = TECH_TITLE;
+				FLOW_TITLE_DESC = TECH_TITLE_DESC;
+				currIndex = 7;
+			}
+		}
+		
+		function initFlowInfo()
+		{	
+			// Last Update
+			document.getElementById("last_update").innerHTML = LAST_UPDATE;
+			
+			// Fix title
+			document.getElementById("flow_title").innerHTML = FLOW_TITLE;
+			
+			// Fix process Descriptor
+			document.getElementById("step_detail").innerHTML = FLOW_TITLE_DESC;
+		}
+		
+		function configPanel()
+		{
+			if(0==currIndex)
+			{
+				document.getElementById("step_detail").innerHTML = FLOW_TITLE_DESC;
+			}
+			else
+			{
+				document.getElementById("step_detail").innerHTML = FLOW_DETAIL[currIndex-1];
+			}
+		}
+		
+		function cleanpreface()
+		{
+			for(var i=0;i<PROCESS_TYPE_ARR.length;i++)
+			{
+				document.getElementById("submenu"+i).innerHTML = "";
+			}
+		}
+		
+		function loadpreface()
+		{
+			cleanpreface();
+			if(0==currIndex)	return 0;
+			
+			var preface = getNodeById("step_detail", "h2", "h3", "h4");
+			// console.log("submenu"+currIndex);
+			if(""!=preface)
+				document.getElementById("submenu"+currIndex).innerHTML = "<hr style='margin-top:10px; margin-bottom:5px;'><div style='margin-left:10px;border-left:1px dotted #eee;z-index:1000'>"+preface+"</div>";
+		}
+		
+		function PageInit()
+		{
+			initParams();
+			initFlowInfo();
+			loadpreface();
+		}
+		
+		function convertDec2Hex(id)
+		{
+			var raw = document.getElementById(id).value;
+			document.getElementById(id+"_converted").innerHTML = parseInt(raw).toString(16)+" (Hex Format)";
+		}
+		
+		function reloadNITSample()
+		{
+			document.getElementById("nit_sample_place").innerHTML = NIT_SAMPLE;
+		}
+		
+		function dropFocused(preStr_curr,preStr)
+		{
+			for(var i=0;i<15;i++)
+			{
+				document.getElementById(preStr+i).setAttribute("class","");
+			}
+			reloadNITSample();
+		}
+		
+		function changeFocused(index)
+		{
+			var preStr_curr = "nit";
+			var preStr = "shownit";
+			var style = "line-f-error";
+			dropFocused(preStr_curr,preStr)
+			document.getElementById(preStr_curr+index).setAttribute("class",style);
+			document.getElementById(preStr+index).setAttribute("class",style);
+		}
+				
+		function loadOtherTypeLink()
+		{
+			var type = new Array();
+			var name = new Array();
+			var link = "";
+
+			if("cable"==instal_type)
+			{
+				MANUAL = FLOW_FILE_CABLE_SIMPLY_V2;
+				type[0] = "terrestrial";
+				name[0] = "Terrestrial";
+				type[1] = "satellite";
+				name[1] = "Satellite";
+			}
+			else if("terrestrial"==instal_type)
+			{
+				MANUAL = FLOW_FILE_TERRESTRIAL_SIMPLY_V2;
+				type[0] = "cable";
+				name[0] = "Cable";
+				type[1] = "satellite";
+				name[1] = "Satellite";
+			}
+			else if("satellite"==instal_type)
+			{
+				MANUAL = FLOW_FILE_SATELLITE_SIMPLY_V2;
+				type[0] = "cable";
+				name[0] = "Cable";
+				type[1] = "terrestrial";
+				name[1] = "Terrestrial";
+			}
+			
+			if(SHOW_OTHER_TYPE_LINK)
+			{
+				for(var i=0;i<2;i++)
+				{
+					link = link+"<a href=\"index.html?index="+type[i]+"\" class=\"list-group-item\" style=\"cursor:pointer\"><span class=\"glyphicon glyphicon-link\"></span> User Manual for <font color=#689beb>"+name[i]+"</font> STB</a>";
+				}
+			}
+			
+			attach_link = "<a target='blank' class=\"list-group-item\" style=\"cursor:pointer\" href='"+MANUAL+"'><font color=#689beb><span class=\"glyphicon glyphicon-floppy-save\"></span></font> User Manual</a>";
+			
+			document.getElementById("otherType").innerHTML = link+attach_link;
+		}
+		
+		window.onload=function()
+		{
+			$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+			
+			loadOtherTypeLink();	
+			
+			currIndex = 0;
+			changeFlow(currIndex);
+			PageInit();
+			
+		}
+	
+/*
+ * Copyright
+ * Author: Xiaozhou Lin
+ * Email: linxiaozhoubiz@gmail.com
+ * Country: China
+ * Date: Dec 11, 2014
+*/
+		
+	</script> 
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+	
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	
+  </body>
+</html>

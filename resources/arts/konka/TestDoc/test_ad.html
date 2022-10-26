@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>康佳广告系统测试 - 数字网络事业部</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+
+     <!-- OneLib style -->
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/onelib.css" rel="stylesheet">
+	
+	<link href="images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	
+
+    <script src="js/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
+        <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" id='ca_top'>
+	
+	<nav class="navbar navbar-default navbar-inverse">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container-fluid col-md-offset-2">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.onelib.biz/konka/">
+			<img alt="Brand" src="images/structure/logo.ico" style='height:25px; margin-top:-3px;'>
+		  </a>
+		  <a class="navbar-brand" href="http://www.onelib.biz/konka/">
+			<span style='font-family:orbitron-bold; color:#2298DB;'> OneLib</span>
+		  </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="test_diseqc_22k.html">DisEqC和22K</a></li>
+            <li><a href="test_video.html">输出模式</a></li>
+            <li><a href="test_spdif.html">数字音频</a></li>
+            <li><a href="test_3_4_channel.html">3-4频道</a></li>
+            <li><a href="test_motor.html">马达Motor</a></li>
+            <li><a href="test_scart.html">SCART</a></li>
+            <li><a href="test_dbupdate.html">节目更新</a></li>
+            <li class="active"><a href="test_ad.html">广告</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+	
+	
+	<!-- Docs page layout -->
+    <div class="jumbotron" style='margin-top:-20px;'>
+	  <div class="container">
+		  <br>
+		  <p>本文档介绍了康佳广告系统的测试方法</p>
+	  </div>
+	</div>
+	
+	<div class="container col-md-offset-2 col-md-7 col-xs-12 ">
+
+		<div class="row">
+			<h1 id='test_0'>0.码流说明</h1>
+			<p>测试码流需要根据项目不同自行制作</p>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+		
+		<div class="row">
+			<h1 id='test_1'>1.特殊素材信息</h1>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>素材</td><td>名称</td><td>内容</td></tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style='text-align:center;' rowspan='6'><br><br><br><br>字幕</td>
+						<td style='text-align:center;'>左飞底字幕测试01</td><td style='text-align:center;'>01左飞底字幕测试，字体白色，背景透明。END!!!END!!!!</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>左飞底字幕测试02</td><td style='text-align:center;'>02左飞底字幕测试，字体蓝色，背景白色。END!!!END!!!!</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>左飞底字幕测试03</td><td style='text-align:center;'>03左飞底字幕测试，字体蓝色，背景黄色。END!!!END!!!!</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>左飞顶字幕测试01（流1）</td><td style='text-align:center;'>01左飞顶字幕测试，字体黄色，背景黑色。END!!!END!!!!</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>左飞顶字幕测试01（流2）</td><td style='text-align:center;'>START!!!START!!!01左飞顶字幕测试，字体黄色，背景黑色。（前面的汉字重复几百次）END!!!END!!!!</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>左飞顶字幕测试02</td><td style='text-align:center;'>02左飞顶字幕测试，字体白色，背景黑色。END!!!END!!!!</td>
+					</tr>
+					
+					<tr>
+						<td style='text-align:center;' rowspan='4'><br><br>链接</td>
+						<td style='text-align:center;'>麦当劳01</td><td style='text-align:center;'>麦当劳01.jpg麦当劳02.jpg麦当劳03.jpg麦当劳04.jpg麦当劳05.jpg麦当劳06.jpg</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>竹叶青01</td><td style='text-align:center;'>竹叶青01.jpg，竹叶青02.jpg，竹叶青03.jpg，竹叶青04.jpg，竹叶青05.jpg</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>酒水广告01</td><td style='text-align:center;'>酒水广告01.jpg，酒水广告02.jpg，酒水广告03.jpg</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>肯德基01</td><td style='text-align:center;'>肯德基人气产品01.jpg，肯德基人气产品02.jpg，肯德基人气产品03.jpg，肯德基人气产品04.jpg</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+
+	
+		<hr class="featurette-divider">
+		
+		<div class="row">
+			<h1 id='test_2'>2.KonkaAdvTest_1.ts信息</h1>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>广告类型</td><td>标记</td><td>素材</td><td>关联频道</td><td>备注</td><td>有效性</td></tr>
+				</thead>
+				<tbody>
+					<tr style='text-align:center;'>
+						<td>开机广告图</td><td></td><td>开机广告_麦当劳.jpg</td><td></td><td></td><td>全天有效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>广播背景广告</td><td></td><td>背景广告_蒙牛.jpg</td><td></td><td></td><td>全天有效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>菜单广告</td><td></td><td>菜单广告_赖谷.JPG</td><td></td><td></td><td>全天有效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>音量条广告</td><td></td><td>音量条广告_够味.jpg  （链接：肯德基01）</td><td></td><td></td><td>全天有效</td>
+					</tr>
+					
+					<tr style='text-align:center;'>
+						<td rowspan='3'><br><br>翻台信息条广告</td><td>1</td><td>翻台广告_竹叶青01.jpg (链接：竹叶青01)</td><td>4231BBCTwo</td><td></td><td>全天有效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>2</td><td>旗帜广告_长城.jpg（链接酒水广告01）</td><td>1.4415BBCNEWS <br>2.4671CBBC</td><td></td><td>全天有效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>3</td><td>翻台广告_动画.gif</td><td>4167BBCOne</td><td></td><td>全天有效</td>
+					</tr>
+					
+					<tr style='text-align:center;'>
+						<td rowspan='2'>挂角广告</td><td>1</td><td>挂角广告_肯德基动画.GIF</td><td>4415 BBC_NEWS</td><td>显示时长10秒，周期60秒。</td><td>全天有效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>2</td><td>挂角广告_麦当劳.JPG  （链接：麦当劳01）</td><td>1.4167BBCOne <br>2.4231BBCTwo</td><td>显示时长5秒，周期30秒。</td><td>全天有效</td>
+					</tr>
+					
+					<tr style='text-align:center;'>
+						<td rowspan='3'><br><br>字幕广告</td><td>1.左飞底字幕</td><td>1.左飞底字幕测试01<br>2.左飞底字幕测试02</td><td>1. 4167 BBCONE<br>2. 4671 CBBC</td><td></td><td>01全天有效<br>02时段有效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>2.左飞底字幕2</td><td>左飞底字幕测试03</td><td>4415BBCNEWS</td><td></td><td>全天有效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>3.左飞顶字幕</td><td>1.左飞顶字幕测试01<br>2.左飞顶字幕测试02</td><td>4231 BBCTWO</td><td>时段有效，且显示时间有间隔的两条字幕</td><td>时段有效</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+
+		
+		<hr class="featurette-divider">
+		
+		<div class="row">
+			<h1 id='test_3'>3.KonkaAdvTest_2.ts信息</h1>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>广告类型</td><td>标记</td><td>素材</td><td>关联频道</td><td>备注</td><td>有效性</td></tr>
+				</thead>
+				<tbody>
+					<tr style='text-align:center;'>
+						<td rowspan='6'><br><br><br>开机广告图</td><td rowspan='6'></td><td>开机广告_仙草蜜.jpg</td><td></td><td></td><td><b>时段有效，此流中有效</b></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>开机广告_麦当劳.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>开机广告_032.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>开机广告_鲜C.JPG</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>开机广告_麦当劳00.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>开机广告_动画2.gif</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					
+					
+					<tr style='text-align:center;'>
+						<td rowspan='4'><br><br>广播背景广告</td><td rowspan='4'></td><td>背景广告_蒙牛.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>麦当劳05.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>肯德基人气产品04.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>肯德基人气产品05.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					
+					
+					<tr style='text-align:center;'>
+						<td rowspan='6'><br><br><br>菜单广告</td><td rowspan='6'></td><td>菜单广告_赖谷.JPG</td><td></td><td></td><td><b>时段有效，此流中有效</b></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>肯德基菜单广告02.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>肯德基菜单广告03.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>肯德基菜单广告04.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>肯德基菜单广告06.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>肯德基菜单广告08.jpg</td><td></td><td></td><td>时段有效，此流中无效</td>
+					</tr>
+					
+					
+					<tr style='text-align:center;'>
+						<td>音量条广告</td><td></td><td>音量条广告_够味.jpg  （链接：肯德基01）</td><td></td><td></td><td><b>全天有效</b></td>
+					</tr>
+					
+					
+					<tr style='text-align:center;'>
+						<td rowspan='3'><br>翻台信息条广告</td><td>1</td><td>翻台广告_竹叶青01.jpg (链接：竹叶青01)</td><td>4231BBCTwo</td><td></td><td><b>全天有效</b></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>2</td><td>1.旗帜广告_长城.jpg（链接酒水广告01）<br>2.翻台广告_竹叶青01.jpg (链接：竹叶青01)<br>3.翻台广告_动画.gif</td><td>1.4415BBCNEWS<br>2.4671CBBC</td><td></td><td>时段有效<br>1.此流中有效<br>2.3.此流中无效</td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>3</td><td>翻台广告_动画.gif</td><td>4167BBCOne</td><td></td><td><b>全天有效</b></td>
+					</tr>
+					
+					
+					<tr style='text-align:center;'>
+						<td rowspan='2'><br>挂角广告</td><td>1</td><td>挂角广告_肯德基动画.GIF</td><td>4415 BBC_NEWS</td><td>显示时长10秒，周期0秒</td><td><b></b></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>2</td><td>挂角广告_麦当劳.JPG（链接：麦当劳01）</td><td>1.4167BBCOne<br>2.4231BBCTwo</td><td>显示时长5秒，周期0秒</td><td></td>
+					</tr>
+					
+					
+					<tr style='text-align:center;'>
+						<td rowspan='3'><br>字幕广告</td><td>1 左飞底字幕</td><td>左飞底字幕测试01</td><td>1.4167 BBC_ONE<br>2.4671 CBBC</td><td>显示时长5秒，周期2秒</td><td><b>全天有效</b></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>2 左飞顶字幕</td><td>左飞顶字幕测试01</td><td>4231 BBC_TWO</td><td>显示时长10秒，周期3秒</td><td><b>全天有效</b></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>3 左飞底字幕</td><td>左飞底字幕测试03</td><td>4167 BBC_ONE </td><td>显示时长0秒，周期0秒</td><td>时段有效</td>
+					</tr>
+					
+					
+					<tr style='text-align:left;'>
+						<td colspan='6'>说明：此流中图片数据为1243KB，左飞顶字幕字数大小为19998BYTE，挂角广告无消隐。在频道4167，有两个左飞底字幕，两个字幕属于不同的广告位，但显示时间有冲突。</td>
+					</tr>
+					
+					
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+		
+		<div class="row">
+			<h1 id='test_4'>4.广告模板信息</h1>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>模板号</td><td>名称</td><td style='width:40%;'>图片</td><td>显示周期</td><td>备注</td></tr>
+				</thead>
+				<tbody>
+					<tr style='text-align:center;'>
+						<td>1#</td><td>开机广告</td><td><img src="images/ad/01.png" class="img-thumbnail"></td><td>8秒</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>2#</td><td>收音机背景广告</td><td><img src="images/ad/02.png" class="img-thumbnail"></td><td>持续显示</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>3#</td><td>主菜单广告</td><td><img src="images/ad/03.png" class="img-thumbnail"></td><td>持续显示</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>4#</td><td>音量条广告</td><td><img src="images/ad/04.png" class="img-thumbnail"></td><td>8秒</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>5#</td><td>PF条广告</td><td><img src="images/ad/05.png" class="img-thumbnail"></td><td>8秒</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>6#</td><td>挂角广告</td><td><img src="images/ad/06.png" class="img-thumbnail"></td><td>广告位设置显示时间和现实间隔周期</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td></td><td>左飞字幕广告</td><td>左飞字幕条位置由数据协议内部设定。可以在屏幕顶部或者屏幕底部。</td><td>字幕素材决定显示持续时间和间隔周期</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>15#</td><td>单图页面广告</td><td><img src="images/ad/07.png" class="img-thumbnail"></td><td>持续显示，数据协议决定自动换页时间</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+						<td>14#</td><td>左图右字页面广告</td><td><img src="images/ad/08.png" class="img-thumbnail"></td><td>持续显示，数据协议决定自动换页时间</td><td></td>
+					</tr>
+					<tr style='text-align:center;'>
+					</tr>	
+					
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+	
+		<div class="row">
+			<h1 id='test_5'>5.相关文档</h1>
+			<br>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>#</td><td>文档</td></tr>
+				</thead>
+				<tbody style='text-align:center;'>
+					<tr><td>1</td><td><a href='doc/test_ad/测试流测试结果指引.xls' target='blank'>测试流测试结果指引</a></td></tr>
+					<tr><td>2</td><td><a href='doc/test_ad/广告模板信息.doc' target='blank'>广告模板信息</a></td></tr>
+					<tr><td>3</td><td><a href='doc/test_ad/康佳EPG广告集成厂商自测试报告（每次提交测试时必须重新填写自测试报告并发给康佳）.xls' target='blank'>康佳EPG广告集成厂商自测试报告</a></td></tr>
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+	
+		<div class="row">
+			<h1 id='test_6'>6.版本信息</h1>
+			<br>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+				</thead>
+				<tbody style='text-align:center;'>
+					<tr><td>1</td><td>2014年06月23日</td><td>V1.0</td><td>根据《测试流测试结果指引》文档整合</td><td>林晓州</td><td>——</td></tr>
+					<tr><td>2</td><td>2014年06月23日</td><td>V1.0</td><td>根据文档《广告模板信息》整合</td><td>林晓州</td><td>——</td></tr>
+					<tr><td>3</td><td>2015年11月24日</td><td>V2.0</td><td>转入网站管理</td><td>林晓州</td><td>——</td></tr>
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+			
+		<div class="row">
+			<div class="col-md-12 well">
+				<p>
+					<b>OneLib智库 · 分享知识和经验，打造精品个人智库平台</b>
+					<br>Designed By 林晓州
+					<br>qq： 1139904786
+					<br>邮箱： 1139904786@qq.com
+					<br>网址： http://www.onelib.biz
+					<br>©2015 · OneLib智库
+				</p>
+			</div>
+		</div><!-- /.row -->
+		
+		
+
+    </div>
+	
+	  
+	<!-- start guide -->
+	<div class="col-md-3 col-sm-4" id="myScrollspy">
+		<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+			
+			<div style='width:60%; text-align:left; margin-top:10px;'>
+				<b>本页导航</b>
+			</div>
+			
+			<ul class="nav bs-docs-sidenav" style='margin-top:5px;'>
+				<li class="active">
+					<a href="#test_0"><i class='fa fa-tags'></i> 0.码流说明</a>
+				</li>
+				<li>
+					<a href="#test_1"><i class='fa fa-tags'></i> 1.特殊素材信息</a>
+				</li>
+				<li>
+					<a href="#test_2"><i class='fa fa-tags'></i> 2.KonkaAdvTest_1.ts信息</a>
+				</li>
+				<li>
+					<a href="#test_3"><i class='fa fa-tags'></i> 3.KonkaAdvTest_2.ts信息</a>
+				</li>
+				<li>
+					<a href="#test_4"><i class='fa fa-tags'></i> 4.广告模板信息.ts信息</a>
+				</li>
+				<li>
+					<a href="#test_5"><i class='fa fa-tags'></i> 5.相关文档</a>
+				</li>
+				<li>
+					<a href="#test_6"><i class='fa fa-tags'></i> 6.版本信息</a>
+				</li>
+			</ul>
+
+			<div style='width:60%; text-align:left; border-top:1px #eee solid; margin-top:15px;'>
+			</div>
+			
+			<a class="back-to-top" onclick=ol_goto('ca_top') style='margin-top:10px;'>
+			  <i class='fa fa-angle-double-up'></i> 返回顶部
+			</a>
+		</nav>
+	</div>
+	<!-- /guide -->
+
+	
+	<footer class="bs-docs-footer col-md-12" role="contentinfo">
+	  <div class="container">
+
+		<p></p>
+		<ul class="bs-docs-footer-links text-muted">
+		  <li>版本：V1.0.0</li>
+		  <li>·</li>
+		  <li>©<a href="http://www.onelib.biz">OneLib智库</a> · 分享知识和经验，打造精品个人智库平台</li>
+		  <li>·</li>
+		  <li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+		</ul>
+	  </div>
+	</footer>
+	
+	<br>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/public.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+            $("#ol_tasklist_guide").affix({
+				offset: {
+					top: 200
+				}
+			});
+
+        });
+		
+	
+	</script>
+
+</body>
+
+</html>

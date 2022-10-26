@@ -1,0 +1,1656 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PSI/SI的数值分配 - PSI/SI专题 | OneLib智库,为您定制私人智库</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/onelib.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="../images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	</head>
+	
+	
+	<body class="subpage" data-spy="scroll" data-target="#myScrollspy">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Logo -->
+								<h1>
+									<a href="/blog/stb" id="logo">
+										<img alt="Brand" src="../images/logo_sm.png" style='height:40px; margin-top:-3px;'>
+									</a>
+								</h1>
+
+								<!-- Nav -->
+								<nav id="nav">
+									<a href="../index.html">首页</a>
+									<a href="../psisi.html">PSI/SI教程</a>
+									<a href="../knowledge.html">机顶盒知识点</a>
+									<a href="index.html">资料快查</a>
+								</nav>
+
+							</div>
+						</div>
+					</header>
+				</div>
+
+			<!-- Content -->
+				<div id="content-wrapper">
+					<div id="content">
+						<div class="container">
+							<div class="row">
+								<div class="3u 12u(mobile)">
+
+									<!-- Sidebar -->
+										
+										<section>
+											<header>
+												<h2>PSI/SI资料快查</h2>
+												<p class='light-text'>资料入口</p>
+											</header>
+											<a class="feature-image"><img src="../images/pic05.jpg" alt="" /></a>
+											<p>
+												这里是PSI/SI相关资料的主入口，
+												你有任何需要查询的资料，都可以从这里开始寻找...
+											</p>
+											<ul class="link-list">
+												<li><a href="index.html" class='bold'>首页</a> <span class='light-text small'>返回首页</span></li>
+												<br>
+												
+												<li style='font-weight:bold;'>基础</li>
+												<li><a href="dictionary.html" target='_blank'>PSI/SI名词速查</a></li>
+												<li><a href="ts.html" target='_blank'>TS流的制作、传输及解析</a></li>
+												<br>
+												
+												<li style='font-weight:bold;'>PSI信息</li>
+												<li>
+													<a href="psisitable.html#pat" target='_blank'>PAT表</a>、
+													<a href="psisitable.html#pmt" target='_blank'>PMT表</a>、
+													<a href="psisitable.html#nit" target='_blank'>NIT表</a>、
+													<a href="psisitable.html#cat" target='_blank'>CAT表</a>
+												</li>
+												<br>
+												
+												<li style='font-weight:bold;'>SI信息</li>
+												<li>
+													<a href="psisitable.html#sdt" target='_blank'>SDT表</a>、
+													<a href="psisitable.html#eit" target='_blank'>EIT表</a>、
+													<a href="psisitable.html#tdt" target='_blank'>TDT表</a>、
+													<a href="psisitable.html#bat" target='_blank'>BAT表</a>、
+													<a href="psisitable.html#tot" target='_blank'>TOT表</a>、
+													<a href="psisitable.html#rts" target='_blank'>RST表</a>、
+													<a href="psisitable.html#sit" target='_blank'>SIT表</a>、
+													<a href="psisitable.html#st" target='_blank'>ST表</a>、
+													<a href="psisitable.html#dit" target='_blank'>DIT表</a>
+												</li>
+												<br>
+												
+												<li style='font-weight:bold;'>描述子Descriptor列表</li>
+												<li>
+													<a href="descriptor.html" target='_blank'>进入详细列表</a>
+												</li>
+												<br>
+												
+												<li style='font-weight:bold;'>表格</li>
+												<li>
+													<a href="table.html" target='_blank'>进入详细列表</a>
+												</li>
+											</ul>
+											
+											<br>
+											<p class='author'>
+												<br>
+												本资料集由 林晓州 收集和整理，并提供共享。
+												<br>邮箱： 1139904786@qq.com
+												<br>网址： <a href='http://www.onelib.biz' target='_blank'>http://www.onelib.biz</a>
+											</p>
+											<br>
+											<p class='copyright'>
+												<span style='font-weight:bold;'>版权声明</span>：未经许可，请勿转载！
+											</p>
+											<br>
+											<p class='website'>
+												<br>
+												©2016 · OneLib智库 · 分享知识和经验，打造精品智库平台
+											</p>
+										</section>
+										
+										
+										<section id="myScrollspy" style='padding: 5px;'>
+											<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+												
+												<header style='padding-top:25px; margin:0;'>
+													<h2>本页导航</h2>
+													<p class='light-text'>PSI/SI的数值分配</p>
+												</header>
+												
+												<ul class="nav bs-docs-sidenav" style=';'>
+													<li class="active">
+														<a href="#part1"><span class='fa fa-tags'></span> PID的分配</a>
+													</li>
+													<li><a href="#part2"><span class='fa fa-tags'></span> table_id的分配</a></li>
+													<li><a href="#part3"><span class='fa fa-tags'></span> 描述子及存在位置</a></li>
+													<li><a href="#part4"><span class='fa fa-tags'></span> 有线网络调制方案</a></li>
+													<li><a href="#part5"><span class='fa fa-tags'></span> 卫星网络调制系统</a></li>
+													<li><a href="#part6"><span class='fa fa-tags'></span> 卫星网络调制类型</a></li>
+													<li><a href="#part7"><span class='fa fa-tags'></span> 地面网络带宽</a></li>
+													<li><a href="#part8"><span class='fa fa-tags'></span> 传送系统</a></li>
+													<li><a href="#part9"><span class='fa fa-tags'></span> 国家区域ID</a></li>
+													<li><a href="#part10"><span class='fa fa-tags'></span> 业务类型</a></li>
+													<li><a href="#part11"><span class='fa fa-tags'></span> Teletext类型</a></li>
+													<li><a href="#part12"><span class='fa fa-tags'></span> 内容分级</a></li>
+													<li>
+														<a href="#party"><span class='fa fa-tags'></span> 参考文档</a>
+													</li>
+													<li>
+														<a href="#partx"><span class='fa fa-tags'></span>  版本信息</a>
+													</li>
+												</ul>
+											</nav>
+										</section>
+
+								</div>
+								<div class="9u 12u(mobile) important(mobile)">
+
+									<!-- Main Content -->
+										<section>
+											<header>
+												<h2>PSI/SI的数值分配</h2>
+												<p class='light-text'>PSI/SI中一些数值的分配</p>
+											</header>
+											<p>
+												为了方便查阅PSI/SI中的表格，特将所有关于值分配的表格整理出来。
+												有关表格包括PID、stream_type，service_type分配等。
+											</p>
+											<p>
+												考虑到描述子中有一些表格需要在描述子中进行说明比较合适，一些字段的值编码分配就没有在这里列举了。
+												如有需要，可直接去描述子那里查看。
+											</p>
+										</section>
+									
+										
+										<section id='part1'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>PID的分配</span></a></h2>
+												<p class='light-text'>Allocation of PID</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>表</td><td>PID值</td><td>说明</td></tr>
+												</thead>
+												<tr><td>PAT</td><td>0x0000</td><td>无</td></tr>
+												<tr><td>CAT</td><td>0x0001</td><td>无</td></tr>
+												<tr><td>TSDT</td><td>0x0002</td><td>无</td></tr>
+												<tr><td>预留</td><td>0x0003 至0x000F</td><td>无</td></tr>
+												<tr><td>NIT, ST</td><td>0x0010</td><td>无</td></tr>
+												<tr><td>SDT , BAT, ST</td><td>0x0011</td><td>无</td></tr>
+												<tr><td>EIT, ST</td><td>0x0012</td><td>无</td></tr>
+												<tr><td>RST, ST</td><td>0x0013</td><td>无</td></tr>
+												<tr><td>TDT, TOT, ST</td><td>0x0014</td><td>无</td></tr>
+												<tr><td>网络同步</td><td>0x0015</td><td>network synchronization</td></tr>
+												<tr><td>预留使用</td><td>0x0016 至 0x001B</td><td>无</td></tr>
+												<tr><td>带内信令</td><td>0x001C</td><td>inband signalling</td></tr>
+												<tr><td>measurement</td><td>0x001D</td><td>measurement</td></tr>
+												<tr><td>DIT</td><td>0x001E</td><td>无</td></tr>
+												<tr><td>SIT</td><td>0x001F</td><td>无</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part2'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>table_id的分配</span></a></h2>
+												<p class='light-text'>Allocation of table_id</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%; text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>table_id值</td><td>说明(中文)</td><td>说明(英文)</td><td>所在表</td></tr>
+												</thead>
+												<tr><td>0x00</td><td>节目关联段</td><td>program_association_section</td><td class='bold'>PAT</td></tr>
+												<tr><td>0x01</td><td>条件接收段</td><td>conditional_access_section</td><td class='bold'>CAT</td></tr>
+												<tr><td>0x02</td><td>节目映射段</td><td>program_map_section</td><td class='bold'>PMT</td></tr>
+												<tr><td>0x03</td><td>传输流描述段</td><td>transport_stream_description_section</td><td class='bold'>TSDT</td></tr>
+												<tr class='light-text'><td>0x04 to 0x3F</td><td>预留</td><td>reserved</td><td class='bold'>无</td></tr>
+												<tr><td>0x40</td><td>现行网络信息段</td><td>network_information_section - actual_network</td><td class='bold'>NIT</td></tr>
+												<tr><td>0x41</td><td>其它网络信息段</td><td>network_information_section - other_network</td><td class='bold'>NIT</td></tr>
+												<tr><td>0x42</td><td>现行传输流业务描述段</td><td>network_information_section - actual_transport_stream</td><td class='bold'>NIT</td></tr>
+												<tr class='light-text'><td>0x43 to 0x45</td><td>预留使用</td><td>reserved for future use</td><td class='bold'>无</td></tr>
+												<tr><td>0x46</td><td>现行传输流业务描述段</td><td>service_description_section - other_transport_stream</td><td class='bold'>SDT</td></tr>
+												<tr class='light-text'><td>0x47 to 0x49</td><td>预留使用</td><td>reserved for future use</td><td class='bold'>无</td></tr>
+												<tr><td>0x4A</td><td>业务群关联段</td><td>bouquet_association_section</td><td class='bold'>BAT</td></tr>
+												<tr class='light-text'><td>0x4B to 0x4D</td><td>预留使用</td><td>reserved for future use</td><td class='bold'>无</td></tr>
+												<tr><td>0x4E</td><td>现行传输流事件信息段，当前/后续</td><td>event_information_section - actual_transport_stream, present/following</td><td class='bold'>EIT</td></tr>
+												<tr><td>0x4F</td><td>其它传输流事件信息段，当前/后续</td><td>event_information_section - other_transport_stream, present/following</td><td class='bold'>EIT</td></tr>
+												<tr><td>0x50 to 0x5F</td><td>现行传输流事件信息段，时间表</td><td>event_information_section - actual_transport_stream, schedule</td><td class='bold'>EIT</td></tr>
+												<tr><td>0x60 to 0x6F</td><td>其它传输流事件信息段，时间表</td><td>event_information_section - other_transport_stream, schedule</td><td class='bold'>EIT</td></tr>
+												<tr><td>0x70</td><td>时间-日期段</td><td>time_date_section</td><td class='bold'>TDT</td></tr>
+												<tr><td>0x71</td><td>运行状态段</td><td>running_status_section</td><td class='bold'></td></tr>
+												<tr><td>0x72</td><td>填充段</td><td>stuffing_section</td><td class='bold'>ST</td></tr>
+												<tr><td>0x73</td><td>时间偏移段</td><td>time_offset_section</td><td class='bold'>TOT</td></tr>
+												<tr><td>0x74</td><td></td><td>application information section</td><td class='bold'></td></tr>
+												<tr><td>0x75</td><td></td><td>container section</td><td class='bold'></td></tr>
+												<tr><td>0x76</td><td></td><td>related content section</td><td class='bold'></td></tr>
+												<tr><td>0x77</td><td></td><td>content identifier section</td><td class='bold'></td></tr>
+												<tr><td>0x78</td><td></td><td>MPE-FEC section</td><td class='bold'></td></tr>
+												<tr><td>0x79</td><td></td><td>resolution notification section</td><td class='bold'></td></tr>
+												<tr class='light-text'><td>0x79 to 0x7D</td><td>预留使用</td><td>reserved for future use</td><td class='bold'>无</td></tr>
+												<tr><td>0x7E</td><td>不连续信息段</td><td>discontinuity_information_section</td><td class='bold'>DIT</td></tr>
+												<tr><td>0x7F</td><td>选择信息段</td><td>selection_information_section</td><td class='bold'>SIT</td></tr>
+												<tr><td>0x80 to 0xFE</td><td>用户定义</td><td>user defined</td><td class='bold'>无</td></tr>
+												<tr><td>0xFF</td><td>预留</td><td>reserved</td><td class='bold'>无</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part3'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>描述子及存在位置</span></a></h2>
+												<p class='light-text'>Descriptor identification and location</p>
+											</header>
+											<p>
+												下表将给出所有描述子(Descriptor)的tag_value以及可能存在哪些表中
+											</p>
+											<table class='table table-condensed table-hover table-bordered text-center' style='margin-top:-6px; font-size:70%;'>
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>描述子</td><td>tage_value</td><td>NIT</td><td>BAT</td><td>SDT</td><td>EIT</td><td>TOT</td><td>PMT</td><td>SIT</td></tr>
+												</thead>
+												<tr><td>network_name_descriptor</td><td>0x40</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>service_list_descriptor</td><td>0x41</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>stuffing_descriptor</td><td>0x42</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>satellite_delivery_system_descriptor</td><td>0x43</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>cable_delivery_system_descriptor</td><td>0x44</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>VBI_data_descriptor</td><td>0x45</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>VBI_teletext_descriptor</td><td>0x46</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>bouquet_name_descriptor</td><td>0x47</td><td>×</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>service_descriptor</td><td>0x48</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>country_availability_descriptor</td><td>0x49</td><td>×</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>linkage_descriptor</td><td>0x4A</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>描述子</td><td>tage_value</td><td>NIT</td><td>BAT</td><td>SDT</td><td>EIT</td><td>TOT</td><td>PMT</td><td>SIT</td></tr>
+												</thead>
+												<tr><td>NVOD_reference_descriptor</td><td>0x4B</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>time_shifted_service_descriptor</td><td>0x4C</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>short_event_descriptor</td><td>0x4D</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>extended_event_descriptor</td><td>0x4E</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>time_shifted_event_descriptor</td><td>0x4F</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>component_descriptor</td><td>0x50</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>mosaic_descriptor</td><td>0x51</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>stream_identifier_descriptor</td><td>0x52</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>CA_identifier_descriptor</td><td>0x53</td><td>×</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>content_descriptor</td><td>0x54</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>parental_rating_descriptor</td><td>0x55</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>teletext_descriptor</td><td>0x56</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>telephone_descriptor</td><td>0x57</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>local_time_offset_descriptor</td><td>0x58</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td></tr>
+												<tr><td>subtitling_descriptor</td><td>0x59</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>terrestrial_delivery_system_descriptor</td><td>0x5A</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>描述子</td><td>tage_value</td><td>NIT</td><td>BAT</td><td>SDT</td><td>EIT</td><td>TOT</td><td>PMT</td><td>SIT</td></tr>
+												</thead>
+												<tr><td>multilingual_network_name_descriptor</td><td>0x5B</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>multilingual_bouquet_name_descriptor</td><td>0x5C</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>multilingual_service_name_descriptor</td><td>0x5D</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>multilingual_component_descriptor</td><td>0x5E</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>private_data_specifier_descriptor</td><td>0x5F</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>service_move_descriptor</td><td>0x60</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>short_smoothing_buffer_descriptor</td><td>0x61</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>frequency_list_descriptor</td><td>0x62</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>partial_transport_stream_descriptor(see note 1)</td><td>0x63</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>data_broadcast_descriptor</td><td>0x64</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>scrambling_descriptor</td><td>0x65</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>data_broadcast_id_descriptor</td><td>0x66</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>transport_stream_descriptor(see note 2)</td><td>0x67</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>DSNG_descriptor(see note 2)</td><td>0x68</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>PDC_descriptor</td><td>0x69</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td></tr>
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>描述子</td><td>tage_value</td><td>NIT</td><td>BAT</td><td>SDT</td><td>EIT</td><td>TOT</td><td>PMT</td><td>SIT</td></tr>
+												</thead>
+												<tr><td>AC-3_descriptor (see annex D)</td><td>0x6A</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>ancillary_data_descriptor</td><td>0x6B</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>cell_list_descriptor</td><td>0x6C</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>cell_frequency_link_descriptor</td><td>0x6D</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>announcement_support_descriptor</td><td>0x6E</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>application_signalling_descriptor</td><td>0x6F</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>adaptation_field_data_descriptor</td><td>0x70</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>service_identifier_descriptor</td><td>0x71</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>service_availability_descriptor</td><td>0x72</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>default_authority_descriptor(TS 102 323 [15])</td><td>0x73</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>related_content_descriptor(TS 102 323 [15])</td><td>0x74</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>TVA_id_descriptor(TS 102 323 [15])</td><td>0x75</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>content_identifier_descriptor(TS 102 323 [15])</td><td>0x76</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>time_slice_fec_identifier_descriptor(EN 301 192 [4]) (see note 3)</td><td>0x77</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>描述子</td><td>tage_value</td><td>NIT</td><td>BAT</td><td>SDT</td><td>EIT</td><td>TOT</td><td>PMT</td><td>SIT</td></tr>
+												</thead>
+												<tr><td>ECM_repetition_rate_descriptor(EN 301 192 [4])</td><td>0x78</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>S2_satellite_delivery_system_descriptor</td><td>0x79</td><td class='bold graybg red'>√</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>enhanced_AC-3_descriptor(see annex D)</td><td>0x7A</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>DTS descriptor (see annex G)</td><td>0x7B</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>AAC descriptor (see annex H)</td><td>0x7C</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td class='bold graybg red'>√</td><td>×</td></tr>
+												<tr><td>reserved for future use</td><td>0x7D</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+												<tr><td>reserved for future use</td><td>0x7E</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+												<tr><td>extension descriptor</td><td>0x7F</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td><td class='bold graybg red'>√</td></tr>
+												<tr><td>user defined</td><td>0x80 to 0xFE</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td><td>×</td></tr>
+												<tr><td>forbidden</td><td>0xFF</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+												<tr>
+													<td colspan='9' class='text-left'>
+														NOTE 1: Only found in Partial Transport Streams.
+														<br>NOTE 2: Only in the TSDT (Transport Streams Description Table).
+														<br>NOTE 3: May also be located in the CAT (ISO/IEC 13818-1 [20]) and INT (TS 102 006 [13]).
+														<br>NOTE 4: √ Possible location.
+													</td>
+												</tr>
+												
+											</table>
+										</section>
+									
+										
+										<section id='part4'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>有线网络调制方案</span></a></h2>
+												<p class='light-text'>Modulation scheme for cable</p>
+											</header>
+											<p>
+											cable_delivery_system_descriptor描述子中modulation是一个8位字段，它表示：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%; text-align:center;'>
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>modulation值(16进制)</td><td>说明</td></tr>
+												</thead>
+												<tr><td>0x00</td><td>未定义</td></tr>
+												<tr><td>0x01</td><td>16-QAM</td></tr>
+												<tr><td>0x02</td><td>32-QAM</td></tr>
+												<tr><td>0x03</td><td>64-QAM</td></tr>
+												<tr><td>0x04</td><td>128-QAM</td></tr>
+												<tr><td>0x05</td><td>256-QAM</td></tr>
+												<tr><td>0x06 - 0xFF</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part4-1'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>前向纠错外码</span></a></h2>
+												<p class='light-text'>FEC_outer</p>
+											</header>
+											<p>
+											cable_delivery_system_descriptor描述子中FEC_outer是一个4位字段，表示前向纠错（FEC）外码方案：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%; text-align:center;'>
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>前向纠错外码  位3210</td><td>说明</td></tr>
+												</thead>
+												<tr><td>0000</td><td>未定义</td></tr>
+												<tr><td>0001</td><td>无FEC外码</td></tr>
+												<tr><td>0010</td><td>RS（204/188）</td></tr>
+												<tr><td>0011 - 1111</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part4-2'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>前向纠错内码</span></a></h2>
+												<p class='light-text'>FEC_inner</p>
+											</header>
+											<p>
+											cable_delivery_system_descriptor描述子中FEC_inner是一个4位字段，指出前向纠错码（FEC）内码方案：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%; text-align:center;'>
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>前向纠错外码  位3210</td><td>说明</td></tr>
+												</thead>
+												<tr><td>0000</td><td>未定义</td></tr>
+												<tr><td>0001</td><td>卷积码率1/2</td></tr>
+												<tr><td>0010</td><td>卷积码率2/3</td></tr>
+												<tr><td>0011</td><td>卷积码率3/4</td></tr>
+												<tr><td>0100</td><td>卷积码率5/6</td></tr>
+												<tr><td>0101</td><td>卷积码率7/8</td></tr>
+												<tr><td>1111</td><td>无卷积码率</td></tr>
+												<tr><td>0110 - 1110</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part5'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>卫星网络调制系统</span></a></h2>
+												<p class='light-text'>Modulation system for satellite</p>
+											</header>
+											<p>
+											satellite_delivery_system_descriptor描述子中modulation_system是一个1位字段，它表示：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%; text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>modulation系统</td><td>说明</td></tr>
+												</thead>
+												<tr><td>0</td><td>DVB-S</td></tr>
+												<tr><td>1</td><td>DVB-S2</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part6'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>卫星网络调制类型</span></a></h2>
+												<p class='light-text'>Modulation type for satellite</p>
+											</header>
+											<p>
+											satellite_delivery_system_descriptor描述子中modulation_type是一个2位字段，它表示：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='font-weight:bold; background-color:#bbb; color:#000;'><td>modulation_type(二进制)</td><td>说明</td></tr>
+												</thead>
+												<tr><td>00</td><td>Auto</td></tr>
+												<tr><td>01</td><td>QPSK</td></tr>
+												<tr><td>10</td><td>8PSK</td></tr>
+												<tr><td>11</td><td>16-QAM (n/a for DVB-S2)</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part7'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>地面网络带宽</span></a></h2>
+												<p class='light-text'>Signalling format for the bandwidth</p>
+											</header>
+											<p>
+											terrestrial_delivery_system_descriptor描述子中bandwidth是一个3位字段，它表示：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>bandwidth(二进制)</td><td>带宽</td></tr>
+												</thead>
+												<tr><td>000</td><td>8 MHz</td></tr>
+												<tr><td>001</td><td>7 MHz</td></tr>
+												<tr><td>010</td><td>6 MHz</td></tr>
+												<tr><td>011</td><td>5 MHz</td></tr>
+												<tr><td>100 - 111</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part7-1'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>星座(地面)</span></a></h2>
+												<p class='light-text'>constellation(Terrestrial)</p>
+											</header>
+											<p>
+											terrestrial_delivery_system_descriptor描述子中constellation是一个2位字段，指明地面传送系统使用的星座模式
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>constellation(二进制)</td><td>星座特征</td></tr>
+												</thead>
+												<tr><td>00</td><td>QPSK</td></tr>
+												<tr><td>01</td><td>16-QAM</td></tr>
+												<tr><td>10</td><td>64-QAM</td></tr>
+												<tr><td>11</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part7-2'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>分层信息，α值的信令格式</span></a></h2>
+												<p class='light-text'>hierarchy_information(Terrestrial)</p>
+											</header>
+											<p>
+											terrestrial_delivery_system_descriptor描述子中hierarchy_information是一个3位字段，此分层信息指明了传送是否分层，如果分层，α值见下表：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>hierarchy_information(二进制)</td><td>α值</td></tr>
+												</thead>
+												<tr><td>000</td><td>未分层</td></tr>
+												<tr><td>001</td><td>α=1</td></tr>
+												<tr><td>010</td><td>α=2</td></tr>
+												<tr><td>011</td><td>α=4</td></tr>
+												<tr><td>100 - 111</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part7-3'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>码率的信令格式</span></a></h2>
+												<p class='light-text'>code_rate(Terrestrial)</p>
+											</header>
+											<p>
+											terrestrial_delivery_system_descriptor描述子中的code_rate是一个3位字段，按下表给出FEC内码的方案。未分层信道编码和调制需要一种码率信令，在这种情况下，按下表用3位给出码率，其后紧接3位‘000’。为实现分层，可能会有两个不同的码率应用于调制的两个不同层。传输时先按高优先级层的码率传输，再按低优先级层的码率传输。
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>code_rate(二进制)</td><td>描述</td></tr>
+												</thead>
+												<tr><td colspan='2' class='text-left'>terrestrial_delivery_system_descriptor描述子中的code_rate是一个3位字段，按下表给出FEC内码的方案。未分层信道编码和调制需要一种码率信令，在这种情况下，按下表用3位给出码率，其后紧接3位‘000’。为实现分层，可能会有两个不同的码率应用于调制的两个不同层。传输时先按高优先级层的码率传输，再按低优先级层的码率传输。</td></tr>
+												<tr><td>000</td><td>1/2</td></tr>
+												<tr><td>001</td><td>2/3</td></tr>
+												<tr><td>010</td><td>3/4</td></tr>
+												<tr><td>011</td><td>5/6</td></tr>
+												<tr><td>100</td><td>7/8</td></tr>
+												<tr><td>101 - 111</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part7-4'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>保护间隔值的信令格式</span></a></h2>
+												<p class='light-text'>guard_interval(Terrestrial)</p>
+											</header>
+											<p>
+											terrestrial_delivery_system_descriptor描述子中的guard_interval是一个2位字段
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>guard_interval(二进制)</td><td>保护间隔值</td></tr>
+												</thead>
+												<tr><td>00</td><td>1/32</td></tr>
+												<tr><td>01</td><td>1/16</td></tr>
+												<tr><td>10</td><td>1/8</td></tr>
+												<tr><td>11</td><td>1/4</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part7-5'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>传输模式，模式的信令格式</span></a></h2>
+												<p class='light-text'>transmission_mode(Terrestrial)</p>
+											</header>
+											<p>
+											terrestrial_delivery_system_descriptor描述子中的transmission_mode是一个2位字段，定义了OFDM帧中的载波数
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>transmission_mode(二进制)</td><td>保护间隔值</td></tr>
+												</thead>
+												<tr><td>00</td><td>2k 模式</td></tr>
+												<tr><td>01</td><td>8k 模式</td></tr>
+												<tr><td>10 - 11</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part8'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>传送系统</span></a></h2>
+												<p class='light-text'>Delivery system</p>
+											</header>
+											<p>
+											NIT表的frequency_list_descriptor描述子中coding_type是一个2位字段，它表示：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='margin-top:-6px; font-size:70%;text-align:center;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#bbb; color:#000;'><td>coding_type(二进制)</td><td>传输系统</td></tr>
+												</thead>
+												<tr><td>000</td><td>8 MHz</td></tr>
+												<tr><td>001</td><td>7 MHz</td></tr>
+												<tr><td>010</td><td>6 MHz</td></tr>
+												<tr><td>011</td><td>5 MHz</td></tr>
+												<tr><td>100 - 111</td><td>预留使用</td></tr>
+											</table>
+										</section>
+									
+										
+										<section id='part9'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>国家区域ID</span></a></h2>
+												<p class='light-text'>Coding of country_region_id</p>
+											</header>
+											<p>
+											TOT表的local_time_offset_descriptor描述子中country_region_id是一个6位字段，它表示：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead style='text-align:center;'>
+													<tr style='background-color:#bbb; color:#000; font-weight:bold;'><td>country_region_id</td><td>描述</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>00 0000</td><td>未使用时区扩展</td></tr>
+													<tr><td>00 0001</td><td>时区1（最东部）</td></tr>
+													<tr><td>00 0010</td><td>时区2</td></tr>
+													<tr><td>00 0011</td><td>时区3</td></tr>
+													<tr><td>...</td><td>...</td></tr>
+													<tr><td>11 1100</td><td>时区60</td></tr>
+													<tr><td>11 1101 – 11 1111</td><td>预留</td></tr>
+												</tbody>
+											</table>
+										</section>
+									
+										
+										<section id='part10'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>业务类型</span></a></h2>
+												<p class='light-text'>Service type coding</p>
+											</header>
+											<p>
+											service_descriptor的service_type是一个6位字段，表示country_code指明的国家所在的时区。若国家内部里没有时差，则置“000000”。
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead style='text-align:center;'>
+													<tr style='background-color:#bbb; color:#000; font-weight:bold;'><td>service_type</td><td>描述子类型</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>0x00</td><td>reserved for future use，预留使用</td></tr>
+													<tr><td>0x01</td><td title='查看NOTE1'>digital television service，数字电视业务</td></tr>
+													<tr><td>0x02</td><td title='查看NOTE2'>digital radio sound service，数字音频广播业务</td></tr>
+													<tr><td>0x03</td><td>Teletext service，图文电视业务</td></tr>
+													<tr><td>0x04</td><td title='查看NOTE1'>NVOD reference service，NVOD参考业务</td></tr>
+													<tr><td>0x05</td><td title='查看NOTE1'>NVOD time-shifted service，NVOD时移业务</td></tr>
+													<tr><td>0x06</td><td>mosaic service，马赛克业务</td></tr>
+													<tr><td>0x07</td><td>PAL制编码信号</td></tr>
+													<tr><td>0x08</td><td>SECAM制编码信号</td></tr>
+													<tr><td>0x09</td><td>D/D2-MAC</td></tr>
+													<tr><td>0x0A</td><td>advanced codec digital radio sound servic，调频广播</td></tr>
+													<tr><td>0x0B</td><td>advanced codec mosaic service，NTSC制信号</td></tr>
+													<tr><td>0x0C</td><td>data broadcast service，数据广播业务</td></tr>
+													<tr><td>0x0D</td><td>reserved for Common Interface Usage (EN 50221 [39])，公共接口使用预留</td></tr>
+													<tr><td>0x0E</td><td>RCS Map (see EN 301 790 [7])，RCS映射</td></tr>
+													<tr><td>0x0F</td><td>RCS FLS (see EN 301 790 [7])，RCS FLS</td></tr>
+													<tr><td>0x10</td><td>DVB MHP service，DVB MHP业务</td></tr>
+													<tr><td>0x11</td><td>MPEG-2 HD digital television service</td></tr>
+													<tr><td>0x12 - 0x15</td><td>reserved for future use，预留使用</td></tr>
+													<tr><td>0x16</td><td>advanced codec SD digital television service</td></tr>
+													<tr><td>0x17</td><td>advanced codec SD NVOD time-shifted service</td></tr>
+													<tr><td>0x18</td><td>advanced codec SD NVOD reference service</td></tr>
+													<tr><td>0x19</td><td>advanced codec HD digital television service</td></tr>
+													<tr><td>0x1A</td><td>advanced codec HD NVOD time-shifted service</td></tr>
+													<tr><td>0x1A</td><td>advanced codec HD NVOD reference service</td></tr>
+													<tr><td>0x1C - 0x7F</td><td>reserved for future use，预留使用</td></tr>
+													<tr><td>0x80 - 0xFE</td><td>user defined，用户定义</td></tr>
+													<tr><td>0xFF</td><td>erved for future use，预留使用</td></tr>
+													<tr style='text-align:left; font-weight:bold;'><td colspan='2'>
+														NOTE 1: MPEG-2 SD material should use this type<br>
+														NOTE 2: digital radio sound service<br>
+													</td></tr>
+												</tbody>
+											</table>
+										</section>
+									
+										
+										<section id='part11'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>Teletext类型</span></a></h2>
+												<p class='light-text'>teletext_type</p>
+											</header>
+											<p class='paper'>
+												下面给出了teletext_type值的规定：
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='; font-weight:bold; background:#bbb; color:#000;'><td>teletext_type</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>保留</td><td>Reserved</td></tr>
+													<tr><td>0x01</td><td>初始图文电视页面</td><td>initial Teletext page</td></tr>
+													<tr><td>0x02</td><td>图文电视字幕页面</td><td>Teletext subtitle page</td></tr>
+													<tr><td>0x03</td><td>附加信息页面</td><td>additional information page</td></tr>
+													<tr><td>0x04</td><td>节目时间表页面</td><td>programme schedule page</td></tr>
+													<tr><td>0x05</td><td>听障人士Teletext字幕</td><td>Teletext subtitle page for hearing impaired people</td></tr>
+													<tr><td>0x06 - 0x1F</td><td>保留</td><td>Reserved</td></tr>
+												</table>
+											</div>
+										</section>
+									
+									
+										
+										<section id='part12'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>内容分级</span></a></h2>
+												<p class='light-text'>content_nibble</p>
+											</header>
+											<p class=''>
+												内容描述符content_descriptor中有几个字段：
+												<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class='bold'>一级节目内容分类  content_nibble_level_1</span>
+												<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4位字段，表示节目内容标识符的第一级。
+												<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class='bold'>二级节目内容分类  content_nibble_level_2</span>
+												<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4位字段，表示节目内容标识符的第二级。
+												<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class='bold'>用户节目内容分类  user_nibble</span>
+												<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4位字段，由广播者定义。
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%; text-align:center;'>
+													<thead>
+														<tr style='text-align:center; font-weight:bold; background:#bbb; color:#000;'><td>Content_nibble_level_1</td><td>Content_nibble_level_2</td><td>描述(中文)</td><td>描述(English)</td></tr>
+													</thead>
+													
+													<tr><td>0x0</td><td>0x0 - 0xF</td><td>未定义的节目内容</td><td>undefined content</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'>电影/戏剧(Movie/Drama)：</td></tr>
+													<tr><td rowspan='11'>0x1</td><td>0x0</td><td>电影/戏剧（普通）</td><td>movie/drama (general)</td></tr>
+													<tr><td>0x1</td><td>侦探/恐怖片</td><td>detective/thriller</td></tr>
+													<tr><td>0x2</td><td>冒险片/西部片/战争片</td><td>adventure/western/war</td></tr>
+													<tr><td>0x3</td><td>科幻/荒诞/恐怖</td><td>science fiction/fantasy/horror</td></tr>
+													<tr><td>0x4</td><td>喜剧</td><td>comedy</td></tr>
+													<tr><td>0x5</td><td>肥皂剧/伤感剧/民俗剧</td><td>soap/melodrama/folkloric</td></tr>
+													<tr><td>0x6</td><td>浪漫剧</td><td>romance</td></tr>
+													<tr><td>0x7</td><td>严肃/古典/宗教/历史电影/戏剧</td><td>serious/classical/religious/historical movie/drama</td></tr>
+													<tr><td>0x8</td><td>成人电影/剧</td><td>adult movie/drama</td></tr>
+													<tr><td>0x9 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'>新闻时事(News/Current affairs)：</td></tr>
+													<tr><td rowspan='7'>0x2</td><td>0x0</td><td>新闻时事（普通）</td><td>news/current affairs (general)</td></tr>
+													<tr><td>0x1</td><td>新闻/天气预报</td><td>news/weather report</td></tr>
+													<tr><td>0x2</td><td>新闻杂志</td><td>news magazine</td></tr>
+													<tr><td>0x3</td><td>资料</td><td>documentary</td></tr>
+													<tr><td>0x4</td><td>讨论/聊天/辩论</td><td>discussion/interview/debate</td></tr>
+													<tr><td>0x5 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'>表演/比赛(Show/Game show)：</td></tr>
+													<tr><td rowspan='6'>0x3</td><td>0x0</td><td>表演/比赛（普通）</td><td>show/game show (general)</td></tr>
+													<tr><td>0x1</td><td>比赛/智力测验/竞赛</td><td>game show/quiz/contest</td></tr>
+													<tr><td>0x2</td><td>各种各样的表演</td><td>variety show</td></tr>
+													<tr><td>0x3</td><td>对话表演</td><td>talk show</td></tr>
+													<tr><td>0x4 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'>体育(Sports)：</td></tr>
+													<tr><td rowspan='14'>0x4</td><td>0x0</td><td>体育（普通）</td><td>sports (general)</td></tr>
+													<tr><td>0x1</td><td>特别节目（奥运会、世界杯等）</td><td>special events (Olympic Games, World Cup, etc.)</td></tr>
+													<tr><td>0x2</td><td>体育杂志</td><td>sports magazines</td></tr>
+													<tr><td>0x3</td><td>足球/橄榄球</td><td>football/soccer</td></tr>
+													<tr><td>0x4</td><td>网球/壁球</td><td>tennis/squash</td></tr>
+													<tr><td>0x5</td><td>团队运动（足球除外）</td><td>team sports (excluding football)</td></tr>
+													<tr><td>0x6</td><td>田径</td><td>athletics</td></tr>
+													<tr><td>0x7</td><td>摩托赛</td><td>motor sport</td></tr>
+													<tr><td>0x8</td><td>水上运动</td><td>water sport</td></tr>
+													<tr><td>0x9</td><td>冬季运动</td><td>winter sports</td></tr>
+													<tr><td>0xA</td><td>马术</td><td>equestrian</td></tr>
+													<tr><td>0xB</td><td>拳击/武术</td><td>martial sports</td></tr>
+													<tr><td>0xC - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'>儿童/青少节目(Children's/Youth programmes)：</td></tr>
+													<tr><td rowspan='8'>0x5</td><td>0x0</td><td>儿童/青少节目（普通）</td><td>children's/youth programmes (general)</td></tr>
+													<tr><td>0x1</td><td>幼儿园节目</td><td>pre-school children's programmes</td></tr>
+													<tr><td>0x2</td><td>6-14岁的娱乐节目</td><td>entertainment programmes for 6 to14</td></tr>
+													<tr><td>0x3</td><td>10-16岁的娱乐节目</td><td>entertainment programmes for 10 to 16</td></tr>
+													<tr><td>0x4</td><td>信息/教育/学校节目</td><td>informational/educational/school programmes</td></tr>
+													<tr><td>0x5</td><td>卡通/木偶戏</td><td>cartoons/puppets</td></tr>
+													<tr><td>0x6 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'>音乐/芭蕾/舞蹈(Music/Ballet/Dance)：</td></tr>
+													<tr><td rowspan='9'>0x6</td><td>0x0</td><td>音乐/芭蕾舞/舞蹈（普通）</td><td>music/ballet/dance (general)</td></tr>
+													<tr><td>0x1</td><td>摇滚/流行</td><td>rock/pop</td></tr>
+													<tr><td>0x2</td><td>严肃音乐/古典音乐</td><td>serious music/classical music</td></tr>
+													<tr><td>0x3</td><td>民间音乐/传统音乐</td><td>folk/traditional music</td></tr>
+													<tr><td>0x4</td><td>爵士乐</td><td>jazz</td></tr>
+													<tr><td>0x5</td><td>音乐/戏曲</td><td>musical/opera</td></tr>
+													<tr><td>0x6</td><td>芭蕾舞</td><td>ballet</td></tr>
+													<tr><td>0x7 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'> 艺术/文化（无音乐），Arts/Culture (without music):</td></tr>
+													<tr><td rowspan='14'>0x7</td><td>0x0</td><td>艺术/文化（无音乐，普通）</td><td>arts/culture (without music, general)</td></tr>
+													<tr><td>0x1</td><td>表演艺术</td><td>performing arts</td></tr>
+													<tr><td>0x2</td><td>高雅艺术</td><td>fine arts</td></tr>
+													<tr><td>0x3</td><td>宗教</td><td>religion</td></tr>
+													<tr><td>0x4</td><td>大众文化/传统艺术</td><td>popular culture/traditional arts</td></tr>
+													<tr><td>0x5</td><td>文艺</td><td>literature</td></tr>
+													<tr><td>0x6</td><td>摄影</td><td>film/cinema</td></tr>
+													<tr><td>0x7</td><td>实验摄影/摄像</td><td>experimental film/video</td></tr>
+													<tr><td>0x8</td><td>广播/出版</td><td>broadcasting/press</td></tr>
+													<tr><td>0x9</td><td>新媒体</td><td>new media</td></tr>
+													<tr><td>0xA</td><td>艺术/文化杂志</td><td>arts/culture magazines</td></tr>
+													<tr><td>0xB</td><td>时尚</td><td>fashion</td></tr>
+													<tr><td>0xC - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'> 社会/政治/经济(Social/Political issues/Economics)：</td></tr>
+													<tr><td rowspan='6'>0x8</td><td>0x0</td><td>社会/政治/经济（普通）</td><td>social/political issues/economics (general)</td></tr>
+													<tr><td>0x1</td><td>杂志/报道/资料</td><td>magazines/reports/documentary</td></tr>
+													<tr><td>0x2</td><td>经济/社会报道</td><td>economics/social advisory</td></tr>
+													<tr><td>0x3</td><td>名人</td><td>remarkable people</td></tr>
+													<tr><td>0x4 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'> 儿童/青少年节目：教育/科学/专题(Education/Science/Factual topics)：</td></tr>
+													<tr><td rowspan='10'>0x9</td><td>0x0</td><td>教育/科学/专题（普通）</td><td>education/science/factual topics (general)</td></tr>
+													<tr><td>0x1</td><td>自然/动物/环境</td><td>nature/animals/environment</td></tr>
+													<tr><td>0x2</td><td>技术/自然科学</td><td>technology/natural sciences</td></tr>
+													<tr><td>0x3</td><td>医疗/生理/心理</td><td>medicine/physiology/psychology</td></tr>
+													<tr><td>0x4</td><td>外国/旅游</td><td>foreign countries/expeditions</td></tr>
+													<tr><td>0x5</td><td>社会/精神科学</td><td>social/spiritual sciences</td></tr>
+													<tr><td>0x6</td><td>继续教育</td><td>further education</td></tr>
+													<tr><td>0x7</td><td>语言</td><td>languages</td></tr>
+													<tr><td>0x8 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'> 娱乐(Leisure hobbies)：</td></tr>
+													<tr><td rowspan='10'>0xA</td><td>0x0</td><td>娱乐（普通）</td><td>leisure hobbies (general)</td></tr>
+													<tr><td>0x1</td><td>旅游</td><td>tourism/travel</td></tr>
+													<tr><td>0x2</td><td>手工</td><td>handicraft</td></tr>
+													<tr><td>0x3</td><td>赛车</td><td>motoring</td></tr>
+													<tr><td>0x4</td><td>减肥与健康</td><td>fitness and health</td></tr>
+													<tr><td>0x5</td><td>烹饪</td><td>cooking</td></tr>
+													<tr><td>0x6</td><td>广告/购物</td><td>advertisement/shopping</td></tr>
+													<tr><td>0x7</td><td>园艺</td><td>gardening</td></tr>
+													<tr><td>0x8 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr class='graybg'><td colspan='4' class='bold'> Special characteristics：</td></tr>
+													<tr><td rowspan='6'>0xB</td><td>0x0</td><td>母语</td><td>original language</td></tr>
+													<tr><td>0x1</td><td>黑与白</td><td>black and white</td></tr>
+													<tr><td>0x2</td><td>未出版的</td><td>unpublished</td></tr>
+													<tr><td>0x3</td><td>现场直播</td><td>live broadcast</td></tr>
+													<tr><td>0x4 - 0xE</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+													<tr><td colspan='4' class='bold'> - </td></tr>
+													<tr><td>0xC - 0xE</td><td>0x0 - 0xF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xF</td><td>0x0 - 0xF</td><td>用户定义</td><td>user defined</td></tr>
+													
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part13'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>极化方式</span></a></h2>
+												<p class='light-text'>polarization</p>
+											</header>
+											<p class='paper'>
+												描述子satellite_delivery_system_descriptor中的2位字段，定义传输信号的极化方式。第一位定义极化是线性极化还是环型极化
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>极化方式</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>00</td><td>线性 水平极化</td><td>linear – horizontal</td></tr>
+													<tr><td>01</td><td>线性 垂直极化</td><td>linear – vertical</td></tr>
+													<tr><td>10</td><td>环型极化 左半圆</td><td>Circular – left</td></tr>
+													<tr><td>11</td><td>环型极化 右半圆</td><td>Circular – right</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part14'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>roll_off</span></a></h2>
+												<p class='light-text'>roll_off</p>
+											</header>
+											<p class='paper'>
+												描述子satellite_delivery_system_descriptor中的roll_off，2位字段，specifies the roll-off factor used in DVB-S2：
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>roll-off</td><td>描述(中文)</td></tr>
+													</thead>
+													<tr><td>00</td><td>α = 0,35</td></tr>
+													<tr><td>01</td><td>α = 0,25</td></tr>
+													<tr><td>10</td><td>α = 0,20</td></tr>
+													<tr><td>11</td><td>保留</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part15'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>数据业务标识符</span></a></h2>
+												<p class='light-text'>data_service_id</p>
+											</header>
+											<p class='paper'>
+												描述子VBI_data_descriptor中的data_service_id，数据业务标识符，8位字段，指示与VBI数据描述符相关的基本流中的VBI业务类型。其值在表86中定义。对于VBI数据流中的每个VBI业务，VBI数据描述符中必须有且只有一个数据业务标识符的编码。当data_service_id已在VBI_data_decriptor中出现时，VBI业务可能暂时还未在VBI数据流中出现。但这种情况可以不超过10秒钟
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>data_service_id</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td>图文电视（需要额外的图文电视描述符）</td><td>EBU teletext (Requires additional teletext_descriptor)</td></tr>
+													<tr><td>0x02</td><td>倒相图文电视</td><td>inverted teletext</td></tr>
+													<tr><td>0x03</td><td>预留</td><td>reserved</td></tr>
+													<tr><td>0x04</td><td>VPS</td><td>VPS</td></tr>
+													<tr><td>0x05</td><td>WSS</td><td>WSS</td></tr>
+													<tr><td>0x06</td><td>闭合字幕</td><td>Closed Captioning，即“CC”</td></tr>
+													<tr><td>0x07</td><td>单色4:2:2采样</td><td>monochrome 4:2:2 samples</td></tr>
+													<tr><td>0x08 - 0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part16'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>链接类型</span></a></h2>
+												<p class='light-text'>linkage_type</p>
+											</header>
+											<p class='paper'>
+												描述子linkage_descriptor中的linkage_type，链接类型，8位字段，定义链接类型，例如与信息链接
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>linkage_type</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td>信息服务</td><td>information service</td></tr>
+													<tr><td>0x02</td><td>EPG服务</td><td>EPG service</td></tr>
+													<tr><td>0x03</td><td>CA替换功能</td><td>CA replacement service</td></tr>
+													<tr><td>0x04</td><td>包含了全部的网络/业务群SI的TS</td><td>TS containing complete Network/Bouquet SI</td></tr>
+													<tr><td>0x05</td><td>业务替换功能</td><td>service replacement service</td></tr>
+													<tr><td>0x06</td><td>数据广播</td><td>data broadcast service</td></tr>
+													<tr><td>0x07</td><td>RCS映射</td><td>RCS Map</td></tr>
+													<tr><td>0x08</td><td>移动漫游</td><td>mobile hand-over</td></tr>
+													<tr><td>0x09</td><td>-</td><td>System Software Update Service (TS 102 006 [13])</td></tr>
+													<tr><td>0x0A</td><td>-</td><td>TS containing SSU BAT or NIT (TS 102 006 [13])</td></tr>
+													<tr><td>0x0B</td><td>-</td><td>IP/MAC Notification Service (EN 301 192 [4])</td></tr>
+													<tr><td>0x0C</td><td>-</td><td>TS containing INT BAT or NIT (EN 301 192 [4])</td></tr>
+													<tr><td>0x0D 至 0x7F</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x80 至 0xFE</td><td>用户定义</td><td>user defined</td></tr>
+													<tr><td>0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part17'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>漫游类型</span></a></h2>
+												<p class='light-text'>hand_over_type</p>
+											</header>
+											<p class='paper'>
+												描述子linkage_descriptor中的hand_over_type，漫游类型，4位字段，指明漫游类型
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>hand_over_type</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td>漫游至邻国的同一业务</td><td>DVB hand-over to an identical service in a neighbouring country</td></tr>
+													<tr><td>0x02</td><td>漫游至同一业务的本地变更</td><td>DVB hand-over to a local variation of the same service</td></tr>
+													<tr><td>0x03</td><td>漫游至关联业务</td><td>DVB hand-over to an associated service</td></tr>
+													<tr><td>0x04 - 0x0F</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part18'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>流内容与组件类型</span></a></h2>
+												<p class='light-text'>stream_content and component_type</p>
+											</header>
+											<p class='paper'>
+												描述子linkage_descriptor中的stream_content和component_type，流内容与组件类型
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>stream_content</td><td>component_type</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>0x00 to 0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													
+													<tr><td rowspan='21'>0x01</td><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td>视频，宽高比4:3，25Hz</td><td>MPEG-2 video, 4:3 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x02</td><td>视频，宽高比16:9，有摇移矢量，25Hz</td><td>MPEG-2 video, 16:9 aspect ratio with pan vectors, 25 Hz</td></tr>
+													<tr><td>0x03</td><td>视频，宽高比16:9，无摇移矢量，25Hz</td><td>MPEG-2 video, 16:9 aspect ratio without pan vectors, 25 Hz</td></tr>
+													<tr><td>0x04</td><td>视频，宽高比>16:9，25Hz</td><td>MPEG-2 video, > 16:9 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x05</td><td>视频，宽高比4:3，30Hz</td><td>MPEG-2 video, 4:3 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x06</td><td>视频，宽高比16：9，有摇移矢量，30Hz</td><td>MPEG-2 video, 16:9 aspect ratio with pan vectors, 30 Hz</td></tr>
+													<tr><td>0x07</td><td>视频，宽高比16:9, 无摇移矢量，30Hz</td><td>MPEG-2 video, 16:9 aspect ratio without pan vectors, 30 Hz</td></tr>
+													<tr><td>0x08</td><td>视频，宽高比>16:9, 30Hz</td><td>MPEG-2 video, > 16:9 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x09</td><td>高清晰度视频，宽高比4:3, 25Hz</td><td>MPEG-2 high definition video, 4:3 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x0A</td><td>高清晰度视频，宽高比16:9, 有摇移矢量,25Hz</td><td>MPEG-2 high definition video, 16:9 aspect ratio with pan vectors, 25 Hz</td></tr>
+													<tr><td>0x0B</td><td>高清晰度视频，宽高比16:9, 无摇移矢量,25Hz</td><td>MPEG-2 high definition video, 16:9 aspect ratio without pan vectors, 25 Hz</td></tr>
+													<tr><td>0x0C</td><td>高清晰度视频，宽高比>16:9,25Hz</td><td>MPEG-2 high definition video, > 16:9 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x0D</td><td>高清晰度视频，宽高比4:3,30Hz</td><td>MPEG-2 high definition video, 4:3 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x0E</td><td>高清晰度视频，宽高比16:9, 有摇移矢量,30Hz</td><td>MPEG-2 high definition video, 16:9 aspect ratio with pan vectors, 30 Hz</td></tr>
+													<tr><td>0x0F</td><td>高清晰度视频，宽高比16:9, 无摇移矢量,30Hz</td><td>MPEG-2 high definition video, 16:9 aspect ratio without pan vectors, 30 Hz</td></tr>
+													<tr><td>0x10</td><td>高清晰度视频，宽高比>16:9, 30Hz</td><td>MPEG-2 high definition video, > 16:9 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x11 - 0xAF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xB0 - 0xFE</td><td>用户定义</td><td>user defined</td></tr>
+													<tr><td>0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													
+													<tr><td rowspan='13'>0x02</td><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td>音频，单声道</td><td>MPEG-1 Layer 2 audio, single mono channel</td></tr>
+													<tr><td>0x02</td><td>音频，两路单声道</td><td>MPEG-1 Layer 2 audio, dual mono channel</td></tr>
+													<tr><td>0x03</td><td>音频，立体声（2声道）</td><td>MPEG-1 Layer 2 audio, stereo (2 channel)</td></tr>
+													<tr><td>0x04</td><td>音频，多语言，多声道</td><td>MPEG-1 Layer 2 audio, multi-lingual, multi-channel</td></tr>
+													<tr><td>0x05</td><td>音频，环绕声</td><td>MPEG-1 Layer 2 audio, surround sound</td></tr>
+													<tr><td>0x06 - 0x3F</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x40</td><td>服务于视觉障碍者的音频描述</td><td>MPEG-1 Layer 2 audio description for the visually impaired</td></tr>
+													<tr><td>0x41</td><td>预留使用</td><td>MPEG-1 Layer 2 audio for the hard of hearing</td></tr>
+													<tr><td>0x42</td><td>-</td><td>receiver-mixed supplementary audio as per annex G of TR 101 154 [10]</td></tr>
+													<tr><td>0x43 - 0xAF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xB0 - 0xFE</td><td>用户定义</td><td>user defined</td></tr>
+													<tr><td>0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													
+													<tr><td rowspan='16'>0x03</td><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td>预留使用</td><td>EBU Teletext subtitles</td></tr>
+													<tr><td>0x02</td><td>预留使用</td><td>associated EBU Teletext</td></tr>
+													<tr><td>0x03</td><td>预留使用</td><td>VBI data</td></tr>
+													<tr><td>0x04 - 0x0F</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x10</td><td>预留使用</td><td>DVB subtitles (normal) with no monitor aspect ratio criticality</td></tr>
+													<tr><td>0x11</td><td>预留使用</td><td>DVB subtitles (normal) for display on 4:3 aspect ratio monitor</td></tr>
+													<tr><td>0x12</td><td>预留使用</td><td>DVB subtitles (normal) for display on 16:9 aspect ratio monitor</td></tr>
+													<tr><td>0x13</td><td>预留使用</td><td>DVB subtitles (normal) for display on 2.21:1 aspect ratio monitor</td></tr>
+													<tr><td>0x14 - 0x1F</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x20</td><td>预留使用</td><td>DVB subtitles (for the hard of hearing) with no monitor aspect ratio criticality</td></tr>
+													<tr><td>0x21</td><td>预留使用</td><td>DVB subtitles (for the hard of hearing) for display on 4:3 aspect ratio monitor</td></tr>
+													<tr><td>0x22</td><td>预留使用</td><td>DVB subtitles (for the hard of hearing) for display on 16:9 aspect ratio monitor</td></tr>
+													<tr><td>0x23</td><td>预留使用</td><td>DVB subtitles (for the hard of hearing) for display on 2.21:1 aspect ratio monitor</td></tr>
+													<tr><td>0x24 - 0xAF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xB0 - 0xFE</td><td>用户定义</td><td>user defined</td></tr>
+													<tr><td>0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													
+													<tr><td rowspan='2'>0x04</td><td>0x00 - 0x7F</td><td>预留用于AC-3音频模式（参考附录D表D.1）</td><td>reserved for AC-3 audio modes (refer to table D.1)</td></tr>
+													<tr><td>0x80 to 0xFF</td><td>预留使用</td><td>reserved for enhanced AC-3 audio modes (refer to table D.1)</td></tr>
+													
+													<tr><td rowspan='18'>0x05</td><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td>-</td><td>H.264/AVC standard definition video, 4:3 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x02</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x03</td><td>-</td><td>H.264/AVC standard definition video, 16:9 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x04</td><td>-</td><td>H.264/AVC standard definition video, > 16:9 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x05</td><td>-</td><td>H.264/AVC standard definition video, 4:3 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x06</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x07</td><td>-</td><td>H.264/AVC standard definition video, 16:9 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x08</td><td>-</td><td>H.264/AVC standard definition video, > 16:9 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x09 - 0x0A</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x0B</td><td>-</td><td>H.264/AVC high definition video, 16:9 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x0C</td><td>-</td><td>H.264/AVC high definition video, > 16:9 aspect ratio, 25 Hz</td></tr>
+													<tr><td>0x0D - 0x0E</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x0F</td><td>-</td><td>H.264/AVC high definition video, 16:9 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x10</td><td>-</td><td>H.264/AVC high definition video, > 16:9 aspect ratio, 30 Hz</td></tr>
+													<tr><td>0x11 - 0xAF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xB0 - 0xFE</td><td>用户定义</td><td>user defined</td></tr>
+													<tr><td>0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													
+													<tr><td rowspan='17'>0x06</td><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td>-</td><td>HE-AAC audio, single mono channel</td></tr>
+													<tr><td>0x02</td><td>预留使用</td><td>ffffffffffffffffff</td></tr>
+													<tr><td>0x03</td><td>-</td><td>HE-AAC audio, stereo</td></tr>
+													<tr><td>0x04</td><td>预留使用</td><td>ffffffffffffffffff</td></tr>
+													<tr><td>0x05</td><td>-</td><td>HE-AAC audio, surround sound</td></tr>
+													<tr><td>0x06 - 0x3F</td><td>预留使用</td><td>ffffffffffffffffff</td></tr>
+													<tr><td>0x40</td><td>-</td><td>HE-AAC audio description for the visually impaired</td></tr>
+													<tr><td>0x41</td><td>-</td><td>HE-AAC audio for the hard of hearing</td></tr>
+													<tr><td>0x42</td><td>-</td><td>HE-AAC receiver-mixed supplementary audio as per annex G of TR 101 154 [10]</td></tr>
+													<tr><td>0x43</td><td>-</td><td>HE-AAC v2 audio, stereo</td></tr>
+													<tr><td>0x44</td><td>-</td><td>HE-AAC v2 audio description for the visually impaired</td></tr>
+													<tr><td>0x45</td><td>-</td><td>HE-AAC v2 audio for the hard of hearing</td></tr>
+													<tr><td>0x46</td><td>-</td><td>HE-AAC v2 receiver-mixed supplementary audio as per annex G of TR 101 154 [10]</td></tr>
+													<tr><td>0x47 - 0xAF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0xB0 - 0xFE</td><td>用户定义</td><td>user defined</td></tr>
+													<tr><td>0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													
+													<tr><td rowspan='2'>0x07</td><td>0x00 to 0x7F</td><td>-</td><td>reserved for DTS audio modes (refer to annex G)</td></tr>
+													<tr><td>0x80 to 0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													
+													<tr><td>0x08 - 0x0B</td><td>0x00 to 0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x0C - 0x0F</td><td>0x00 to 0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part19'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>水平基本单元数</span></a></h2>
+												<p class='light-text'>number_of_horizontal_elementary_cells</p>
+											</header>
+											<p class='paper'>
+												描述子mosaic_descriptor中的number_of_horizontal_elementary_cells，水平基本单元数，3位字段，指示出屏幕水平显示的单元数
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>number_of_horizontal_elementary_cells</td><td>描述(中文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>一个单元</td></tr>
+													<tr><td>0x01</td><td>二个单元</td></tr>
+													<tr><td>0x02</td><td>三个单元</td></tr>
+													<tr><td>0x03</td><td>四个单元</td></tr>
+													<tr><td>0x04</td><td>五个单元</td></tr>
+													<tr><td>0x05</td><td>六个单元</td></tr>
+													<tr><td>0x06</td><td>七个单元</td></tr>
+													<tr><td>0x07</td><td>八个单元</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part20'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>逻辑单元标识符</span></a></h2>
+												<p class='light-text'>logical_cell_id</p>
+											</header>
+											<p class='paper'>
+												描述子mosaic_descriptor中的logical_cell_id，逻辑单元标识符，6位字段，以二进制编码。相邻的不同基本单元可以组合在一起，形成一个逻辑单元。logical_cell_number和毗邻的elementary_cell_id集相关联。逻辑单元总数不能超过基本单元数（最大为64）。每个基本单元可以分配给一个逻辑单元。若干个基本单元可以同属于一个逻辑单元。
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-bordered bold' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<tr><td>A</td><td>B</td><td>C</td></tr>
+													<tr><td>D</td><td>E</td><td>F</td></tr>
+													<tr><td>G</td><td>H</td><td>I</td></tr>
+													<tr><td colspan='3'>注： B，D，H，F单元与单元E毗邻；C不与A和D毗邻；D不与H毗邻。</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part21'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>逻辑单元展现信息</span></a></h2>
+												<p class='light-text'>logical_cell_presentation_info</p>
+											</header>
+											<p class='paper'>
+												描述子mosaic_descriptor中的logical_cell_presentation_info，逻辑单元展现信息，3位字段，指示出逻辑单元的展现类型
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>logical_cell_presentation_info</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>未定义</td><td>undefined</td></tr>
+													<tr><td>0x01</td><td>视频</td><td>video</td></tr>
+													<tr><td>0x02</td><td>静止图象(见注)</td><td>still picture (see note)</td></tr>
+													<tr><td>0x03</td><td>图形/文本</td><td>graphics/text</td></tr>
+													<tr><td>0x04 - 0x07</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td colspan='3' class='text-left'>
+														NOTE: Still picture: A coded still picture consists of a video sequence containing exactly one coded picture which is intra-coded.
+													</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part22'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>单元链接信息</span></a></h2>
+												<p class='light-text'>cell_linkage_info</p>
+											</header>
+											<p class='paper'>
+												描述子mosaic_descriptor中的cell_linkage_info，单元链接信息，8位字段，给出逻辑单元携带信息的类型
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>cell_linkage_info</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>未定义</td><td>undefined</td></tr>
+													<tr><td>0x01</td><td>与业务群相关</td><td>bouquet related</td></tr>
+													<tr><td>0x02</td><td>与业务相关</td><td>service related</td></tr>
+													<tr><td>0x03</td><td>与其它马赛克相关</td><td>other mosaic related</td></tr>
+													<tr><td>0x04</td><td>与事件有关</td><td>event related</td></tr>
+													<tr><td>0x05 - 0x07</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part23'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>家长分级描述符</span></a></h2>
+												<p class='light-text'>Rating</p>
+											</header>
+											<p class='paper'>
+												描述子parental_rating_descriptor中的Rating，家长分级描述符
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>Rating</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>未定义</td><td>undefined</td></tr>
+													<tr><td>0x01 - 0x0F</td><td>最小年龄＝级别＋3年</td><td>minimum age = rating + 3 years</td></tr>
+													<tr><td>0x10 - 0xFF</td><td>由广播者定义</td><td>defined by the broadcaster</td></tr>
+													<tr><td colspan='3'>举例：Rating=0x04表示终端用户的最小年龄为7岁</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part24'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>平滑缓冲区大小</span></a></h2>
+												<p class='light-text'>sb_size</p>
+											</header>
+											<p class='paper'>
+												描述子short_smoothing_buffer_descriptor中的sb_size，平滑缓冲区大小，2位字段，给出平滑缓冲区的大小
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>sb_size</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0</td><td>本标准预留</td><td>DVB_reserved</td></tr>
+													<tr><td>1</td><td>1 536</td><td>1 536</td></tr>
+													<tr><td>2</td><td>本标准预留</td><td>DVB_reserved</td></tr>
+													<tr><td>3</td><td>本标准预留</td><td>DVB_reserved</td></tr>
+													<tr><td colspan='3' class='text-left'>注：由于实现的限制，指定的缓冲区容量应考虑留有2K字节的RAM备用空间，以防止包抖动。</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part25'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'></span></a></h2>
+												<p class='light-text'>sb_leak_rate</p>
+											</header>
+											<p class='paper'>
+												描述子short_smoothing_buffer_descriptor中的sb_leak_rate，6位字段，指出从缓冲区溢出速率的值
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>sb_leak_rate</td><td>描述(中文)</td></tr>
+													</thead>
+													<tr><td>0</td><td>本标准预留</td></tr>
+													<tr><td>1</td><td>0.0009</td></tr>
+													<tr><td>2</td><td>0.0018</td></tr>
+													<tr><td>3</td><td>0.0036</td></tr>
+													<tr><td>4</td><td>0.0072</td></tr>
+													<tr><td>5</td><td>0.0108</td></tr>
+													<tr><td>6</td><td>0.0144</td></tr>
+													<tr><td>7</td><td>0.0216</td></tr>
+													<tr><td>8</td><td>0.0288</td></tr>
+													<tr><td>9</td><td>0.075</td></tr>
+													<tr><td>10</td><td>0.5</td></tr>
+													<tr><td>11</td><td>0.5625</td></tr>
+													<tr><td>12</td><td>0.8437</td></tr>
+													<tr><td>13</td><td>1.0</td></tr>
+													<tr><td>14</td><td>1.1250</td></tr>
+													<tr><td>15</td><td>1.5</td></tr>
+													<tr><td>16</td><td>1.6875</td></tr>
+													<tr><td>17</td><td>2.0</td></tr>
+													<tr><td>18</td><td>2.2500</td></tr>
+													<tr><td>19</td><td>2.5</td></tr>
+													<tr><td>20</td><td>3.0</td></tr>
+													<tr><td>21</td><td>3.3750</td></tr>
+													<tr><td>22</td><td>3.5</td></tr>
+													<tr><td>23</td><td>4.0</td></tr>
+													<tr><td>24</td><td>4.5</td></tr>
+													<tr><td>25</td><td>5.0</td></tr>
+													<tr><td>26</td><td>5.5</td></tr>
+													<tr><td>27</td><td>6.0</td></tr>
+													<tr><td>28</td><td>6.5</td></tr>
+													<tr><td>29</td><td>6.7500</td></tr>
+													<tr><td>30 - 32</td><td>（（值）- 16）×0.5  （7.0, 7.5, 8.0 Mbit/s）</td></tr>
+													<tr><td>33 - 37</td><td>（（值）- 24） （9, 10, 11, 12， 13 Mbit/s）</td></tr>
+													<tr><td>38</td><td>13.5</td></tr>
+													<tr><td>39 - 43</td><td>（（值）- 25）  （14, 15, 16, 17, 18 Mbit/s）</td></tr>
+													<tr><td>44 - 47</td><td>（（值）- 34）×2   （20, 22, 24, 26 Mbit/s）</td></tr>
+													<tr><td>48</td><td>27</td></tr>
+													<tr><td>49 - 55</td><td>（（值）- 35）×2  （28, 30, 32,…，40 Mbit/s）</td></tr>
+													<tr><td>56</td><td>44</td></tr>
+													<tr><td>57</td><td>48</td></tr>
+													<tr><td>58</td><td>54</td></tr>
+													<tr><td>59</td><td>72</td></tr>
+													<tr><td>60</td><td>108</td></tr>
+													<tr><td>61-63</td><td>本标准预留</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part26'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>编码类型</span></a></h2>
+												<p class='light-text'>coding_type</p>
+											</header>
+											<p class='paper'>
+												描述子frequency_list_descriptor中的coding_type，2位字段，指出了频率编码的方式以及与所使用传送系统的关系
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>coding_type</td><td>描述(中文)</td></tr>
+													</thead>
+													<tr><td>00</td><td>未定义</td></tr>
+													<tr><td>01</td><td>卫星</td></tr>
+													<tr><td>10</td><td>有线</td></tr>
+													<tr><td>11</td><td>地面</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part27'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>加扰模式编码</span></a></h2>
+												<p class='light-text'>scrambling_mode</p>
+											</header>
+											<p class='paper'>
+												描述子scrambling_descriptor中的scrambling_mode，8位字段，This 8-bit field identifies the selected mode of the scrambling algorithm (see table 77). The technical details of the scrambling algorithm are available only to bona-fide users upon signature of a Non Disclosure Agreement (NDA) administered by the DVB Common Scrambling Algorithm Custodian.
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>scrambling_mode</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01 to 0x7F</td><td>DVB定义</td><td>DVB defined</td></tr>
+													<tr><td>0x80 to 0xFE</td><td>用户定义</td><td>user defined</td></tr>
+													<tr><td>0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part28'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>节目标识标签</span></a></h2>
+												<p class='light-text'>programme_identification_label</p>
+											</header>
+											<p class='paper'>
+												描述子PDC_descriptor中的programme_identification_label，节目标识标签，20位字段，给出节目的标识标签（ETS 300 231 ）
+											</p>
+											<div class='table-responsive long-table'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td colspan='20'>节目标识标签</td></tr>
+													</thead>
+													<tr>
+														<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+														<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+														<td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+														<td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+													</tr>
+													<tr>
+														<td colspan='5'>M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L</td>
+														<td colspan='5'>M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L</td>
+														<td colspan='5'>M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L</td>
+														<td colspan='5'>M&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L</td>
+													</tr>
+													<tr>
+														<td colspan='5'>日</td>
+														<td colspan='5'>月</td>
+														<td colspan='5'>时</td>
+														<td colspan='5'>分</td>
+													</tr>
+													<tr><td colspan='20'>其中日、月、时、分的值为二进制码</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part29'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>辅助数据标识编码</span></a></h2>
+												<p class='light-text'>ancillary_data_identifier</p>
+											</header>
+											<p class='paper'>
+												描述子ancillary_data_descriptor中的ancillary_data_identifier，辅助数据标识编码，此8位字段指明音频ES流中编码的辅助数据。编码方法见表14。如果ancillary_data_identifier中的某一位置“1”，说明该辅助数据包含对应的数据字段
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>辅助数据标识符（位号）ancillary_data_identifier</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>b0(LSB)</td><td>DVD视频辅助数据</td><td>DVD-Video Ancillary Data (TR 101 154 [10])</td></tr>
+													<tr><td>b1</td><td>扩展辅助数据</td><td>Extended Ancillary Data (TR 101 154 [10])</td></tr>
+													<tr><td>b2</td><td>公告切换数据</td><td>Announcement Switching Data (TR 101 154 [10])</td></tr>
+													<tr><td>b3</td><td>DAB辅助数据</td><td>DAB Ancillary Data (EN 300 401 [2])</td></tr>
+													<tr><td>b4</td><td>比例因子差错校验（ScF-CRC）</td><td>Scale Factor Error Check (ScF-CRC) (TR 101 154 [10])</td></tr>
+													<tr><td>b5</td><td>预留使用</td><td>MPEG-4 ancillary data (TR 101 154 [10] clause D.5)</td></tr>
+													<tr><td>b6</td><td>预留使用</td><td>RDS via UECP (TR 101 154 [10])</td></tr>
+													<tr><td>b7</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part30'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>公告支持指示符</span></a></h2>
+												<p class='light-text'>announcement_support_indicator</p>
+											</header>
+											<p class='paper'>
+												描述子announcement_support_descriptor中的announcement_support_indicator，公告支持指示符，16位标志字段，指明业务所支持的公告类型。编码方式表16。如果特定类型的公告不被支持，则相应的位置“0”；如果支持，则置“1”
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>位标识</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>b0(LSB)</td><td>紧急告警</td><td>Emergency alarm</td></tr>
+													<tr><td>b1</td><td>路况快讯</td><td>Road Traffic flash</td></tr>
+													<tr><td>b2</td><td>公交快讯</td><td>Public Transport flash</td></tr>
+													<tr><td>b3</td><td>告警信息</td><td>Warning message</td></tr>
+													<tr><td>b4</td><td>新闻快讯</td><td>News flash</td></tr>
+													<tr><td>b5</td><td>天气快讯</td><td>Weather flash</td></tr>
+													<tr><td>b6</td><td>事件公告</td><td>Event announcement</td></tr>
+													<tr><td>b7</td><td>个人呼叫</td><td>Personal call</td></tr>
+													<tr><td>b8至b15</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part31'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>公告类型编码</span></a></h2>
+												<p class='light-text'>announcement_type</p>
+											</header>
+											<p class='paper'>
+												描述子announcement_support_descriptor中的announcement_type，公告类型，4位字段，指明公告类型，使得循环中紧随其后的字段有效
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>公告类型announcement</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>0000</td><td>紧急告警</td><td>Emergency alarm</td></tr>
+													<tr><td>0001</td><td>路况快讯</td><td>Road Traffic flash</td></tr>
+													<tr><td>0010</td><td>公交快讯</td><td>Public Transport flash</td></tr>
+													<tr><td>0011</td><td>告警信息</td><td>Warning message</td></tr>
+													<tr><td>0100</td><td>新闻快讯</td><td>News flash</td></tr>
+													<tr><td>0101</td><td>天气快讯</td><td>Weather flash</td></tr>
+													<tr><td>0110</td><td>事件公告</td><td>Event announcement</td></tr>
+													<tr><td>0111</td><td>个人呼叫</td><td>Personal call</td></tr>
+													<tr><td>1000 - 1111</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part32'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>参考类型编码</span></a></h2>
+												<p class='light-text'>reference_type</p>
+											</header>
+											<p class='paper'>
+												描述子announcement_support_descriptor中的reference_type，参考类型，3位字段，指明公告的传送方法
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>参考类型reference_type</td><td>描述(中文)</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>000</td><td>公告通过业务中普通音频流广播</td><td>Announcement is broadcast in the usual audio stream of the service</td></tr>
+													<tr><td>001</td><td>公告通过业务中单独的音频流广播</td><td>Announcement is broadcast in a separate audio stream that is part of the service</td></tr>
+													<tr><td>010</td><td>公告通过同一传输流中另外的业务广播</td><td>Announcement is broadcast by means of a different service within the same transport stream</td></tr>
+													<tr><td>011</td><td>公告通过另外的传送流中的业务广播</td><td>Announcement is broadcast by means of a different service within a different transport stream</td></tr>
+													<tr><td>100 - 111</td><td>预留使用</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='part33'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>Adaptation field data identifier coding</span></a></h2>
+												<p class='light-text'>adaptation_field_data_identifier</p>
+											</header>
+											<p class='paper'>
+												描述子adaptation_field_data_descriptor中的adaptation_field_data_identifier.
+												This is an 8-bit field identifying data fields transmitted in the private data bytes ofthe adaptation field. It shall be coded according to table 14. If a bit in the adaptation_field_data_identifier is set to "1" itindicates that the transmission of the corresponding data field is supported. The data field does not necessarily occur in every adaptation field
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>adaptation_field_data_identifier位号</td><td>描述(英文)</td></tr>
+													</thead>
+													<tr><td>b0 (LSB)</td><td>announcement switching data field (TR 101 154 [10])</td></tr>
+													<tr><td>b1</td><td>reserved for future use</td></tr>
+													<tr><td>b2</td><td>reserved for future use</td></tr>
+													<tr><td>b3</td><td>reserved for future use</td></tr>
+													<tr><td>b4</td><td>reserved for future use</td></tr>
+													<tr><td>b5</td><td>reserved for future use</td></tr>
+													<tr><td>b6</td><td>reserved for future use</td></tr>
+													<tr><td>b7</td><td>reserved for future use</td></tr>
+												</table>
+											</div>
+										</section>
+									
+										
+										<section id='party'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>参考文档</span></a></h2>
+												<p class='light-text'>References</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead>
+													<tr style='background:#bbb; color:#000; text-align:center;'><td>#</td><td>文档名称</td><td>作者</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td><a href='../course/prereading.html' target='_blank'>《PSI/SI教程：第一章：预备知识》</a></td><td>林晓州</td></tr>
+													<tr><td>2</td><td><a href='../course/begin.html' target='_blank'>《PSI/SI教程：第二章：从TS到PAT和PMT》</a></td><td>林晓州</td></tr>
+													<tr><td>3</td><td><a href='../course/psi.html' target='_blank'>《PSI/SI教程：第三章：深入学习PSI》</a></td><td>林晓州</td></tr>
+													<tr><td>4</td><td><a href='../course/si.html' target='_blank'>《PSI/SI教程：第四章：深入学习SI》</a></td><td>林晓州</td></tr>
+													<tr><td>5</td><td><a href='../doc/En300468.V1.7.1_Specification for SI in DVB Systems.pdf' target='_blank'>《En300468.V1.7.1_Specification for SI in DVB Systems》</a></td><td>European Standard</td></tr>
+													<tr><td>6</td><td><a href='../doc/DVB和MPEG-II中的表格.html' target='_blank'>DVB和MPEG-II中的表格</a></td><td>网络</td></tr>
+													<tr><td>7</td><td><a href='../doc/中文SI版本1.0.doc' target='_blank'>《数字视频广播中文业务信息规范》</a></td><td>国家广播电影电视总局</td></tr>
+												</tbody>
+											</table>
+										</section>
+									
+										
+										<section id='partx'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>版本信息</span></a></h2>
+												<p class='light-text'>Version Information</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead>
+													<tr style='background:#bbb; color:#000; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td>2016年02月24日</td><td>V1.0</td><td>主要参考《En300468.V1.7.1_Specification for SI in DVB Systems》，整理出各类值分配的表格</a></td><td>林晓州</td><td>——</td></tr>
+													<tr><td>2</td><td>2016年02月24日</td><td>V1.1</td><td>参考《数字视频广播中文业务信息规范》，增加内容分级表格以及补充table_id的中文信息</a></td><td>林晓州</td><td>——</td></tr>
+												</tbody>
+											</table>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="6u 12u(mobile)">
+
+							<!-- Links -->
+								<section>
+									<h2>友情链接</h2>
+									<div>
+										<div class="row">
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://www.onelib.biz/konka">海外软件研发资料库</a></li>
+													<li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://www.onelib.biz/">OneLib智库</a></li>
+													<li><a href="http://www.onelib.biz/tasks">OneLib · 工作</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://html5up.net/">HTML5UP</a></li>
+													<li><a href="http://html5up.net/halcyonic">本页模板：Halcyonic</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+						<div class="6u 12u(mobile)">
+
+							<!-- Blurb -->
+								<section>
+									<h2>PSI/SI专题 简介</h2>
+									<p>
+										此专题根据我在2013年自学PSI/SI相关资料所做的学习笔记(参考<a href='http://blog.csdn.net/kkdestiny' target='_blank'>KKDestiny的博客</a>)，
+										并在2016年2月17日开始再次深入学习。
+										在本次学习过程中，对以前的笔记做了勘误和补充，并增加了2013年至今(2016年)工作中的一些理解。
+										<br><span class='not-select'>——</span> 林晓州，2016年02月17日 于深圳
+									</p>
+								</section>
+
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			
+			<!-- Copyright -->
+			<div id="copyright">
+				&copy;<a href="http://www.onelib.biz">OneLib智库</a> · 分享知识和经验，打造精品智库平台</a>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/skel-viewport.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			
+			<script src="../assets/js/bootstrap.min.js"></script>
+			
+			<script>
+				$(document).ready(function () {
+					$("#ol_tasklist_guide").affix({
+						offset: {
+							top: 1000
+						}
+					});
+				
+					$(function () {
+					  $('[data-toggle="popover"]').popover()
+					})
+
+				});
+			</script>
+
+	</body>
+</html>

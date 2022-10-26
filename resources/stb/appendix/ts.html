@@ -1,0 +1,924 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>TS流的制作、传输及解析 - PSI/SI专题 | OneLib智库,为您定制私人智库</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/onelib.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="../images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	</head>
+	
+	
+	<body class="subpage" data-spy="scroll" data-target="#myScrollspy">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Logo -->
+								<h1>
+									<a href="/blog/stb" id="logo">
+										<img alt="Brand" src="../images/logo_sm.png" style='height:40px; margin-top:-3px;'>
+									</a>
+								</h1>
+
+								<!-- Nav -->
+								<nav id="nav">
+									<a href="../index.html">首页</a>
+									<a href="../psisi.html">PSI/SI教程</a>
+									<a href="../knowledge.html">机顶盒知识点</a>
+									<a href="index.html">资料快查</a>
+								</nav>
+
+							</div>
+						</div>
+					</header>
+				</div>
+
+			<!-- Content -->
+				<div id="content-wrapper">
+					<div id="content">
+						<div class="container">
+							<div class="row">
+								<div class="3u 12u(mobile)">
+
+									<!-- Sidebar -->
+										
+										<section>
+											<header>
+												<h2>PSI/SI资料快查</h2>
+												<p class='light-text'>资料入口</p>
+											</header>
+											<a class="feature-image"><img src="../images/pic05.jpg" alt="" /></a>
+											<p>
+												这里是PSI/SI相关资料的主入口，
+												你有任何需要查询的资料，都可以从这里开始寻找...
+											</p>
+											<ul class="link-list">
+												<li><a href="index.html" class='bold'>首页</a> <span class='light-text small'>返回首页</span></li>
+												<br>
+												
+												<li style='font-weight:bold;'>基础</li>
+												<li><a href="dictionary.html" target='_blank'>PSI/SI名词速查</a></li>
+												<li><a href="ts.html" target='_blank'>TS流的制作、传输及解析</a></li>
+												<br>
+												
+												<li style='font-weight:bold;'>PSI信息</li>
+												<li>
+													<a href="psisitable.html#pat" target='_blank'>PAT表</a>、
+													<a href="psisitable.html#pmt" target='_blank'>PMT表</a>、
+													<a href="psisitable.html#nit" target='_blank'>NIT表</a>、
+													<a href="psisitable.html#cat" target='_blank'>CAT表</a>
+												</li>
+												<br>
+												
+												<li style='font-weight:bold;'>SI信息</li>
+												<li>
+													<a href="psisitable.html#sdt" target='_blank'>SDT表</a>、
+													<a href="psisitable.html#eit" target='_blank'>EIT表</a>、
+													<a href="psisitable.html#tdt" target='_blank'>TDT表</a>、
+													<a href="psisitable.html#bat" target='_blank'>BAT表</a>、
+													<a href="psisitable.html#tot" target='_blank'>TOT表</a>、
+													<a href="psisitable.html#rts" target='_blank'>RST表</a>、
+													<a href="psisitable.html#sit" target='_blank'>SIT表</a>、
+													<a href="psisitable.html#st" target='_blank'>ST表</a>、
+													<a href="psisitable.html#dit" target='_blank'>DIT表</a>
+												</li>
+												<br>
+												
+												<li style='font-weight:bold;'>描述子Descriptor列表</li>
+												<li>
+													<a href="descriptor.html" target='_blank'>进入详细列表</a>
+												</li>
+												<br>
+												
+												<li style='font-weight:bold;'>表格</li>
+												<li>
+													<a href="table.html" target='_blank'>进入详细列表</a>
+												</li>
+											</ul>
+											
+											<br>
+											<p class='author'>
+												<br>
+												本资料集由 林晓州 收集和整理，并提供共享。
+												<br>邮箱： 1139904786@qq.com
+												<br>网址： <a href='http://www.onelib.biz' target='_blank'>http://www.onelib.biz</a>
+											</p>
+											<br>
+											<p class='copyright'>
+												<span style='font-weight:bold;'>版权声明</span>：未经许可，请勿转载！
+											</p>
+											<br>
+											<p class='website'>
+												<br>
+												©2016 · OneLib智库 · 分享知识和经验，打造精品智库平台
+											</p>
+										</section>
+										
+										
+										<section id="myScrollspy" style='padding: 5px;'>
+											<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+												
+												<header style='padding-top:25px; margin:0;'>
+													<h2>本页导航</h2>
+													<p class='light-text'>TS流的制作、传输及解析</p>
+												</header>
+												
+												<ul class="nav bs-docs-sidenav" style=';'>
+													<li class="active">
+														<a href="#part1"><span class='fa fa-tags'></span> TS、PS、PES和ES</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#part1_1"><span class='fa fa-chevron-right'></span> PES包装载到TS包</a></li>
+															<li class=""><a href="#part1_2"><span class='fa fa-chevron-right'></span> TS和PS的区别</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#part2"><span class='fa fa-tags'></span> TS流的复用与解复用</a>
+													</li>
+													<li>
+														<a href="#part3"><span class='fa fa-tags'></span> DVB搜台过程</a>
+													</li>
+													<li>
+														<a href="#part4"><span class='fa fa-tags'></span> TS流的格式</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#part4_1"><span class='fa fa-chevron-right'></span> TS流的包结构</a></li>
+															<li class=""><a href="#part4_2"><span class='fa fa-chevron-right'></span> TS流中包(Packect)的包头结构</a></li>
+															<li class=""><a href="#part4_3"><span class='fa fa-chevron-right'></span> TS流中包(Packect)的包数据结构</a></li>
+															<li class=""><a href="#part4_4"><span class='fa fa-chevron-right'></span> TS流结构小结</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#part5"><span class='fa fa-tags'></span> 解析PAT表的数据包</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#part5_1"><span class='fa fa-chevron-right'></span> PAT表的包头</a></li>
+															<li class=""><a href="#part5_2"><span class='fa fa-chevron-right'></span> PAT表的包数据总览</a></li>
+															<li class=""><a href="#part5_3"><span class='fa fa-chevron-right'></span> 解析前8个字节</a></li>
+															<li class=""><a href="#part5_4"><span class='fa fa-chevron-right'></span> 解析循环部分</a></li>
+															<li class=""><a href="#part5_5"><span class='fa fa-chevron-right'></span> 循环汇总</a></li>
+															<li class=""><a href="#part5_6"><span class='fa fa-chevron-right'></span> PAT表包数据解析小结</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#partz"><span class='fa fa-tags'></span> 本章小结</a>
+													</li>
+													<li>
+														<a href="#party"><span class='fa fa-tags'></span> 参考文档</a>
+													</li>
+													<li>
+														<a href="#partx"><span class='fa fa-tags'></span>  版本信息</a>
+													</li>
+												</ul>
+											</nav>
+										</section>
+
+								</div>
+								<div class="9u 12u(mobile) important(mobile)">
+
+									<!-- Main Content -->
+										<section>
+											<header>
+												<h2>TS流的制作、传输及解析</h2>
+												<p class='light-text'>DVB和PSI/SI的基础知识</p>
+											</header>
+											<p class='paper'>
+												在这一章中，你讲了解到：<span class='bold'>ES、PES、PS和TS是什么，复用与解复用的概念，TS流的传输方式，TS流的包结构</span> 等。
+												这些内容是学习DVB的PSI/SI信息的最基本知识。
+											</p>
+										</section>
+										
+											
+										<section id='part1'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>TS流、PS流、PES流和ES流都是什么</span></a></h2>
+												<p class='light-text'>Brief Introduction Of TS, PS, PES and ES</p>
+											</header>
+											<p>
+												<span class='strong'>ES流（Elementary Stream）</span> 基本码流，不分段的音频、视频或其他信息的连续码流。
+												<br>
+												<span class='strong'>PES流</span> 把基本流ES分割成段，并加上相应头文件打包成形的打包基本码流。
+												<br>
+												<span class='strong'>PS流（Program Stream）</span> 节目流，将具有共同时间基准的一个或多个PES组合（复合）而成的单一数据流（用于播放或编辑系统，如m2p）。
+												<br>
+												<span class='strong'>TS流（Transport Stream）</span> 传输流，将具有共同时间基准<span class='strong'>或独立时间基准</span>的一个或多个PES组合（复合）而成的单一数据流（用于数据传输）。
+											</p>
+											<br>
+											
+											<h3 id='part1_1' class='subtitle-border'>PES包装载到TS包</h3>
+											<p class='paper'>
+												在实际传输中，PES包会被切割后装载到TS包中。下图是PES和TS之间的关系图：
+											</p>
+											<a class="feature-image"><img src="images/02.png" alt="" /></a>
+											<ul class='paper'>
+												要注意的几点是：
+												<li>（1）一个PES包可以装载到不同的TS包</li>
+												<li>（2）每一个TS包必须只含有从一个PES来的数据</li>
+												<li>（3）PES包头必须跟在TS包的链接头后面</li>
+												<li>（4）对于一个特定的PES，最后一个TS包可以含有填充比特</li>
+											</ul>
+											<br>
+											
+											<h3 id='part1_2' class='subtitle-border'>TS和PS的区别</h3>
+											<p class='paper'>
+												TS流的包结构是长度是固定的；PS流的包结构是可变长度的。
+												这导致了 <span class='strong'>TS流的抵抗传输误码的能力强于PS流</span> （TS码流由于采用了固定长度的包结构，
+												当传输误码破坏了某一TS包的同步信息时，接收机可在固定的位置检测它后面包中的同步信息，从而恢复同步，避免了信息丢失。
+												而PS包由于长度是变化的，一旦某一 PS包的同步信息丢失，
+												接收机无法确定下一包的同步位置，就会造成失步，导致严重的信息丢失。
+												因此，在信道环境较为恶劣，传输误码较高时，一般采用TS码流；而在信道环境较好，传输误码较低时，一般采用PS码流。）
+											</p>
+											<p class='paper'>
+												由于TS码流具有较强的抵抗传输误码的能力，因此目前在传输媒体中进行传输的MPEG-2码流基本上都采用了TS码流的包格。
+											</p>
+											
+										</section>
+ 
+										
+										<section id='part2'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>TS的复用与解复用</span></a></h2>
+												<p class='light-text'>Multiplexing and Demultiplexing of Transport Stream</p>
+											</header>
+											<p class='paper'>
+												在数字电视系统的前端，所有的数据（视频、音频、PSI/SI信息）都会被复用器(Multiplexer)复用成TS流，从而进行传送（见下图）。
+											</p>
+											<a class="feature-image"><img src="../course/images/01.jpg" alt="" />TS复用(Multiplexing)</a>
+											
+											<p class='paper'>
+												当机顶盒等接收器收到的数据，自然就是被复用后的一个个包(Package)了。这样的数据是不能直接使用的。
+												这时候，我们要做的就是把被复用的TS流 <span class='bold'>解复用(Demultiplexing, 简称Demux)</span>。
+											</p>
+											<p class='paper'>
+												解复用的意义在于，由于TS流是一种复用的码流，里面混杂了多种类型的包；解复用TS流可以将类型相同的Packet存入相同缓存，分别处理。
+												这样就可以将Video、Audio或者其他业务信息(如PSI/SI信息)的数据区分开来。
+											</p>
+										</section>
+ 
+										
+										<section id='part3'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>DVB搜台过程</span></a></h2>
+												<p class='light-text'>Process of DVB Scanning</p>
+											</header>
+											<h3 class='subtitle-border'>DVB搜台过程</h3>
+											<p class='paper'>
+												机顶盒先调整高频头到一个固定的频率(一般是主频点，如深圳天威的主频点是259MHZ)，如果此频率有数字信号，
+												则COFDM芯片(如MT352)会自动把TS流数据传送给MPEG-2 decoder。
+												MPEG-2 decoder先进行数据的同步，也就是等待完整的Packet的到来.然后循环查找是否出现PID==0x0000的Packet;
+												如果出现了，则马上进入分析PAT的处理，获取了所有的PMT的PID。
+												接着循环查找是否出现PMT，如果发现了，则自动进入PMT分析，获取该频段所有的频道数据并保存。
+												如果没有发现PAT或者没有发现PMT，说明该频段没有信号，进入下一个频率扫描。
+											</p>
+											<a class="feature-image"><img src="../course/images/11.jpg" alt="" /></a>
+											<p class='paper'>
+												在解析TS流的时候，首先寻找PAT表，根据PAT获取所有PMT表的PID；再寻找PMT表，获取该频段所有节目数据并保存。
+												这样，只需要知道节目的PID就可以根据PacketHeade给出的PID过滤出不同的Packet，从而观看不同的节目。
+												这些就是PAT表和PMT表之间的关系。
+											</p>
+											
+										</section>
+										
+										
+										<section id='part4'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>TS流的格式</span></a></h2>
+												<p class='light-text'>Structure of Transport Stream</p>
+											</header>
+											<br>
+											
+											<h3 id='part4_1' class='subtitle-border'>TS流的包结构</h3>
+											<p class='paper'>
+												TS流是基于Packet的位流格式，即由n个包组成；每个包是188个字节（或204个字节，在188个字节后加上了16字节的CRC校验数据，其他格式一样）。
+												下图是一个TS流，以第k个包(Package)为例：
+											</p>
+											<a class="feature-image"><img src="../course/images/02.jpg" alt="" /></a>
+											<table class='table table-striped' style='margin-top:-26px; font-size:70%;'>
+												<tr><td colspan='4' style='text-align:center; font-weight:bold;'>Packet Header（包头）信息说明</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td>#</td><td>标识</td><td>位数</td><td>说明</td></tr>
+												<tr style='text-align:center;'><td>0</td><td>sync_byte</td><td>8 bits</td><td>同步字节，固定是0x47</td></tr>
+												<tr style='text-align:center;'><td>1</td><td>transport_error_indicator</td><td>1 bits</td><td>错误指示信息（1：该包至少有1bits传输错误）</td></tr>
+												<tr style='text-align:center;'><td>2</td><td>payload_unit_start_indicator</td><td>1 bits</td><td>负载单元开始标志（packet不满188字节时需填充）</td></tr>
+												<tr style='text-align:center;'><td>3</td><td>transport_priority</td><td>1 bits</td><td>传输优先级标志（1：优先级高）</td></tr>
+												<tr style='text-align:center;' class='strong'><td>4</td><td>PID</td><td>13 bits</td><td>Packet ID号码，唯一的号码对应不同的包</td></tr>
+												<tr style='text-align:center;'><td>5</td><td>transport_scrambling_control</td><td>2 bits</td><td>加密标志（00：未加密；其他表示已加密）</td></tr>
+												<tr style='text-align:center;'><td>6</td><td>adaptation_field_control</td><td>2 bits</td><td>附加区域控制</td></tr>
+												<tr style='text-align:center;'><td>7</td><td>continuity_counter</td><td>4 bits</td><td>包递增计数器</td></tr>
+											</table>
+											<p class='paper'>
+												上面表格是一个包(Package)的头(Header)的说明，其中需要注意的是：<span class='strong'>PID是TS流中唯一识别标志，Packet Data是什么内容就是由PID决定的</span>。
+												如果一个TS流中的一个Packet的Packet Header中的PID是0x0000，那么这个Packet的Packet Data就是DVB的PAT表而非其他类型数据（如Video、Audio或其他业务信息）。
+											</p>
+											<p class='paper'>
+												下表给出了一些表的PID值，这些值是固定的，不允许更改。
+											</p>
+											<table class='table table-striped' style='margin-top:-6px; font-size:70%;'>
+												<tr><td colspan='3' style='text-align:center; font-weight:bold;'>TS流中PID的分配</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td>表</td><td>PID值</td><td>说明</td></tr>
+												<tr style='text-align:center;'><td>PAT</td><td>0x0000</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>CAT</td><td>0x0001</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>TSDT</td><td>0x0002</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>预留</td><td>0x0003 至0x000F</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>NIT, ST</td><td>0x0010</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>SDT , BAT, ST</td><td>0x0011</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>EIT, ST</td><td>0x0012</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>RST, ST</td><td>0x0013</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>TDT, TOT, ST</td><td>0x0014</td><td>-</td></tr>
+												<tr style='text-align:center;'><td>网络同步</td><td>0x0015</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>预留使用</td><td>0x0016 至 0x001B</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>带内信令</td><td>0x001C</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>DIT</td><td>0x001E</td><td>无</td></tr>
+												<tr style='text-align:center;'><td>SIT</td><td>0x001F</td><td>无</td></tr>
+											</table>
+											<br>
+											
+											<h3 id='part4_2' class='subtitle-border'>TS流中包(Packect)的包头结构</h3>
+											<p class='paper'>
+												下面以一个TS流的其中一个Packet中的Packet Header为例进行说明：
+											</p>
+											<div class='table-responsive long-table'>
+												<table class='table table-striped table-bordered' style='margin-top:-6px; font-size:70%; background-color:#fff;'>
+													<tr style='text-align:center;'>
+														<td>位号</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+														<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+														<td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+														<td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+														<td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Packet（二进制）</td>
+														<td>0</td><td>1</td><td>0</td><td>0</td>    <td>0</td><td>1</td><td>1</td><td>1</td>
+														<td>0</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>1</td><td>1</td><td>1</td>
+														<td>1</td><td>1</td><td>1</td><td>0</td>    <td>0</td><td>1</td><td>0</td><td>1</td>
+														<td>0</td><td>0</td><td>0</td><td>1</td>    <td>0</td><td>0</td><td>1</td><td>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Packet（十六进制）</td>
+														<td colspan='4'>4</td><td colspan='4'>7</td>
+														<td colspan='4'>0</td><td colspan='4'>7</td>
+														<td colspan='4'>E</td><td colspan='4'>5</td>
+														<td colspan='4'>1</td><td colspan='4'>2</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>Packet Header信息</td>
+														<td colspan='8'>0: sync_byte=0x47</td>
+														<td>1</td><td>2</td><td>3</td><td colspan='13'>4: PID (这里是0x07e5)</td>
+														<td colspan='2'>5</td><td colspan='2'>6</td>
+														<td colspan='4'>7</td>
+														<td>...</td>
+													</tr>
+												</table>
+												<p class='light-text not-select text-right'>拖动可显示更多数据 <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span></p>
+											</div>
+											<p class='paper'>
+												上表中，第一行为表头的位号（0-31，共32位），
+												第二行为每位的二进制数值，
+												第三行为每个字节的16进制数值，
+												最后一行对应上面的表格<a href='#part3_t1'>《Packet Header（包头）信息说明》</a>的数据。下表是<a href='#part3_t1'>《Packet Header（包头）信息说明》的Demo数据</a>。
+											</p>
+											<table class='table table-striped' style='margin-top:-6px; font-size:70%;'>
+												<tr><td colspan='4' style='text-align:center; font-weight:bold;'>Packet Header（包头）信息Demo</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td>#</td><td>标识</td><td>位数</td><td>说明</td></tr>
+												<tr style='text-align:center;'><td>0</td><td>sync_byte</td><td>8 bits</td><td style='text-align:left;'>固定是0x47</td></tr>
+												<tr style='text-align:center;'><td>1</td><td>transport_error_indicator</td><td>1 bits</td><td style='text-align:left;'>值为0，表示当前包没有发生传输错误。<span class='light-text'>错误指示信息（1：该包至少有1bits传输错误）</span></td></tr>
+												<tr style='text-align:center;'><td>2</td><td>payload_unit_start_indicator</td><td>1 bits</td><td style='text-align:left;'>值为0，含义参考ISO13818-1标准文档。<span class='light-text'>负载单元开始标志（packet不满188字节时需填充）</span></td></tr>
+												<tr style='text-align:center;'><td>3</td><td>transport_priority</td><td>1 bits</td><td style='text-align:left;'>值为0，表示当前包是低优先级。<span class='light-text'>传输优先级标志（1：优先级高）</span></td></tr>
+												<tr style='text-align:center;'><td>4</td><td>PID</td><td>13 bits</td><td style='text-align:left;'>PID=00111 11100101即0x07e5,是Video PID。<span class='light-text'>Packet ID号码，唯一的号码对应不同的包</span></td></tr>
+												<tr style='text-align:center;'><td>5</td><td>transport_scrambling_control</td><td>2 bits</td><td style='text-align:left;'>值为0x00，表示节目没有加密。<span class='light-text'>加密标志（00：未加密；其他表示已加密）</span></td></tr>
+												<tr style='text-align:center;'><td>6</td><td>adaptation_field_control</td><td>2 bits</td><td style='text-align:left;'>值为0x01,具体含义请参考ISO13818-1。<span class='light-text'>附加区域控制</span></td></tr>
+												<tr style='text-align:center;'><td>7</td><td>continuity_counter</td><td>4 bits</td><td style='text-align:left;'>值为0x02,表示当前传送的相同类型的包是第3个。<span class='light-text'>包递增计数器</span></td></tr>
+											</table>
+											<br>
+											<br>
+											
+											<h3 id='part4_3' class='subtitle-border'>TS流中包(Packect)的包数据结构</h3>
+											<p class='paper'>
+												TS流的包数据是承载实际数据的区域，根据不同的PID，有不同的解析方式。
+												下一节将以PAT表为例进行解析，本节暂不介绍。
+											</p>
+											
+											<h3 id='part4_4' class='subtitle-border'>TS流结构小结</h3>
+											<p class='paper'>
+												回顾一下，TS流是一种位流（当然就是数字的），
+												它是由ES流分割成PES后复用而成的；它经过网络传输被机顶盒接收到；
+												数字电视机顶盒接收到TS流后将解析TS流。
+											</p>
+											<p class='paper'>
+												TS流是由一个个Packet（包）构成的，
+												每个包都是由Packet Header（包头）和Packet Data（包数据）组成的。
+												其中Packet Header指示了该Packet是什么属性的，并给出了该Packet Data的数据的唯一网络标识符PID。
+											</p>
+										</section>
+										
+	
+										<section id='part5'>
+											
+											<header style='margin-bottom:0'>
+												<h2 class='title-border'><a><span class='titleName'>解析PAT表的数据包</span></a></h2>
+												<p class='light-text'>Analyze the Package of PAT</p>
+											</header>
+											<p>
+												下图是用码流分析软件得到的PAT表的数据包。
+											</p>
+											<a class="feature-image"><img src="../course/images/05.jpg" style="width:70%;" /></a>
+											<p>
+												可以将上图的的数据这样划分：
+											</p>
+											<table class='table table-striped table-bordered' style='margin-top:-6px; font-size:70%;'>
+												<tr style='text-align:center; font-weight:bold;'><td>包头(Package Header)</td><td>包数据(Package Data)</td></tr>
+												<tr style='text-align:center;'><td class='strong'>47 40 00 1C</td><td><span style='color:#00CC66; font-weight:bold;'>00</span> <span style='color:#EF0000; font-weight:bold;'>B0 1D 22 01 CF 00 00 00 00 E0 10 40 13 E1 30 40 18 E1 ... FF FF</span></td></tr>
+											</table>
+											<p>
+												注：表格内数据均为16进制数值。前4个字节为包头，后面的184个字节为包数据。
+											</p>
+											<br>
+											
+											<h3 class='subtitle-border' id='part5_1'>PAT表的包头</h3>
+											<p>
+												细分其表头(Package Header)数据（<span class='strong'>47 40 00 1C</span>）如下：
+											</p>
+											<div class='table-responsive long-table'>
+												<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%; background-color:#fff;'>
+													<tr style='text-align:center;'>
+														<td>位号</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+														<td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+														<td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+														<td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+														<td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Packet（二进制）</td>
+														<td>0</td><td>1</td><td>0</td><td>0</td>    <td>0</td><td>1</td><td>1</td><td>1</td>
+														<td>0</td><td>1</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>0</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>0</td><td>0</td><td>0</td><td>1</td>    <td>1</td><td>1</td><td>0</td><td>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Packet（十六进制）</td>
+														<td colspan='4'>4</td><td colspan='4'>7</td>
+														<td colspan='4'>4</td><td colspan='4'>0</td>
+														<td colspan='4'>0</td><td colspan='4'>0</td>
+														<td colspan='4'>1</td><td colspan='4'>C</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>Packet Header信息</td>
+														<td colspan='8'>0*: sync_byte=0x47</td>
+														<td>1*</td><td>2*</td><td>3*</td><td colspan='13'>4*: PID (这里是0x0000)</td>
+														<td colspan='2'>5*</td><td colspan='2'>6*</td>
+														<td colspan='4'>7*</td>
+														<td>...</td>
+													</tr>
+												</table>
+												<p class='light-text not-select text-right'>拖动可显示更多数据 <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span></p>
+											</div>
+											<p class='paper'>
+												上表中，第一行为表头的位号（0-31，共32位），
+												第二行为每位的二进制数值，
+												第三行为每个字节的16进制数值，
+												最后一行的数据说明参看下面的表格。
+											</p>
+											<table class='table table-striped table-bordered' style='margin-top:-6px; font-size:70%;'>
+												<tr><td colspan='4' style='text-align:center; font-weight:bold;'>Packet Header（包头）信息Demo</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td>#</td><td>标识</td><td>位数</td><td>说明</td></tr>
+												<tr style='text-align:center;'><td class='strong'>0*</td><td>sync_byte</td><td>8 bits</td><td style='text-align:left;'>固定是0x47</td></tr>
+												<tr style='text-align:center;'><td class='strong'>1*</td><td>transport_error_indicator</td><td>1 bits</td><td style='text-align:left;'>值为0，表示当前包没有发生传输错误。<span class='light-text'>错误指示信息（1：该包至少有1bits传输错误）</span></td></tr>
+												<tr style='text-align:center;'><td class='strong'>2*</td><td>payload_unit_start_indicator</td><td>1 bits</td><td style='text-align:left;'>值为1，含义参考ISO13818-1标准文档。<span class='light-text'>负载单元开始标志（packet不满188字节时需填充）</span></td></tr>
+												<tr style='text-align:center;'><td class='strong'>3*</td><td>transport_priority</td><td>1 bits</td><td style='text-align:left;'>值为0，表示当前包是低优先级。<span class='light-text'>传输优先级标志（1：优先级高）</span></td></tr>
+												<tr style='text-align:center;'><td class='strong'>4*</td><td>PID</td><td>13 bits</td><td style='text-align:left;'>PID=0x0000,说明是PAT表。<span class='light-text'>Packet ID号码，唯一的号码对应不同的包</span></td></tr>
+												<tr style='text-align:center;'><td class='strong'>5*</td><td>transport_scrambling_control</td><td>2 bits</td><td style='text-align:left;'>值为0x00，表示节目没有加密。<span class='light-text'>加密标志（00：未加密；其他表示已加密）</span></td></tr>
+												<tr style='text-align:center;'><td class='strong'>6*</td><td>adaptation_field_control</td><td>2 bits</td><td style='text-align:left;'>值为0x01,具体含义请参考ISO13818-1。<span class='light-text'>附加区域控制</span></td></tr>
+												<tr style='text-align:center;'><td class='strong'>7*</td><td>continuity_counter</td><td>4 bits</td><td style='text-align:left;'>值为0xC,表示当前传送的相同类型的包是第12个。<span class='light-text'>包递增计数器</span></td></tr>
+											</table>
+											<br>
+											
+											<h3 class='subtitle-border' id='part5_2'>PAT表的包数据总览</h3>
+											<p>
+												该包的数据部分(Package Data)为：
+												<br><span style='color:#00CC66; font-weight:bold;'>00</span> <span style='color:#EF0000; font-weight:bold;'>B0 1D 22 01 CF 00 00 00 00 E0 10 40 13 E1 30 40 18 E1 80 40 0A E0 A0 40 0E E0 B5 10 A5 84 FF ... FF FF</span>
+											</p>
+											<p class='paper'>
+												注意到这里有一个绿色的 <span style='color:#00CC66; font-weight:bold;'>00</span>，
+												这是因为在包头后需要除去一个字节才是有效数据（payload_unit_start_indicator="1"）。
+												因此，真正要分析的数据应该是红色部分：
+												<br><span style='color:#EF0000; font-weight:bold;'>B0 1D 22 01 CF 00 00 00 00 E0 10 40 13 E1 30 40 18 E1 80 40 0A E0 A0 40 0E E0 B5 10 A5 84 FF ... FF FF</span>
+											</p>
+											<br>
+											
+											<h3 class='subtitle-border' id='part5_3'>解析前8个字节</h3>
+											<p>
+												下面对前8个字节（0-7字节，共计64 bits）进行分析：
+												<br><span style='color:#EF0000; font-weight:bold;'>B0 1D 22 01 CF 00 00 <span style='color:#ccc; font-weight:bold;'>00 00 E0 10 40 13 E1 30 40 18 E1 80 40 0A E0 A0 40 0E E0 B5 10 A5 84 FF ... FF FF</span></span>
+											</p>
+											<div class='table-responsive long-table'>
+												<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%; background-color:#fff;'>
+													<tr style='text-align:center;'>
+														<td>位号</td>
+														<td>0</td><td>1</td><td>2</td><td>3</td>		<td>4</td><td>5</td><td>6</td><td>7</td>
+														<td>8</td><td>9</td><td>10</td><td>11</td>		<td>12</td><td>13</td><td>14</td><td>15</td>
+														<td>16</td><td>17</td><td>18</td><td>19</td>	<td>20</td><td>21</td><td>22</td><td>23</td>
+														<td>24</td><td>25</td><td>26</td><td>27</td>	<td>28</td><td>29</td><td>30</td><td>31</td>
+														<td>32</td><td>33</td><td>34</td><td>35</td>	<td>36</td><td>37</td><td>38</td><td>39</td>
+														<td>40</td><td>41</td><td>42</td><td>43</td>	<td>44</td><td>45</td><td>46</td><td>47</td>
+														<td>48</td><td>49</td><td>50</td><td>51</td>	<td>52</td><td>53</td><td>54</td><td>55</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Binary</td>
+														<td>0</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>1</td><td>0</td><td>1</td><td>1</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>0</td><td>0</td><td>0</td><td>1</td>    <td>1</td><td>1</td><td>0</td><td>1</td>
+														<td>0</td><td>0</td><td>1</td><td>0</td>    <td>0</td><td>0</td><td>1</td><td>0</td>
+														<td>0</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>1</td>
+														<td>1</td><td>1</td><td>0</td><td>0</td>    <td>1</td><td>1</td><td>1</td><td>1</td>
+														<td>0</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>Hex</td>
+														<td colspan='4'>0</td><td colspan='4'>0</td>
+														<td colspan='4'>B</td><td colspan='4'>0</td>
+														<td colspan='4'>1</td><td colspan='4'>D</td>
+														<td colspan='4'>2</td><td colspan='4'>2</td>
+														<td colspan='4'>0</td><td colspan='4'>1</td>
+														<td colspan='4'>C</td><td colspan='4'>F</td>
+														<td colspan='4'>0</td><td colspan='4'>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>结构</td>
+														<td colspan='8'>0*: table_id=0x00</td>
+														<td>1*</td><td>2*</td><td colspan='2'>3*</td><td colspan='12'>4*: section_length (这里是0x01D)</td>
+														<td colspan='16'>5*</td><td colspan='2'>6*</td>
+														<td colspan='5'>7*</td><td>8*</td><td colspan='4'>9*</td><td colspan='4'>10*</td>
+														<td>...</td>
+													</tr>
+												</table>
+												<p class='light-text not-select text-right'>拖动可显示更多数据 <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span></p>
+											</div>
+											<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%;'>
+												<tr style='text-align:center; font-weight:bold;'><td>#</td><td>字段名</td><td>占位</td><td>具体值</td><td>次序</td><td>说明</td></tr>
+												<tr style='text-align:center;'><td class='strong'>0*</td><td>table_id</td><td>8 bits</td><td>0000 0000(即0x00)</td><td>第0个字节<br><span class='strong'>00</span></td><td>PAT的table_id只能是0x00</td></tr>
+												<tr style='text-align:center;'><td class='strong'>1*</td><td>section_syntax_indicator</td><td>1 bit</td><td>1</td><td rowspan='4'><br><br>第1、2个字节<br><span class='strong'>B0 1D</span></td><td>段语法标志位，固定为1</td></tr>
+												<tr style='text-align:center;'><td class='strong'>2*</td><td>zero</td><td>1 bit</td><td>0</td><td></td></tr>
+												<tr style='text-align:center;'><td class='strong'>3*</td><td>reserved</td><td>2 bits</td><td>11 (Binary)</td><td></td></tr>
+												<tr style='text-align:center;'><td class='strong'>4*</td><td>section_length</td><td>12 bits</td><td>00 00 00 01 11 01(即0x1D，十进制值为29)</td><td>意思是 段长度为29字节</td></tr>
+												<tr style='text-align:center;'><td class='strong'>5*</td><td>transport_stream_id</td><td>16 bits</td><td>‭00 10 00 10 00 00 00 01‬(即0x2201)</td><td>第3、4个字节<br><span class='strong'>22 01</span></td><td>TS的识别号</td></tr>
+												<tr style='text-align:center;'><td class='strong'>6*</td><td>reserved</td><td>2 bits</td><td>11</td><td rowspan='3'><br><br>第5个字节<br><span class='strong'>CF</span></td><td>TS的识别号</td></tr>
+												<tr style='text-align:center;'><td class='strong'>7*</td><td>version_number</td><td>5 bits</td><td>0 01 11</td><td>一旦PAT有变化，版本号加1</td></tr>
+												<tr style='text-align:center;'><td class='strong'>8*</td><td>current_next_indicator</td><td>1 bit</td><td>1</td><td>当前传送的PAT表可以使用，若为0则要等待下一个表</td></tr>
+												<tr style='text-align:center;'><td class='strong'>9*</td><td>section_number</td><td>4 bits</td><td>00 00(即0x00)</td><td>第6个字节<br><span class='strong'>00</span></td><td>给出section号，在sub_table中，<br>第一个section其section_number为"0x00",<br>每增加一个section,section_number加一</td></tr>
+												<tr style='text-align:center;'><td class='strong'>10*</td><td>last_section_number</td><td>4 bits</td><td>00 00(即0x00)</td><td>第7个字节<br><span class='strong'>00</span></td><td>sub_table中最后一个section的section_number</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td colspan='6'>循环开始（循环内的数据解析见下一节内容！）</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>-</td><td>program_number</td><td>16 bits</td><td>--</td><td>--</td><td>-</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>-</td><td>reserved</td><td>3 bits</td><td>--</td><td>--</td><td>-</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>-</td><td>network_id<br>或<br>program_map_PID</td><td>13 bits</td><td>--</td><td>--</td><td>program_number为0x0000时，<br>这里是network_id(NIT的PID)；<br>其余情况是program_map_PID(PMT的PID)</td></tr>
+												<tr style='text-align:center; font-weight:bold;'><td colspan='6'>循环结束</td></tr>
+												<tr style='text-align:center;'><td class='strong'>-</td><td>CRC_32</td><td>32 bits</td><td>--</td><td>最后4个字节</td><td>-</td></tr>
+											</table>
+											<br>
+											
+											<h3 class='subtitle-border' id='part5_4'>解析循环部分</h3>
+											<p>
+												下面对后续几个字节（第8个字符开始）进行分析：
+												<br><span style='color:#ccc; font-weight:bold;'>B0 1D 22 01 CF 00 00 <span style='color:#EF0000; font-weight:bold;'>00 00 E0 10 40 13 E1 30 40 18 E1 80 40 0A E0 A0 40 0E E0 B5 10 A5 84 FF ... FF FF</span></span>
+											</p>
+											
+											<p>
+												在上一小节节的表格中，每一个循环都是4个字节(32 bits)，我们在这里就先解析第一个循环：
+												<br><span style='color:#ccc;'>B0 1D 22 01 CF 00 00 <span style='color:#EF0000;'><span style='text-decoration:underline; font-weight:bold;'>00 00 E0 10</span> 40 13 E1 30 40 18 E1 80 40 0A E0 A0 40 0E E0 B5 10 A5 84 FF ... FF FF</span></span>
+											</p>
+											<div class='table-responsive long-table'>
+												<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%; background-color:#fff;'>
+													<tr style='text-align:center;'>
+														<td>位号</td>
+														<td>0</td><td>1</td><td>2</td><td>3</td>		<td>4</td><td>5</td><td>6</td><td>7</td>
+														<td>8</td><td>9</td><td>10</td><td>11</td>		<td>12</td><td>13</td><td>14</td><td>15</td>
+														<td>16</td><td>17</td><td>18</td><td>19</td>	<td>20</td><td>21</td><td>22</td><td>23</td>
+														<td>24</td><td>25</td><td>26</td><td>27</td>	<td>28</td><td>29</td><td>30</td><td>31</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Binary</td>
+														<td>0</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>0</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>1</td><td>1</td><td>1</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>0</td><td>0</td><td>0</td><td>1</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>Hex</td>
+														<td colspan='4'>0</td><td colspan='4'>0</td>
+														<td colspan='4'>0</td><td colspan='4'>0</td>
+														<td colspan='4'>E</td><td colspan='4'>0</td>
+														<td colspan='4'>1</td><td colspan='4'>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>结构</td>
+														<td colspan='16'>1*: program_number = 0x0000</td>
+														<td colspan='3'>2*: reserved</td>
+														<td colspan='13'>3*: network_id = 0x10</td>
+														<td>...</td>
+													</tr>
+												</table>
+												<p class='light-text not-select text-right'>拖动可显示更多数据 <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span></p>
+											</div>
+											<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%;'>
+												<tr style='text-align:center; font-weight:bold;'><td>#</td><td>字段名</td><td>占位</td><td>具体值</td><td>说明</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>1*</td><td>program_number</td><td>16 bits</td><td>0x0000</td><td>program_number = 0x0000</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>2*</td><td>reserved</td><td>3 bits</td><td>111</td><td>-</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>3*</td><td>program_map_PID</td><td>13 bits</td><td>0x0000</td><td>因为program_number为0x0000，<br>所以这里是network_id(NIT的PID)</td></tr>
+											</table>
+											
+											<p>
+												继续解析下一个循环：
+												<br><span style='color:#ccc;'>B0 1D 22 01 CF 00 00 <span style='color:#EF0000;'>00 00 E0 10 <span style='text-decoration:underline; font-weight:bold;'>40 13 E1 30</span> 40 18 E1 80 40 0A E0 A0 40 0E E0 B5 10 A5 84 FF ... FF FF</span></span>
+											</p>
+											<div class='table-responsive long-table'>
+												<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%; background-color:#fff;'>
+													<tr style='text-align:center;'>
+														<td>位号</td>
+														<td>0</td><td>1</td><td>2</td><td>3</td>		<td>4</td><td>5</td><td>6</td><td>7</td>
+														<td>8</td><td>9</td><td>10</td><td>11</td>		<td>12</td><td>13</td><td>14</td><td>15</td>
+														<td>16</td><td>17</td><td>18</td><td>19</td>	<td>20</td><td>21</td><td>22</td><td>23</td>
+														<td>24</td><td>25</td><td>26</td><td>27</td>	<td>28</td><td>29</td><td>30</td><td>31</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;'>
+														<td>Binary</td>
+														<td>0</td><td>1</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>0</td><td>0</td><td>0</td><td>1</td>    <td>0</td><td>0</td><td>1</td><td>1</td>
+														<td>1</td><td>1</td><td>1</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>1</td>
+														<td>0</td><td>0</td><td>1</td><td>1</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>Hex</td>
+														<td colspan='4'>4</td><td colspan='4'>0</td>
+														<td colspan='4'>1</td><td colspan='4'>3</td>
+														<td colspan='4'>E</td><td colspan='4'>1</td>
+														<td colspan='4'>3</td><td colspan='4'>0</td>
+														<td>...</td>
+													</tr>
+													<tr style='text-align:center;' class='strong'>
+														<td>结构</td>
+														<td colspan='16'>1*: program_number = 0x4013(即十进制16403)</td>
+														<td colspan='3'>2*: reserved</td>
+														<td colspan='13'>3*: program_map_PID = 0x130(即PMT_PID为0x130)</td>
+														<td>...</td>
+													</tr>
+												</table>
+												<p class='light-text not-select text-right'>拖动可显示更多数据 <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span></p>
+											</div>
+											<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%;'>
+												<tr style='text-align:center; font-weight:bold;'><td>#</td><td>字段名</td><td>占位</td><td>具体值</td><td>说明</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>1*</td><td>program_number</td><td>16 bits</td><td>0x4013</td><td>program_number = 0x4013(即十进制16403)</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>2*</td><td>reserved</td><td>3 bits</td><td>111</td><td>-</td></tr>
+												<tr style='text-align:center;' class='success'><td class='strong'>3*</td><td>program_map_PID</td><td>13 bits</td><td>0x130</td><td>因为program_number不为0x0000，<br>所以这里是program_map_PID = 0x130(即PMT_PID为0x130)</td></tr>
+											</table>
+											<p>
+												通过这个循环，我们可以知道，在这个TS中，有一个节目号为0x4013(即十进制16403)的节目，其PMT的PID为0x130。那么要想获取这个节目的详细信息，就要去解析PID为0x130的PMT表。（关于PMT表的解析可参看下一节内容）
+											</p>
+											
+											<p>为了不占用过多空间来显示这样重复的内容，关于更多循环的分析就不显示在正文，如果你仍想看，可以 <a onclick=OL_ToggelText1() style='cursor:pointer;'>点击这里显示或隐藏</a>。</p>
+											
+											<div style='display:none; border:1px #ccc dashed; padding:10px;' id='part5_text1'>
+												<p>
+													继续解析下一个循环：
+													<br><span style='color:#ccc;'>B0 1D 22 01 CF 00 00 <span style='color:#EF0000;'>00 00 E0 10 40 13 E1 30 <span style='text-decoration:underline; font-weight:bold;'>40 18 E1 80</span> 40 0A E0 A0 40 0E E0 B5 10 A5 84 FF ... FF FF</span></span>
+												</p>
+												<div class='table-responsive long-table'>
+													<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%; background-color:#fff;'>
+														<tr style='text-align:center;'>
+															<td>位号</td>
+															<td>0</td><td>1</td><td>2</td><td>3</td>		<td>4</td><td>5</td><td>6</td><td>7</td>
+															<td>8</td><td>9</td><td>10</td><td>11</td>		<td>12</td><td>13</td><td>14</td><td>15</td>
+															<td>16</td><td>17</td><td>18</td><td>19</td>	<td>20</td><td>21</td><td>22</td><td>23</td>
+															<td>24</td><td>25</td><td>26</td><td>27</td>	<td>28</td><td>29</td><td>30</td><td>31</td>
+															<td>...</td>
+														</tr>
+														<tr style='text-align:center;'>
+															<td>Binary</td>
+															<td>0</td><td>1</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+															<td>0</td><td>0</td><td>0</td><td>1</td>    <td>1</td><td>0</td><td>1</td><td>1</td>
+															<td>1</td><td>1</td><td>1</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>1</td>
+															<td>1</td><td>0</td><td>0</td><td>0</td>    <td>0</td><td>0</td><td>0</td><td>0</td>
+															<td>...</td>
+														</tr>
+														<tr style='text-align:center;' class='strong'>
+															<td>Hex</td>
+															<td colspan='4'>4</td><td colspan='4'>0</td>
+															<td colspan='4'>1</td><td colspan='4'>8</td>
+															<td colspan='4'>E</td><td colspan='4'>1</td>
+															<td colspan='4'>8</td><td colspan='4'>0</td>
+															<td>...</td>
+														</tr>
+														<tr style='text-align:center;' class='strong'>
+															<td>结构</td>
+															<td colspan='16'>1*: program_number = 0x4018(即十进制16408)</td>
+															<td colspan='3'>2*: reserved</td>
+															<td colspan='13'>3*: program_map_PID = 0x180(即PMT_PID为0x180)</td>
+															<td>...</td>
+														</tr>
+													</table>
+													<p class='light-text not-select text-right'>拖动可显示更多数据 <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span> <span class='fa fa-chevron-right'></span></p>
+												</div>
+												<table class='table table-striped table-bordered' style='margin-top:6px; font-size:70%;'>
+													<tr style='text-align:center; font-weight:bold;'><td>#</td><td>字段名</td><td>占位</td><td>具体值</td><td>说明</td></tr>
+													<tr style='text-align:center;' class='success'><td class='strong'>1*</td><td>program_number</td><td>16 bits</td><td>0x4018</td><td>program_number = 0x4018(即十进制16408)</td></tr>
+													<tr style='text-align:center;' class='success'><td class='strong'>2*</td><td>reserved</td><td>3 bits</td><td>111</td><td>-</td></tr>
+													<tr style='text-align:center;' class='success'><td class='strong'>3*</td><td>program_map_PID</td><td>13 bits</td><td>0x180</td><td>因为program_number不为0x0000，<br>所以这里是program_map_PID = 0x180(即PMT_PID为0x180)</td></tr>
+												</table>
+												<p>
+													通过这个循环，我们可以知道，在这个TS中，有一个节目号为0x4018(即十进制16408)的节目，其PMT的PID为0x180。那么要想获取这个节目的详细信息，就要去解析PID为0x180的PMT表。
+												</p>
+											</div>
+											<br>
+											
+											<h3 class='subtitle-border' id='part5_5'>循环汇总</h3>
+											<p>
+												将所有循环遍历完毕后，我们就能找出4个节目。下图是码流分析软件的截图。
+											</p>
+											<a class="feature-image"><img src="../course/images/06.jpg" alt="" /></a>
+											<br>
+											
+											<h3 class='subtitle-border'>PMT PID列表</h3>
+											<p>
+												下面表格是通过对PAT表分析后得到的数据。在分析完PMT表后，还可以对这张表进行补充，得到每个节目(Service)的名称。
+											</p>
+											<table class='table table-condensed table-bordered table-hover' style='margin-top:-15px; font-size:70%;'>
+												<thead>
+													<tr style='text-align:center; font-weight:bold; background-color:#ddd; color:#000;'><td>#</td><td>节目号</td><td>PMT PID</td></tr>
+												</thead>
+												<tr style='text-align:center;'><td>1</td><td>16403</td><td>0x130</td></tr>
+												<tr style='text-align:center;'><td>2</td><td>16408</td><td>0x180</td></tr>
+												<tr style='text-align:center;'><td>3</td><td>16394</td><td>0xA0</td></tr>
+												<tr style='text-align:center;'><td>4</td><td>16398</td><td>0xE0</td></tr>
+											</table>
+											<br>
+											
+											<h3 class='subtitle-border' id='part5_6'>PAT表包数据解析小结</h3>
+											<p>
+												对我们来说，<span class='strong'>PAT就是一个总入口</span>。PAT告诉了我们，这个TS流中有几个节目，以及它们的PMT PID分别是多少。有了PMT的PID，我们就可以继续下一步了。
+											</p>
+											
+										</section>
+									
+										
+										<section id='partz'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>本章小结</span></a></h2>
+												<p class='light-text'>Summary</p>
+											</header>
+											<p class='paper'>
+												本章对DVB及PSI/SI相关的知识作了细致的讲解，对初学者适用。
+											</p>
+										</section>
+									
+										
+										<section id='party'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>参考文档</span></a></h2>
+												<p class='light-text'>References</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead>
+													<tr style='background:#bbb; color:#000; text-align:center;'><td>#</td><td>文档名称</td><td>作者</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td><a href='../course/prereading.html' target='_blank'>《PSI/SI教程：第一章：预备知识》</a></td><td>林晓州</td></tr>
+													<tr><td>2</td><td><a href='../doc/5.1数字电视信号复用与解复用概念.ppt' target='_blank'>《5.1数字电视信号复用与解复用概念》</a></td><td>网络下载</td></tr>
+													<tr><td>3</td><td><a href='../doc/ES、TS、PS流.txt' target='_blank'>《ES、TS、PS流》</a></td><td>网络下载</td></tr>
+												</tbody>
+											</table>
+										</section>
+									
+										
+										<section id='partx'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>版本信息</span></a></h2>
+												<p class='light-text'>Version Information</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead>
+													<tr style='background:#bbb; color:#000; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td>2016年02月24日</td><td>V1.0</td><td>整合了多个文档资料，对PSI/SI学习所需的知识进行系统的总结。</td><td>林晓州</td><td>——</td></tr>
+												</tbody>
+											</table>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="6u 12u(mobile)">
+
+							<!-- Links -->
+								<section>
+									<h2>友情链接</h2>
+									<div>
+										<div class="row">
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://www.onelib.biz/konka">海外软件研发资料库</a></li>
+													<li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://www.onelib.biz/">OneLib智库</a></li>
+													<li><a href="http://www.onelib.biz/tasks">OneLib · 工作</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://html5up.net/">HTML5UP</a></li>
+													<li><a href="http://html5up.net/halcyonic">本页模板：Halcyonic</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+						<div class="6u 12u(mobile)">
+
+							<!-- Blurb -->
+								<section>
+									<h2>PSI/SI专题 简介</h2>
+									<p>
+										此专题根据我在2013年自学PSI/SI相关资料所做的学习笔记(参考<a href='http://blog.csdn.net/kkdestiny' target='_blank'>KKDestiny的博客</a>)，
+										并在2016年2月17日开始再次深入学习。
+										在本次学习过程中，对以前的笔记做了勘误和补充，并增加了2013年至今(2016年)工作中的一些理解。
+										<br><span class='not-select'>——</span> 林晓州，2016年02月17日 于深圳
+									</p>
+								</section>
+
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			
+			<!-- Copyright -->
+			<div id="copyright">
+				&copy;<a href="http://www.onelib.biz">OneLib智库</a> · 分享知识和经验，打造精品智库平台</a>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/skel-viewport.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			
+			<script src="../assets/js/bootstrap.min.js"></script>
+			
+			<script>
+				function OL_ToggelText1()
+				{
+					$("#part5_text1").fadeToggle(300)
+				}
+				
+				$(document).ready(function () {
+					$("#ol_tasklist_guide").affix({
+						offset: {
+							top: 1000
+						}
+					});
+				
+					$(function () {
+					  $('[data-toggle="popover"]').popover()
+					})
+
+				});
+			</script>
+
+	</body>
+</html>

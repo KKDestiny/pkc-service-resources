@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DisEqC和22K - 数字网络事业部</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+
+     <!-- OneLib style -->
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/onelib.css" rel="stylesheet">
+	
+	<link href="images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	
+
+    <script src="js/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
+        <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" id='ca_top'>
+	
+	<nav class="navbar navbar-default navbar-inverse">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container-fluid col-md-offset-2">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.onelib.biz/konka/">
+			<img alt="Brand" src="images/structure/logo.ico" style='height:25px; margin-top:-3px;'>
+		  </a>
+		  <a class="navbar-brand" href="http://www.onelib.biz/konka/">
+			<span style='font-family:orbitron-bold; color:#2298DB;'> OneLib</span>
+		  </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页</a></li>
+            <li class="active"><a href="test_diseqc_22k.html">DisEqC和22K</a></li>
+            <li><a href="test_video.html">输出模式</a></li>
+            <li><a href="test_spdif.html">数字音频</a></li>
+            <li><a href="test_3_4_channel.html">3-4频道</a></li>
+            <li><a href="test_motor.html">马达Motor</a></li>
+            <li><a href="test_scart.html">SCART</a></li>
+            <li><a href="test_dbupdate.html">节目更新</a></li>
+            <li><a href="test_ad.html">广告</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+	
+	
+	<!-- Docs page layout -->
+    <div class="jumbotron" style='margin-top:-20px;'>
+	  <div class="container">
+		  <br>
+		  <p>本文档介绍了用于卫星机顶盒的数字式四选一开关DiSEqC开关和模拟二选一开关22K开关，并提供了测试方法</p>
+	  </div>
+	</div>
+	
+	<div class="container col-md-offset-2 col-md-7 col-xs-12 ">
+
+		<div class="row">
+			<h1 id='test_0'>0.DisEpc简介和22K简介</h1>
+			
+			<h3>DisEpc开关 <small>数字式多选一开关</small></h3>
+			<p>DisEqC是数字式的多选一开关，可以通过机顶盒从多个卫星中选择其中一个。如选择卫星1时，LNB1口（选择DisEqC A）会输出18V/13V电压，其余端口电压为0。18V是水平极化方式（H，如频点4000 H 26850），13V是垂直极化方式（V，如频点12538 V 41250）。通常有四选一、八选一和十六选一。</p>
+			
+			<h3>22K开关 <small>模拟二选一开关</small></h3>
+			<p>22K开关是一个脉冲式的（模拟）二选一开关，可以选择不同卫星。22K开关是脉冲信号开关：0信号和22K信号。虽然可以控制两路以上，但似乎最多也不会有Diseqc那么多。LNB power 有off 、on、13V、18V。13/18V开关是一个继电输出开关，也可以实现2切一，但实现多路起来很困难。</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/01.png" class="img-thumbnail">
+					<p class='text-center'>DisEpc开关</p>
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/02.png" class="img-thumbnail">
+					<p class='text-center'>22K开关</p>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<h3>原理</h3>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/03.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/04.png" class="img-thumbnail">
+				</div>
+			</div>
+			<br>
+			<p>不论是DisEqC还是22K，其目的都是机顶盒只需要接一条信号线，就能看不同卫星的节目。我们知道，每一个“锅盖”（即卫星天线，satellite antenna）一次只能对应一个方向；如果我们用多个“锅盖”的话，就需要引出多根线。这样，如果没有DisEqC或22K，在切换不同“锅盖”对应的卫星节目的时候，就必须更换接入机顶盒的信号线。而DisEqC和22K则解决了这个问题：通过DisEqC或22K，将来自不同“锅盖”的多根信号线同时接入机顶盒，机顶盒则通过菜单来控制选择不同的输入。这样，当我们从卫星A的节目切换到卫星B的节目时，就可以自动地选择信号源了。</p>
+			<div class='row'>
+				<div class='col-md-12 col-xs-12'>
+					<img src="images/diseqc/05.png" class="img-thumbnail">
+				</div>
+			</div>
+			<br>
+			<p><b>拓展</b>：除了DisEqC或22K，还有一种解决方法，就是使用Motor（马达）。通过Motor，我们可以让“锅盖”改变方向，从而改变它接收的卫星信号；当然，因为Motor转到预设的位置需要一定的时间，因此速度远没有使用DisEqC或22K这么快。但Motor的优势在于，用户只需要装一个“锅盖”就可以看多颗卫星了，而DisEqC或22K则需要有多个“锅盖”（当然，如果你愿意爬上屋顶自己转动“锅盖”来改变对准的卫星也是可以的）</p>
+			
+			<hr>
+			
+			<h3>注意事项</h3>
+			<p style='color:#EF0000;'><b>在测试DisEqC和22K的时候，请使用直连信号线（即信号从服务器或LNB直接接入、不经过任何DisEqC或22K）；否则可能造成DisEqC或22K设备损坏！！</b></p>
+			
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+		
+		<div class="row">
+			<h1 id='test_1'>1.DisEqC的基本测试方法</h1>
+			<p>方法一：在DisEqc的LNB-1口~LNB-4口分别接上一个带有LED灯的信号线，编号分别为LED-1，LED-2，LED-3，LED-4，Receiver口直接连接机顶盒，并通过切换卫星编辑里的DisEqc选项，观察LED灯的熄灭情况</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/06.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/07.png" class="img-thumbnail">
+				</div>
+			</div>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>切换到</td><td>LED灯情况</td><td>原理</td></tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style='text-align:center;'>DiSEqC A</td>
+						<td style='text-align:center;'>LED-1亮，其余灭</td>
+						<td style='text-align:center;'>选通DisEqc A时，有18V电压，其余端口电压为0V</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>DiSEqC B</td>
+						<td style='text-align:center;'>LED-2亮，其余灭</td>
+						<td style='text-align:center;'>选通DisEqc B时，有18V电压，其余端口电压为0V</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>DiSEqC C</td>
+						<td style='text-align:center;'>LED-3亮，其余灭</td>
+						<td style='text-align:center;'>选通DisEqc C时，有18V电压，其余端口电压为0V</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>DiSEqC D</td>
+						<td style='text-align:center;'>LED-4亮，其余灭</td>
+						<td style='text-align:center;'>选通DisEqc D时，有18V电压，其余端口电压为0V</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			<hr>
+			
+			<p>
+				方法二：通过实际卫星连接DisEqc的不同信号端口（LNB1~4），通过页面切换DisEqc，通过信号条是否有信号并能够搜台，来判断DisEqc。
+				<br>（注意：信号线到卫星天线之间不能再连接DisEqc）
+			</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/08.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/09.png" class="img-thumbnail">
+				</div>
+			</div>
+			<hr>
+
+			
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+		
+		<div class="row">
+			<h1 id='test_2'>2.22K的测试方法</h1>
+			<p>方法一：用两个LED连接22k的OFF和ON，Receiver连接机顶盒，通过切换卫星编辑菜单22K选项，观察LED亮灭情况。</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<table class='table table-condensed table-hover table-bordered'>
+						<thead>
+							<tr style='background:#2298DB; color:snow; text-align:center;'><td>本振</td><td>切换</td><td>OFF端</td><td>ON端</td></tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style='text-align:center;' rowspan='2'>单本振5150</td>
+								<td style='text-align:center;'>OFF</td>
+								<td style='text-align:center;'>√</td>
+								<td style='text-align:center;'>×</td>
+							</tr>
+							<tr>
+								<td style='text-align:center;'>ON</td>
+								<td style='text-align:center;'>×</td>
+								<td style='text-align:center;'>√</td>
+							</tr>
+							<tr>
+								<td style='text-align:center;'>双本振 9700/10750</td>
+								<td style='text-align:center;'>AUTO</td>
+								<td style='text-align:center;' colspan='2'>OFF亮，ON灭；OFF灭，ON亮</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/10.png" class="img-thumbnail">
+				</div>
+			</div>
+			
+			<br>
+			<p>方法二：22K的OFF端或者ON端连接实际卫星，卫星编辑菜单通过切换22K为OFF或ON，通过信号条显示和搜台来验证。</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<table class='table table-condensed table-hover table-bordered'>
+						<thead>
+							<tr style='background:#2298DB; color:snow; text-align:center;'><td>本振</td><td>22K连接端</td><td>切换到OFF</td><td>切换到ON</td></tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style='text-align:center;' rowspan='2'>单本振5150</td>
+								<td style='text-align:center;'>OFF端</td>
+								<td style='text-align:center;'>√</td>
+								<td style='text-align:center;'>×</td>
+							</tr>
+							<tr>
+								<td style='text-align:center;'>ON端</td>
+								<td style='text-align:center;'>×</td>
+								<td style='text-align:center;'>√</td>
+							</tr>
+						</tbody>
+					</table>
+					<img src="images/diseqc/11.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/12.png" class="img-thumbnail">
+				</div>
+			</div>
+			<hr>			
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+		
+		<div class="row">
+			<h1 id='test_3'>3.Multi-Switch的测试方法</h1>
+			<p>
+				连接设备：机顶盒→DisEqc→22K→连接卫星（或LED）测试
+				<br><span style='color:#EF0000; font-weight:bold;'>注：22K是数字的，如果22k先接，会导致输出的信号只有1路。所以必须先接DisEqc，后接22k。</span>
+			</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/13.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/14.png" class="img-thumbnail">
+				</div>
+			</div>
+			<br>
+			
+			<p>连接实际卫星如下</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/15.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/16.png" class="img-thumbnail">
+				</div>
+			</div>
+			<br>
+			
+			<p>
+				具体的测试用例请参考详细测试报告Multi-Switch部分。请按照测试报告中描述的那样，先将本振设置为双本振（Uni9750/10600），并先将DisEqc设置为DisEqc A（之后还要分别测试DisEqc B~DisEqc D），如左下图；再进去设置四个频点，如右下图所示。
+				<br>V2的菜单选中某个频点后会自动锁频，所以如果用LED灯来测试的话，也能直接看到效果；如果没有反应，可能是没有自动锁频，需要手动去搜索（Scan），在搜索过程中查看效果。以开DisEqc A为例，当选中【1】时，0KHz（即22K选中OFF）有18V~19V电压输出（如果用LED灯测试则会比较亮）；选中【2】时，22K的OFF口有13V~14V的电压输出（LED灯相对暗一些）；同理，选中【3】【4】的时候，从22K的ON输出，效果和从22K的OFF输出是一样的。
+				<br>【1】10928 H 27500 - Diseqc A - 18V - 0KHz
+				<br>【2】10928 V 27500 - Diseqc A - 13V - 0KHz
+				<br>【3】11750 H 27500 - Diseqc A - 18V - 22KHz
+				<br>【4】11750 V 27500 - Diseqc A - 13V - 22KHz
+				<br>测试完DisEqc A后，再接着按照上面的操作测试DisEqc B、C和D
+			</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/17.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/diseqc/18.png" class="img-thumbnail">
+				</div>
+			</div>
+			
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+	
+		<div class="row">
+			<h1 id='test_4'>4.版本信息</h1>
+			<br>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+				</thead>
+				<tbody style='text-align:center;'>
+					<tr><td>1</td><td>2014年06月27日</td><td>V1.0</td><td>创建文档</td><td>莫敦悦、林晓州</td><td>——</td></tr>
+					<tr><td>2</td><td>2014年07月03日</td><td>V1.1</td><td>根据周宇锋建议增加测试注意事项（使用直连信号）</td><td>林晓州</td><td>——</td></tr>
+					<tr><td>3</td><td>2014年07月04日</td><td>V1.2</td><td>增加目录</td><td>林晓州</td><td>——</td></tr>
+					<tr><td>4</td><td>2014年07月07日</td><td>V1.3</td><td>修改DisEqC连接图</td><td>林晓州</td><td>郑嘉惠、周厚秋、周宇锋</td></tr>
+					<tr><td>5</td><td>2015年11月23日</td><td>V2.0</td><td>转入网站管理</td><td>林晓州</td><td>——</td></tr>
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+			
+		<div class="row">
+			<div class="col-md-12 well">
+				<p>
+					<b>OneLib智库 · 分享知识和经验，打造精品个人智库平台</b>
+					<br>Designed By 林晓州
+					<br>qq： 1139904786
+					<br>邮箱： 1139904786@qq.com
+					<br>网址： http://www.onelib.biz
+					<br>©2015 · OneLib智库
+				</p>
+			</div>
+		</div><!-- /.row -->
+		
+		
+
+    </div>
+	
+	  
+	<!-- start guide -->
+	<div class="col-md-3 col-sm-4" id="myScrollspy">
+		<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+			
+			<div style='width:60%; text-align:left; margin-top:10px;'>
+				<b>本页导航</b>
+			</div>
+			
+			<ul class="nav bs-docs-sidenav" style='margin-top:5px;'>
+				<li class="active">
+					<a href="#test_0"><i class='fa fa-tags'></i> 0.DisEpc简介和22K简介</a>
+				</li>
+				<li>
+					<a href="#test_1"><i class='fa fa-tags'></i> 1.DisEqC的基本测试方法</a>
+				</li>
+				<li>
+					<a href="#test_2"><i class='fa fa-tags'></i> 2.22K的测试方法</a>
+				</li>
+				<li>
+					<a href="#test_3"><i class='fa fa-tags'></i> 3.Multi-Switch的测试方法</a>
+				</li>
+				<li>
+					<a href="#test_4"><i class='fa fa-tags'></i> 4.版本信息</a>
+				</li>
+			</ul>
+
+			<div style='width:60%; text-align:left; border-top:1px #eee solid; margin-top:15px;'>
+			</div>
+			
+			<a class="back-to-top" onclick=ol_goto('ca_top') style='margin-top:10px;'>
+			  <i class='fa fa-angle-double-up'></i> 返回顶部
+			</a>
+		</nav>
+	</div>
+	<!-- /guide -->
+
+	
+	<footer class="bs-docs-footer col-md-12" role="contentinfo">
+	  <div class="container">
+
+		<p></p>
+		<ul class="bs-docs-footer-links text-muted">
+		  <li>版本：V1.0.0</li>
+		  <li>·</li>
+		  <li>©<a href="http://www.onelib.biz">OneLib智库</a> · 分享知识和经验，打造精品个人智库平台</li>
+		  <li>·</li>
+		  <li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+		</ul>
+	  </div>
+	</footer>
+	
+	<br>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/public.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+            $("#ol_tasklist_guide").affix({
+				offset: {
+					top: 200
+				}
+			});
+
+        });
+		
+	
+	</script>
+
+</body>
+
+</html>

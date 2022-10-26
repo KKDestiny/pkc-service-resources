@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PSI/SI资料快查 - PSI/SI专题 | OneLib智库,为您定制私人智库</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/onelib.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="../images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	</head>
+	
+	
+	<body class="subpage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Logo -->
+								<h1>
+									<a href="/blog/" id="logo">
+										<img alt="Brand" src="../images/logo_sm.png" style='height:40px; margin-top:-3px;'>
+									</a>
+								</h1>
+
+								<!-- Nav -->
+								<nav id="nav">
+									<a href="../index.html">首页</a>
+									<a href="../psisi.html">PSI/SI教程</a>
+									<a href="../knowledge.html">机顶盒知识点</a>
+									<a href="index.html">资料快查</a>
+								</nav>
+
+							</div>
+						</div>
+					</header>
+				</div>
+
+			<!-- Content -->
+				<div id="content-wrapper">
+					<div id="content">
+						<div class="container">
+							<div class="row">
+								<div class="3u 12u(mobile)">
+
+									<!-- Sidebar -->
+										
+										<section>
+											<header>
+												<h2>PSI/SI资料快查</h2>
+												<p class='light-text'>资料入口</p>
+											</header>
+											<a class="feature-image"><img src="../images/pic05.jpg" alt="" /></a>
+											<p>
+												这里是PSI/SI相关资料的主入口，
+												你有任何需要查询的资料，都可以从这里开始寻找...
+											</p>
+											
+											<br>
+											<p class='author'>
+												<br>
+												本资料集由 林晓州 收集和整理，并提供共享。
+												<br>邮箱： 1139904786@qq.com
+												<br>网址： <a href='http://www.onelib.biz' target='_blank'>http://www.onelib.biz</a>
+											</p>
+											<br>
+											<p class='copyright'>
+												<span style='font-weight:bold;'>版权声明</span>：未经许可，请勿转载！
+											</p>
+											<br>
+											<p class='website'>
+												<br>
+												©2016 · OneLib智库 · 分享知识和经验，打造精品智库平台
+											</p>
+										</section>
+										
+										<section>
+											<header>
+												<h2>PSI/SI教程</h2>
+											</header>
+											<p>
+												如果你是PSI/SI的初学者，
+												那么就让一切都从这里开始吧...
+											</p>
+											<ul class="link-list">
+												<li><a href="../psisi.html" target='_blank'><span class='fa fa-book'></span> 索引</a></li>
+												<li><a href="../course/prereading.html" target='_blank'><span class='fa fa-book'></span> 第一章：预备知识</a></li>
+												<li><a href="../course/begin.html" target='_blank'><span class='fa fa-book'></span> 第二章：从TS到PAT和PMT</a></li>
+												<li><a href="../course/psi.html" target='_blank'><span class='fa fa-book'></span> 第三章：深入学习PSI</a></li>
+												<li><a href="../course/si.html" target='_blank'><span class='fa fa-book'></span> 第四章：深入学习SI</a></li>
+												<li><a href="../index.html" target='_blank'><span class='fa fa-chevron-right'></span> 返回首页</a></li>
+											</ul>
+										</section>
+
+								</div>
+								<div class="9u 12u(mobile) important(mobile)">
+
+									<!-- Main Content -->
+									<section>
+										<header>
+											<h2 class='title-border'><a href='#'><span class='titleName'>资料快查</span></a></h2>
+											<p class='light-text'>您可以输入关键词以搜索您要的资料</p>
+										</header>
+										
+										<input id='ol_psisi_keyword' class='form-control' placeholder='输入关键词以搜索资料...' onkeyup="OL_Psisi_Search()"/>
+										<span class='light-text paper not-select small'>不区分大小写，可直接显示表格</span>
+										
+										<div id='ol_psisi_search_res'></div>
+										
+									</section>
+									
+									
+									<section>
+										<header>
+											<h2 class='title-border'><a href='ts.html' target='_blank'><span class='titleName'>资料向导</span></a></h2>
+											<p class='light-text'>概括本资料集的结构和内容</p>
+										</header>
+										
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<ul class="link-list">
+													<li style='font-weight:bold;'>基础</li>
+													<li><a href="dictionary.html" target='_blank'>PSI/SI名词速查</a></li>
+													<li><a href="ts.html" target='_blank'>TS流的制作、传输及解析</a></li>
+													<br>
+													
+													<li style='font-weight:bold;'>PSI信息</li>
+													<li>
+														<a href="psisitable.html#pat" target='_blank'>PAT表</a>、
+														<a href="psisitable.html#pmt" target='_blank'>PMT表</a>、
+														<a href="psisitable.html#nit" target='_blank'>NIT表</a>、
+														<a href="psisitable.html#cat" target='_blank'>CAT表</a>
+													</li>
+													<br>
+													
+													<li style='font-weight:bold;'>SI信息</li>
+													<li>
+														<a href="psisitable.html#sdt" target='_blank'>SDT表</a>、
+														<a href="psisitable.html#eit" target='_blank'>EIT表</a>、
+														<a href="psisitable.html#tdt" target='_blank'>TDT表</a>、
+														<a href="psisitable.html#bat" target='_blank'>BAT表</a>、
+														<a href="psisitable.html#tot" target='_blank'>TOT表</a>、
+														<a href="psisitable.html#rts" target='_blank'>RST表</a>、
+														<a href="psisitable.html#sit" target='_blank'>SIT表</a>、
+														<a href="psisitable.html#st" target='_blank'>ST表</a>、
+														<a href="psisitable.html#dit" target='_blank'>DIT表</a>
+													</li>
+												</ul>
+											</div>
+											
+											<div class="6u 12u(mobile) important(mobile)">
+												<ul class="link-list">
+													<li style='font-weight:bold;'>描述子Descriptor列表</li>
+													<li>
+														<a href="descriptor.html" target='_blank'>进入详细列表</a>
+													</li>
+													<br>
+													
+													<li style='font-weight:bold;'>表格 <span class='light-text small'>数值编码分配</span></li>
+													<li>
+														<a href="table.html" target='_blank'>进入详细列表</a>
+													</li>
+												</ul>
+											</div>
+											
+										</div>
+										
+									</section>
+									
+									
+									<section>
+										<header>
+											<h2 class='title-border'><a href='dictionary.html' target='_blank'><span class='titleName'>PSI/SI名词速查</span></a></h2>
+											<p class='light-text'>林晓州 于 2016年02月22日 发布</p>
+										</header>
+										<p class='paper'>
+											这里将PSI/SI相关的所有名词都列出，并给出了中英文两个版本以供参考。
+										</p>
+										<a href="dictionary.html" target='_blank' class="feature-image" style='border:1px #ddd dashed; padding:15px;'><img src="images/01.jpg" alt="" /></a>
+									</section>
+									
+									
+									<section>
+										<header>
+											<h2 class='title-border'><a href='ts.html' target='_blank'><span class='titleName'>TS流的制作、传输及解析</span></a></h2>
+											<p class='light-text'>林晓州 于 2016年02月23日 发布</p>
+										</header>
+										<p class='paper'>
+											本章将介绍TS流是如何制作，其传输系统有哪些，是如何接收的。
+										</p>
+										
+									</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="6u 12u(mobile)">
+
+							<!-- Links -->
+								<section>
+									<h2>友情链接</h2>
+									<div>
+										<div class="row">
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://www.onelib.biz/konka">海外软件研发资料库</a></li>
+													<li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://www.onelib.biz/">OneLib智库</a></li>
+													<li><a href="http://www.onelib.biz/tasks">OneLib · 工作</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://html5up.net/">HTML5UP</a></li>
+													<li><a href="http://html5up.net/halcyonic">本页模板：Halcyonic</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+						<div class="6u 12u(mobile)">
+
+							<!-- Blurb -->
+								<section>
+									<h2>PSI/SI专题 简介</h2>
+									<p>
+										此专题根据我在2013年自学PSI/SI相关资料所做的学习笔记(参考<a href='http://blog.csdn.net/kkdestiny' target='_blank'>KKDestiny的博客</a>)，
+										并在2016年2月17日开始再次深入学习。
+										在本次学习过程中，对以前的笔记做了勘误和补充，并增加了2013年至今(2016年)工作中的一些理解。
+										<br><span class='not-select'>——</span> 林晓州，2016年02月17日 于深圳
+									</p>
+								</section>
+
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			
+			<!-- Copyright -->
+			<div id="copyright">
+				&copy;<a href="http://www.onelib.biz">OneLib智库</a> · 分享知识和经验，打造精品智库平台</a>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/skel-viewport.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/bootstrap.min.js"></script>
+			
+			<script>
+				$(document).ready(function () {
+					$("#ol_tasklist_guide").affix({
+						offset: {
+							top: 1000
+						}
+					});
+					
+				});
+				
+			var OL_PSISI_SEARCH_ROOT = "../";
+	
+			</script>
+			
+			<!-- User Define -->
+			<script src="config/public.js"></script>
+			<script src="config/db_descriptortable.js"></script>
+			<script src="config/db_descriptor.js"></script>
+			<script src="config/search.js"></script>
+			<script src="config/function.js"></script>
+
+	</body>
+</html>

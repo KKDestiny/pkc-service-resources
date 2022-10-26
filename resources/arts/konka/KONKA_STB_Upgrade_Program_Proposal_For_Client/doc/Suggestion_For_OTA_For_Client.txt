@@ -1,0 +1,21 @@
+Thank you for your waiting. Please check the files for upgrade.
+ 
+In order to do OTA upgrade successfully, please allow me to repeat the instructions. And  appreciate if you would read it carefully. 
+ 
+There are two ways to do upgrade. The primary is for OTA upgrade, and the USB upgrade for a fall-back plan. Please use OTA upgrade file firstly. 
+ 
+Please note:  
+1. Please read  "KHDT866-G(S)_KONKA_STB_Upgrade_Program_Proposal_TNT_20141114.doc" carefully, and do the upgrade accordingly.  
+Hint: you need to configure the NIT Descriptor, which is introducted in file "NITDesc.doc"
+Any question, please do not hesitate to contact me. 
+ 
+2.  Please do the followings step by step:  
+1) Use 2 STBs to do test. If everything goes well,then
+2) Use 5%~10% of STBs to do a small scale upgrade, display the upgrade stream for 3 days or so . If there is nothing wrong or upgrade failure, then  
+3) Upgrade the whole STBs, display the upgrade stream for more than 3 weeks. If large quantities of STBs occur abnormal condition, please stop the upgrade immediately and concact to us. 
+ 
+The main changes  for this OTA upgrade is that: offer a way to change box's color. Please take a note. 
+ 
+Any problem about the upgrade, please feel free to contact us.  
+Thanks very much for your support. 
+ 

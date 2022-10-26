@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>寻找键盘上失落的文字</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	
+	<style>
+	@font-face {        
+		font-family: 'nangongjianti';     
+		src: url('fonts/nangongjianti.eot?') format('eot');/*IE*/        
+        src: url('fonts/nangongjianti.woff') format('woff'), url('fonts/nangongjianti.ttf') format('truetype');/*non-IE*/   
+	}
+	
+	</style>
+	
+	<!-- Load hanzi project info -->
+	<script src="effect.js"></script>
+	<script src="config.js"></script>
+	<script src="library.js"></script>
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+  
+  <body style="font-family:Microsoft Yahei;">
+  
+	<div class="navbar navbar-default navbar-fixed-top" id="main" style="background-color: #3498db; border-color: transparent; color:snow;">
+		<div class="container-fluid col-md-offset-1">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="doc/寻找键盘上失落的文字.pptx">寻找键盘上失落的文字</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="http://lianhua.xmedu.cn/index.do" target="blank">莲花中学</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+	</div>
+	
+	<div class="row" id="main" style="background-color: #3498db; border-color: transparent; color:snow">
+		<div class="col-md-offset-1 col-md-10">
+			
+			<br><br>
+			
+			<h1><span id="title_main"></span> <small><font color=#343434><span id="title_sub"></span></font></small></h1>
+			
+			
+			<div class="row">
+				<div class="col-md-offset-4 col-md-4">
+					<img src="img/hanzi.png" alt="hanzi.png" class="img-rounded" style="width:260px">
+				</div>
+			</div>
+			
+		</div>
+	</div><!-- End of main -->
+
+	<div class="row" id="main1" style="background-color: #f2f2f2; border-color: transparent; color:#343434">
+		<div class="col-md-offset-1 col-md-10">
+			<h1>
+				<form class="form-inline" role="form">
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="定时" onkeyup=changeEndTime() id="EndTimeInput" style="color:#343434">
+					</div>
+					<a class="btn btn-md btn-success" onclick=beginTimer() id="beginBtn"><span class="glyphicon glyphicon-play"></span> 开始</a> 
+					 <a class="btn btn-md btn-danger" onclick=stopTimer()><span class="glyphicon glyphicon-stop"></span> 停止</a> 
+					 <a class="btn btn-md btn-warning" onclick=resetTimer()><span class="glyphicon glyphicon-repeat"></span> 重置</a>
+					 
+					<font color="#3498db">|</font> 
+					
+					<span id="FreeBtn">
+						<a id="answerBtn" class="btn btn-md btn-info" onclick=showAnswer()><span class="glyphicon glyphicon-flag"></span> 答案</a>
+						<div class="input-group">
+							<input class="form-control" type="text" placeholder="输入答案" onkeyup=changeAnswer() id="AnswerInput" style="color:#343434">
+						</div>
+					</span>
+					<span id="RandomBtn" style="display:none">
+						<a id="answerBtn" class="btn btn-md btn-success" onclick=getQuestion()><span class="glyphicon glyphicon-book"></span> 取题</a>
+						<a id="answerBtn" class="btn btn-md btn-info" onclick=showAnswer()><span class="glyphicon glyphicon-flag"></span> 答案</a>
+					</span>
+					
+					<a id="changeMathType" class="btn btn-md btn-default" onclick=changeMathType()><span class="glyphicon glyphicon-transfer"></span> 切换出题模式</a>
+				</form>
+			</h1>
+		
+		
+			<br><br>
+			
+			<div id="timebar">
+			
+				<div id="RandomQuestion" style="display:none">
+					<p class="text-center"><font size="60px" id="RandomQuestionPinyin"></font></p>
+					<p class="text-center"><font size="10px" color=gray id="RandomQuestionExplanation"></font></p>
+					<hr>
+				</div>
+		
+				<p class="text-center">
+					<font size="40px">
+						<span class="glyphicon glyphicon-time"></span> 剩余时间：
+						<font color="red">
+							<span id="time_left_show"></span>
+						</font>
+						秒
+					</font>
+				</p>
+				
+				<div class="progress">
+				  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%" id="progressBar">
+					<span class="sr-only">100% Complete</span>
+				  </div>
+				</div>
+				
+			</div>
+			
+			<div id="wordbar" style="display:none; font-family:nangongjianti, 华文楷体;">
+		
+				<h1>
+					<p class="text-center">
+						<span id="answer">
+						</span>
+					</p>
+				</h1>
+				
+			</div>
+			
+			<br><br><br><br>
+			
+		</div>
+			
+		<br><br>	
+		<br><br>
+		
+		<!-- MP3 -->
+		<audio  id="bgsound" style="display:none" >
+			<source src="doc/ppt/media/audio1.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+
+
+	</div><!-- End of main1 -->
+
+	
+	<script>
+		var time = 0;
+		var interval = 10; 				// Unit: ms
+		var division = 1000/interval;
+		var action;
+		var status = 0;
+		var showWordBar = 0;
+		var CurrAnswer = "";
+		var HaveGetQuestion_Arr = new Array();
+		
+		Array.prototype.in_array = function(e)  
+		{  
+			for(i=0;i<this.length && this[i]!=e;i++);  
+			return !(i==this.length);  
+		}  
+
+		function changeMathType()
+		{
+
+			if("Random"==Match_Type)
+			{
+				document.getElementById("FreeBtn").style.display = ""
+				document.getElementById("RandomBtn").style.display = "none"
+				document.getElementById("RandomQuestion").style.display = "none"
+				Match_Type = "Free"
+			}
+			else
+			{
+				document.getElementById("FreeBtn").style.display = "none"
+				document.getElementById("RandomBtn").style.display = ""
+				document.getElementById("RandomQuestion").style.display = ""
+				Match_Type = "Random"
+			}
+		}
+		
+		function getQuestion()
+		{
+			hideAnswerFrame()
+			while(1)
+			{
+				var index = parseInt(Math.random()*(LIB.length));
+				if(false==HaveGetQuestion_Arr.in_array(index))
+				{
+					console.log(LIB[index])
+					document.getElementById("RandomQuestionPinyin").innerHTML = LIB[index][1]
+					if("yes"==Show_Explanation)
+						document.getElementById("RandomQuestionExplanation").innerHTML = LIB[index][2]
+						
+					CurrAnswer = LIB[index][0]
+					
+					HaveGetQuestion_Arr.push(index)
+					
+					break;
+				}
+				else if(HaveGetQuestion_Arr.length==LIB.length)
+				{
+					document.getElementById("RandomQuestionPinyin").innerHTML = "<span class=\"glyphicon glyphicon-send\"></span> 题目全部答完！"
+					if("yes"==Show_Explanation)
+						document.getElementById("RandomQuestionExplanation").innerHTML = ""
+					break;
+				}
+			}
+			
+		}
+		
+		function myTimer()
+		{
+
+			if(EndTime*division<=time)
+			{
+				stopTimer(0);
+			}
+			else
+			{
+				time += 1;
+				FunctionDisplay();				
+				action = setTimeout("myTimer()",interval);
+			}
+			
+		}
+		
+		function beginTimer()
+		{			
+			action = setTimeout("myTimer()",interval);
+			
+			// document.getElementById("beginBtn").setAttribute("disabled", "disabled");
+			document.getElementById("beginBtn").style.display = "none"
+			
+			hideAnswerFrame()
+		}
+		
+		function stopTimer(reset)
+		{
+			clearTimeout(action);
+			time = 0;
+			document.getElementById("bgsound").pause();
+			document.getElementById("bgsound").load();
+			
+			if(reset)
+				FunctionDisplay();
+			
+			// document.getElementById("beginBtn").removeAttribute("disabled");
+			document.getElementById("beginBtn").style.display = ""
+		}
+		
+		function resetTimer()
+		{
+			stopTimer(1);
+			
+			// document.getElementById("beginBtn").removeAttribute("disabled");
+			document.getElementById("beginBtn").style.display = ""
+		}
+		
+		function hideAnswerFrame()
+		{
+			document.getElementById("timebar").style.display = "";
+			document.getElementById("wordbar").style.display = "none";
+			document.getElementById("answerBtn").setAttribute("class", "btn btn-md btn-info");
+			showWordBar = 0;
+		}
+		
+		function showAnswerFrame()
+		{
+			document.getElementById("timebar").style.display = "none";
+			document.getElementById("wordbar").style.display = "";				
+			document.getElementById("answerBtn").setAttribute("class", "btn btn-md btn-info active");
+			showWordBar = 1;
+			changeAnswer()
+		}
+		
+		function showAnswer()
+		{
+			if("Random"==Match_Type)
+			{
+				showAnswerFrame()
+			}
+			else
+			{
+				if(0==showWordBar)
+				{
+					showAnswerFrame()
+				}
+				else
+				{
+					hideAnswerFrame()
+				}
+			}
+		}
+		
+		function changeEndTime()
+		{
+			var tmp_end_time = document.getElementById("EndTimeInput").value;
+			EndTime = parseInt(tmp_end_time)
+			display("time_left_show",EndTime.toFixed(1));
+			stopTimer(1);
+		}
+		
+		function changeAnswer()
+		{
+			var temp_answer = ""
+			
+			if("Random"==Match_Type)
+			{
+				temp_answer = CurrAnswer
+			}
+			else
+			{			
+				temp_answer = document.getElementById("AnswerInput").value;
+			}
+			
+			if(null==temp_answer || ""==temp_answer || " "==temp_answer)
+			{			
+				temp_answer="<font color=gray>（请输入正确答案）</font>";
+				display("answer",(temp_answer));
+			}
+			else
+			{
+				display("answer",parseWord(temp_answer));
+			}
+			
+		}
+		
+		function FunctionDisplay()
+		{
+			var temp = ((EndTime*division-time)/division).toFixed(1);
+			if(5>=temp)	document.getElementById("bgsound").play();
+			var percent = temp/EndTime*100
+			showProgressBar(percent)
+			display("time_left_show",temp);
+		}
+		
+		function showProgressBar(percent)
+		{
+			if(percent<30)
+			{
+				document.getElementById("progressBar").setAttribute("class", "progress-bar progress-bar-danger progress-bar-striped active");
+			}
+			else if(percent<50)
+			{
+				document.getElementById("progressBar").setAttribute("class", "progress-bar progress-bar-warning progress-bar-striped active");
+			}
+			else if(percent<70)
+			{
+				document.getElementById("progressBar").setAttribute("class", "progress-bar progress-bar-info progress-bar-striped active");
+			}
+			else
+			{
+				document.getElementById("progressBar").setAttribute("class", "progress-bar progress-bar-success progress-bar-striped active");
+			}
+			
+			document.getElementById("progressBar").style.cssText = "width:"+percent+"%"
+			
+			// console.log(percent);
+		}
+		
+		
+		function parseWord(word)
+		{
+			//word = "日臻完善";
+					
+			// ONEWORD
+			var model1 = "<div class=\"col-md-offset-4 col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD1##</div></div>";
+			
+			// ONEWORD1  ONEWORD2
+			var model2 = "<div class=\"col-md-offset-3 col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD1##</div></div><div class=\"col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD2##</div></div>";
+			
+			// ONEWORD1  ONEWORD3
+			var model3 = "<div class=\"col-md-offset-2 col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD1##</div></div><div class=\"col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD2##</div></div><div class=\"col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD3##</div></div>";
+			
+			// ONEWORD1  ONEWORD4
+			var model4 = "<div class=\"col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD1##</div></div><div class=\"col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD2##</div></div><div class=\"col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD3##</div></div><div class=\"col-md-3\"><img src=\"img/mizige.png\" class=\"img-thumbnail\" style=\"width:200px;\"></img><div style=\"position:relative; top:-175px; left:0px;font-size:130px\">##ONEWORD4##</div></div>";
+			
+			var max = word.length;
+			var temp = "";
+			switch(max)
+			{
+				case 1:
+					temp = model1;
+					break;
+				case 2:
+					temp = model2;
+					break;
+				case 3:
+					temp = model3;
+					break;
+				case 4:
+					temp = model4;
+					break;
+				default:
+					temp = model4;
+			}
+			
+			for(var i=0;i<max;i++)
+			{
+				word_arr = word.substr(i, 1)
+				// alert(word_arr)
+				temp = temp.replace("##ONEWORD"+(i+1)+"##",word_arr);
+			}
+						
+			return temp;
+		}
+		
+		/* Begin Here */
+		window.onload=function(){
+			showTitle();
+			display("time_left_show",EndTime.toFixed(1));			
+			document.getElementById("EndTimeInput").value = EndTime;
+			document.getElementById("answer").style.fontSize = "100px";
+			document.getElementById("RandomQuestionExplanation").style.fontSize = "24px";
+			
+		}
+		
+	</script>
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

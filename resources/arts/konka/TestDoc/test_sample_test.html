@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>机顶盒送样测试用例示例 - 数字网络事业部</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+
+     <!-- OneLib style -->
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/onelib.css" rel="stylesheet">
+	
+	<link href="images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	
+    <script src="js/jquery.min.js"></script>
+	
+	<style>
+	nav.bs-docs-sidebar.affix{
+		top: 50px; /* Set the top position of pinned element */
+	}
+	</style>
+
+    <!--[if lt IE 9]>
+        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
+        <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" id='ca_top'>
+	
+	<nav class="navbar navbar-default navbar-inverse">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container-fluid col-md-offset-2">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.onelib.biz/konka/">
+			<img alt="Brand" src="images/structure/logo.ico" style='height:25px; margin-top:-3px;'>
+		  </a>
+		  <a class="navbar-brand" href="http://www.onelib.biz/konka/">
+			<span style='font-family:orbitron-bold; color:#2298DB;'> OneLib</span>
+		  </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="test_detail_test.html">内部详细测试用例</a></li>
+            <li class="active"><a href="test_sample_test.html">送样测试用例</a></li>
+            <li class=""><a href="test_ctica_test.html">算通CA测试用例</a></li>
+            <li class=""><a href="test_tfca_test.html">永新视博CA测试用例</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+	
+	
+	<!-- Docs page layout -->
+    <div class="jumbotron" style='margin-top:-20px;'>
+	  <div class="container">
+		  <br>
+		  <p>本文档为康佳集团数字网络事业部机顶盒送样测试用例</p>
+		  <p>
+			<a href="http://www.onelib.biz/OneLib/TaskManager/ui_task.php?action=CREATE_TASK" title='点击创建'>创建</a>一个送样测试任务，您可以更方便地进行送样测试...
+		  </p>
+	  </div>
+	</div>
+	
+	<div class="container col-md-offset-2 col-md-7 col-xs-12 ">
+
+		<div class="row" id='ol_testcase_content'>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+		
+		<p class='text-center'>- 测试结束 -</p>
+		
+		<hr class="featurette-divider">
+	
+		<div class="row">
+			<h1 id='test_x'>版本信息</h1>
+			<br>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+				</thead>
+				<tbody style='text-align:center;'>
+					<tr><td>1</td><td>2015年11月25日</td><td>V1.0</td><td>导入送样测试用例_V1.0</td><td>林晓州</td><td>——</td></tr>
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+			
+		<div class="row">
+			<div class="col-md-12 well">
+				<p>
+					<b>OneLib智库 · 分享知识和经验，打造精品个人智库平台</b>
+					<br>Designed By 林晓州
+					<br>qq： 1139904786
+					<br>邮箱： 1139904786@qq.com
+					<br>网址： http://www.onelib.biz
+					<br>©2015 · OneLib智库
+				</p>
+			</div>
+		</div><!-- /.row -->
+		
+		
+
+    </div>
+	
+	  
+	<!-- start guide -->
+	<div class="col-md-3 col-sm-4" id="myScrollspy">
+		<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+			
+			<div style='width:60%; text-align:left; margin-top:10px;'>
+				<b>测试模块</b>
+			</div>
+			
+			<ul class="nav bs-docs-sidenav" style='margin-top:5px;' id='ol_tasklist_guide_list'>
+				<li class="active">
+					<a href="#test_0"><i class='fa fa-tags'></i> 0.xxxx</a>
+				</li>
+			</ul>
+
+			<div style='width:60%; text-align:left; border-top:1px #eee solid; margin-top:15px;'>
+			</div>
+			
+			<a class="back-to-top" onclick=ol_goto('ca_top') style='margin-top:10px;'>
+			  <i class='fa fa-angle-double-up'></i> 返回顶部
+			</a>
+		</nav>
+	</div>
+	<!-- /guide -->
+
+	
+	<footer class="bs-docs-footer col-md-12" role="contentinfo">
+	  <div class="container">
+
+		<p></p>
+		<ul class="bs-docs-footer-links text-muted">
+		  <li>版本：V1.0.0</li>
+		  <li>·</li>
+		  <li>©<a href="http://www.onelib.biz">OneLib智库</a> · 分享知识和经验，打造精品个人智库平台</li>
+		  <li>·</li>
+		  <li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+		</ul>
+	  </div>
+	</footer>
+	
+	<br>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/sampletestcase.js"></script>
+    <script src="js/tpl_sampletestcase_konka_config_V1.0.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+			
+			OL_TestCase_Init();
+		
+            $("#ol_tasklist_guide").affix({
+				offset: {
+					top: 200
+				}
+			});
+
+        });
+		
+	
+	</script>
+
+</body>
+
+</html>

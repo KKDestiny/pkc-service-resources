@@ -1,0 +1,858 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>深入学习PSI - PSI/SI专题 | OneLib智库,为您定制私人智库</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/onelib.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<link href="../images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	</head>
+	
+	
+	<body class="subpage" data-spy="scroll" data-target="#myScrollspy">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Logo -->
+								<h1>
+									<a href="#" id="logo">
+										<img alt="Brand" src="../images/structure/logo.ico" style='height:30px; margin-top:-3px;'>
+										<span style='font-family:orbitron-bold; color:#2298DB;'> OneLib</span>
+										<span style='font-family:banhei; color:#2298DB;'>智库</span>
+									</a>
+								</h1>
+
+								<!-- Nav -->
+								<nav id="nav">
+									<a href="../index.html">首页</a>
+									<a href="../psisi.html">PSI/SI教程</a>
+									<a href="../knowledge.html">机顶盒知识点</a>
+									<a href="../appendix/index.html">资料快查</a>
+								</nav>
+
+							</div>
+						</div>
+					</header>
+				</div>
+
+			<!-- Content -->
+				<div id="content-wrapper">
+					<div id="content">
+						<div class="container">
+							<div class="row">
+								<div class="3u 12u(mobile)">
+
+									<!-- Sidebar -->
+										
+										<section>
+											<header>
+												<h2>教程目录</h2>
+												<p class='light-text'>PSI/SI教程</p>
+											</header>
+											<a class="feature-image"><img src="../images/pic05.jpg" alt="" /></a>
+											<p>
+												如果你是PSI/SI的初学者，
+												那么就让一切都从这里开始吧...
+											</p>
+											<ul class="link-list">
+												<li><a href="../psisi.html"><span class='fa fa-book'></span> 索引</a></li>
+												<li><a href="prereading.html"><span class='fa fa-book'></span> 第一章：预备知识</a></li>
+												<li><a href="begin.html"><span class='fa fa-book'></span> 第二章：从TS到PAT和PMT</a></li>
+												<li><a href="psi.html"><span class='fa fa-book'></span> 第三章：深入学习PSI</a></li>
+												<li><a href="si.html"><span class='fa fa-book'></span> 第四章：深入学习SI</a></li>
+												<li><a href="../appendix/index.html"><span class='fa fa-book'></span> 附录：资料快查</a></li>
+												<li><a href="../index.html"><span class='fa fa-chevron-right'></span> 返回首页</a></li>
+											</ul>
+											
+											<br>
+											<p class='author'>
+												<br>
+												本资料集由 林晓州 收集和整理，并提供共享。
+												<br>邮箱： 1139904786@qq.com
+												<br>网址： <a href='http://120.25.83.13' target='_blank'>http://120.25.83.13</a>
+											</p>
+											<br>
+											<p class='copyright'>
+												<span style='font-weight:bold;'>版权声明</span>：未经许可，请勿转载！
+											</p>
+											<br>
+											<p class='website'>
+												<br>
+												©2016 · OneLib智库 · 挖掘自己的财富
+											</p>
+										</section>
+										
+										
+										<section id="myScrollspy" style='padding: 5px;'>
+											<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+												
+												<header style='padding-top:25px; margin:0;'>
+													<h2>本页导航</h2>
+													<p class='light-text'>PSI/SI教程</p>
+												</header>
+												
+												<ul class="nav bs-docs-sidenav" style=';'>
+													<li class="">
+														<a href="#part1"><span class='fa fa-tags'></span> PAT表</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#part1_1"><span class='fa fa-chevron-right'></span> PAT表的结构分析</a></li>
+															<li class=""><a href="#part1_2"><span class='fa fa-chevron-right'></span> PAT表实例</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#part2"><span class='fa fa-tags'></span> PMT表</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#part2_1"><span class='fa fa-chevron-right'></span> PMT表的结构分析</a></li>
+															<li class=""><a href="#part2_2"><span class='fa fa-chevron-right'></span> PMT表实例</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#part3"><span class='fa fa-tags'></span> CAT表</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#part3_1"><span class='fa fa-chevron-right'></span> CAT表的结构分析</a></li>
+															<li class=""><a href="#part3_2"><span class='fa fa-chevron-right'></span> CAT表实例</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#part4"><span class='fa fa-tags'></span> NIT表</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#part4_1"><span class='fa fa-chevron-right'></span> NIT表的结构分析</a></li>
+															<li class=""><a href="#part4_2"><span class='fa fa-chevron-right'></span> NIT表中的描述子</a></li>
+															<li class=""><a href="#part4_3"><span class='fa fa-chevron-right'></span> NIT表实例</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#partz"><span class='fa fa-tags'></span> 本章小结</a>
+													</li>
+													<li>
+														<a href="#party"><span class='fa fa-tags'></span> 参考文档</a>
+													</li>
+													<li>
+														<a href="#partx"><span class='fa fa-tags'></span>  版本信息</a>
+													</li>
+												</ul>
+											</nav>
+										</section>
+										
+								</div>
+								<div class="9u 12u(mobile) important(mobile)">
+
+									<!-- Main Content -->
+										<section>
+											<header>
+												<h2>第三章：深入学习PSI</h2>
+												<p class='light-text'>进一步学习PSI信息</p>
+											</header>
+											<p>
+												在上一章文档中，我们对PAT和PMT表有了初步的了解；在这一章中，我们会更加系统地对PSI信息进行说明。
+											</p>
+											<blockquote>
+												“PSI是对单一TS流的描述，是TS流中的引导信息”
+												<footer>可以理解为，PSI是某一频点里的节目引导信息</footer>
+											</blockquote>
+											<p class='paper'>
+												PSI信息由节目关联表PAT、条件接收表CAT、节目映射表PMT和网络信息表NIT组成，这些表会被插入到TS流中。
+												PSI信息是对单一TS流的描述，它是TS流的引导信息；PSI信息指定了如何从一个携带多个节目的传输流中找到指定的节目。
+												下面给出的是节目引导信息（或称节目特定信息，PSI）的四个表结构。
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-bordered table-condensed' style='margin-top:-6px; font-size:70%;'>
+													<tr style='text-align:center;font-weight:bold; background-color:#bbb; color:#000'><td>结构名</td><td>中文</td><td>所定义标准</td><td>PID</td><td>描述</td></tr>
+													<tr style='text-align:center;'><td>PAT</td><td>节目关联表</td><td>MPEG2标准</td><td>0x0000</td><td>将节目号码和节目映射表PID相关联，是获取数据的开始</td></tr>
+													<tr style='text-align:center;'><td>PMT</td><td>节目映射表</td><td>MPEG2标准</td><td>PAT中标识</td><td>指定一个或多个节目的PID</td></tr>
+													<tr style='text-align:center;'><td>CAT</td><td>条件接收表</td><td>MPEG2标准</td><td>0x0001</td><td>将一个或多个专用EMM流分别与唯一的PID相关联</td></tr>
+													<tr style='text-align:center;'><td>NIT</td><td>网络信息表</td><td>SI标准</td><td>PAT中标识</td><td>描述整个网络，如多少个TS流、频点和调制方式等信息</td></tr>
+												</table>
+											</div>
+										</section>
+										
+											
+										<section id='part1'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>PAT表</span></a></h2>
+												<p class='light-text'>Program Association Table</p>
+											</header>
+											<blockquote>
+												"PAT是机顶盒接收的入口点，是它获取数据的开始"
+											</blockquote>
+											<p class='paper'>
+												节目关联表PAT的意义在于，它描述了当前TS流中包含了哪些PID；
+												只有根据获得的PID，用户才可以以此作为凭据找出其他表（如PMT表）及其信息。
+												所以 <span class='bold'>PAT是机顶盒接收的入口点，是它获取数据的开始</span>；
+												要保证一个TS流能被正常接收，则至少要有一个完整有效的PAT。
+											</p>
+											<br>
+											
+											<h3 id='part1_1' class='subtitle-border'>PAT表的结构分析</h3>
+											<p class=''>
+												PAT表主要提供Program和PID之间的对应关系。
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;PID = 0x0000
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;table_id = 0x00
+											</p>
+											<p class=''>
+												下表是PAT结构：
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td>Syntax(句法结构)</td><td>No. of bits(所占位数)</td><td>Identifier(识别符)</td><td>Note(注释)</td></tr>
+													</thead>
+													<tr style='text-align:left; font-weight:bold;'><td colspan='4'>program_association_section(){</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>table_id</td><td>8</td><td>uimsbf</td><td>表标识符</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_syntax_indicator</td><td>1</td><td>bslbf</td><td>段语法指示符，通常设置为“1”</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>"0"</td><td>1</td><td>bslbf</td><td>zero</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved</td><td>2</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_length</td><td>12</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Section_length</h3><p class="pop-text">段长度，12位，指出了此Section的长度，头两位为“00”，值不超过1021</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>transport_stream_id</td><td>16</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">transport_stream_id</h3><p class="pop-text">16位, 给出TS的识别号</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved</td><td>2</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Version_number</td><td>5</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Version_number</h3><p class="pop-text">sub_table的版本号，值为0~31，当sub_table信息改变时，值加1，若值已为31，则变化后值为0（循环），若curren_next_indicator的值为“1”，version_number指当前sub_table,若curren_next_indicator的值为“0”，version_number指下一个sub_table</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Current_next_indicator</td><td>1</td><td>bslbf</td><td><a data-content='<h3 class="pop-title">Current_next_indicator</h3><p class="pop-text">当前后续指示符，1位，“1”指sub_table是current, “0”指sub_table是next</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_number</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Section_number</h3><p class="pop-text">段号，8位,给出section号，在sub_table中，第一个section其section_number为"0x00"，每增加一个section，section_number加一</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>last_section_number</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">last_section_number</h3><p class="pop-text">最后段号，sub_table中最后一个section的section_number</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>for(i=0;i&lt;N;i++){</td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>program_number</td><td>16</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">program_number</h3><p class="pop-text">节目号，16位,指定了Program_map_PID可用的节目。若其值为0x0000，则接下来的13bits的PID是network_PID，否则为program_map_PID</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>reserved</td><td>3</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left;'>if(program_number == 0){</td></tr>
+													<tr><td style='text-indent:8em; text-align:left;'>network_PID</td><td>13</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">network_PID</h3><p class="pop-text">13位, 指定了包含NIT的TS包的PID，其值由用户定义</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left;'>}</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left;'>else{</td></tr>
+													<tr><td style='text-indent:8em; text-align:left;'>program_map_PID</td><td>13</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">program_map_PID</h3><p class="pop-text">13位,指定了TS包的PID，这些TS包包含由program_number指定的program_map_section，其值由用户定义</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left;'>}</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>}</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>CRC_32</td><td>32</td><td>rpchof</td><td><a data-content='<h3 class="pop-title">CRC_32</h3><p class="pop-text">32位, 表示CRC的值</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-align:left;'>}</td></tr>
+												</table>
+											</div>
+											<p>
+												这里我们注意关注五个字段：<br>
+												<ul class='paper'>
+													<li><span class='bold'>table_id</span>：PAT的table_id应为0x00</li>
+													<li><span class='bold'>transport_stream_id（传输流标志）</span>：用以标识来源于网络中任何其他复合流的TS流</li>
+													<li><span class='bold'>program_number（节目号）</span>：规定program_map_PID可适用的节目。当值为0x0000时，其后的PID参照将是网络PID。它可以作为一个指示符号，例如用于广播通道。</li>
+													<li><span class='bold'>network_PID（网络PID）</span>：仅当program_number为0x00时使用</li>
+													<li><span class='bold'>program_map_PID（节目映射PID）</span>：据此找出相应的PMT表</li>
+												</ul>
+											</p>
+											<br>
+											
+											<h3 id='part1_2' class='subtitle-border'>PAT表实例</h3>
+											<p class='paper'>
+												在下图中，我们可以看到PAT表携带的基本信息。
+											</p>
+											<a class="feature-image"><img src="images/16.jpg" style="margin-top:-10px" />PAT表一览</a>
+											<p class='paper'>
+												首先，table_id=0x0。网络信息表的PID为0x10。网络中有四路节目，并给出了每个节目的program_number以及每个节目的PMT PID。
+												在解析完PAT表后，就可以根据这里得到的四个PMT PID去过滤对应PID号的PMT表，从而得到每个节目的更详细信息。
+											</p>
+											
+											
+										</section>
+										
+											
+										<section id='part2'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>PMT表</span></a></h2>
+												<p class='light-text'>Program Map Table</p>
+											</header>
+											<blockquote>
+												"PMT是连接节目号与节目元素的桥梁"
+											</blockquote>
+											<p class='paper'>
+												<span class='bold'>节目映射表PMT的意义在于，它给出了节目号与组成这个节目元素之间的映射；</span>
+												也就是说，PMT是连接节目号与节目元素的桥梁。
+												
+												我们知道，一个电视节目至少包含了视频和音频数据，而每一个节目的视音频数据都是以包的形式在TS流中传输的；
+												所以说，一个TS流包含了多个节目的视频和音频数据包。
+												要想过滤出一个TS流中其中一个节目的视频和音频，则需要知道这个节目中视频和音频的标识号PID。
+												PMT表的作用就在于，它提供了每个节目视频、音频（或其他）数据包的PID。
+											</p>
+											<br>
+											
+											<h3 id='part2_1' class='subtitle-border'>PMT表的结构分析</h3>
+											<p class=''>
+												PMT表主要提供节目numbers和节目elements之间的映射关系。
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;PID = 值由编码器选择
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;table_id = 0x02
+											</p>
+											<p class=''>
+												下表是PMT结构：
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover' style='margin-top:-5px; font-size:70%; text-align:center;'>
+													<thead>
+														<tr style='text-align:center; font-weight:bold; background:#bbb; color:#000;'><td>Syntax(句法结构)</td><td>No. of bits(所占位数)</td><td>Identifier(识别符)</td><td>Note(注释)</td></tr>
+													</thead>
+													<tr style='text-align:left; font-weight:bold;'><td colspan='4'>program_map_section(){</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>table_id</td><td>8</td><td>uimsbf</td><td>表标识符</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_syntax_indicator</td><td>1</td><td>bslbf</td><td>段语法指示符，通常设置为“1”</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>"0"</td><td>1</td><td>bslbf</td><td>zero</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved</td><td>2</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_length</td><td>12</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Section_length</h3><p class="pop-text">段长度，12位，指出了此Section的长度，头两位为“00”，值不超过1021</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>program_number</td><td>16</td><td>uimsbf</td><td>节目号，与service_id对应</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved</td><td>2</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Version_number</td><td>5</td><td>bslbf</td><td><a data-content='<h3 class="pop-title">Version_number</h3><p class="pop-text">sub_table的版本号，值为0~31，当sub_table信息改变时，值加1，若值已为31，则变化后值为0（循环），若curren_next_indicator的值为“1”，version_number指当前sub_table,若curren_next_indicator的值为“0”，version_number指下一个sub_table</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Current_next_indicator</td><td>1</td><td>bslbf</td><td><a data-content='<h3 class="pop-title">Current_next_indicator</h3><p class="pop-text">当前后续指示符，1位，“1”指sub_table是current, “0”指sub_table是next</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_number</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Section_number</h3><p class="pop-text">段号，8位,给出section号，在sub_table中，第一个section其section_number为"0x00"，每增加一个section，section_number加一</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>last_section_number</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">last_section_number</h3><p class="pop-text">最后段号，sub_table中最后一个section的section_number</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>reserved</td><td>3</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>PCR_PID</td><td>13</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">PCR_PID</h3><p class="pop-text">13位, 指定了包含NIT的TS包的PID</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>reserved</td><td>4</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>program_info_length</td><td>12</td><td>uimsbf</td><td>头两位为“00”</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>for(i=0;i&lt;N;i++){</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left; font-weight:bold;'>descriptor()</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>}</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>for(i=0;i&lt;N1;i++){</td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>stream_type</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">stream_type</h3><p class="pop-text">8位,指定了节目element的类型</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>reserved</td><td>3</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>elementary_PID</td><td>13</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">elementary_PID</h3><p class="pop-text">13位,指定了包含program element的TS包的PID</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>reserved</td><td>4</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>ES_info_length</td><td>12</td><td>uimsbf</td><td>头两位为"00"</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left;'>for(i=0;i&lt;N2;i++){</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:8em; text-align:left; font-weight:bold;'>descriptor()</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left;'>}</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>}</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>CRC_32</td><td>32</td><td>rpchof</td><td><a data-content='<h3 class="pop-title">CRC_32</h3><p class="pop-text">32位, 表示CRC的值</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-align:left;'>}</td></tr>
+												</table>
+											</div>
+											<p>
+												注意到，PMT表中有两个地方有Descriptor():<br>
+												<ul class='paper'>
+													<li><span class='bold'>Mosaic descriptor</span>：<a href='#'>查看！！</a></li>
+													<li><span class='bold'>Service move descriptor</span>：<a href='#'>查看！！</a></li>
+													<li><span class='bold'>Stream identifier descriptor</span>：<a href='#'>查看！！</a></li>
+													<li><span class='bold'>Teletext descriptor</span>：<a href='#'>查看！！</a></li>
+												</ul>
+											</p>
+											
+											<h3 id='part2_2' class='subtitle-border'>PMT表实例</h3>
+											<p class='paper'>
+												在下图中，我们可以看到PMT表携带的基本信息。一共有四个section，是四张PMT表的信息；其中，每个section存储在一个PMT表中，对应了一个节目的信息。
+												下面，我们以节目号为16398的节目为例进行分析。
+											</p>
+											<a class="feature-image"><img src="images/17.jpg" style="margin-top:-10px" />PMT表一览</a>
+											
+											<p class='paper'>
+												下图可以看到，一共有3个单元流，每一个单元流都是组成这个节目的一个
+												<abbr title='一个电视节目至少包含一个视频、一个音频，还可以有Teletext、字幕、其他音轨等分量；一个广播节目可以仅有音频'>元素(或者说是分量)</abbr>。
+												可以看到，这个节目包含一个MPEG2的视频(stream_type=0x02)、一个MPEG2的音频(stream_type=0x04)以及一个<abbr title='这里需要继续看下一层，其实是一个Teletext'>私有类型(stream_type=0x06)的数据</abbr>。
+											</p>
+											<a class="feature-image"><img src="images/18.jpg" style="margin-top:-10px" />节目号为16398的节目</a>
+											<p class='paper'>
+											下表是stream_type值的规定：
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%; text-align:center;'>
+													<thead>
+														<tr style='text-align:center; font-weight:bold; background:#bbb; color:#000;'><td>stream_type</td><td>描述</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>ITU-T | ISO/IEC Reserved，国际标准保留</td></tr>
+													<tr><td>0x01</td><td>ISO/IEC 11172 Video，视频</td></tr>
+													<tr><td>0x02</td><td>ITU-T Rec. H.262 | ISO/IEC 13818-2 Video or ISO/IEC 11172-2 constrained parameter video stream，视频或受限参数视频流</td></tr>
+													<tr><td>0x03</td><td>ISO/IEC 11172 Audio，音频</td></tr>
+													<tr><td>0x04</td><td>ISO/IEC 13818-3 Audio，音频</td></tr>
+													<tr><td>0x05</td><td>ITU-T Rec. H.222.0 | ISO/IEC 13818-1 private_sections</td></tr>
+													<tr><td>0x06</td><td>ITU-T Rec. H.222.0 | ISO/IEC 13818-1 PES packets containing private data,包含专用数据的PES分组</td></tr>
+													<tr><td>0x07</td><td>ISO/IEC 13522 MHEG</td></tr>
+													<tr><td>0x08</td><td>ITU-T Rec. H.222.0 | ISO/IEC 13818-1 Annex A DSM CC</td></tr>
+													<tr><td>0x09</td><td>ITU-T Rec.H.222.1</td></tr>
+													<tr><td>0x0A</td><td>ISO/IEC 13818-6 type A</td></tr>
+													<tr><td>0x0B</td><td>ISO/IEC 13818-6 type B</td></tr>
+													<tr><td>0x0C</td><td>ISO/IEC 13818-6 type C</td></tr>
+													<tr><td>0x0D</td><td>ISO/IEC 13818-6 type D</td></tr>
+													<tr><td>0x0E</td><td>ISO/IEC 13818-1 auxiliary</td></tr>
+													<tr><td>0x0F - 0x7F</td><td>ITU-T Rec. H.222.0 | ISO/IEC 13818-1 Reserved，GB/T保留</td></tr>
+													<tr><td>0x80 - 0xFF</td><td>User Private，用户专用</td></tr>
+												</table>
+											</div>
+											
+											<p class='paper'>
+												该节目的单元流2是音频分量的信息，可以看出，该音频语言为“deu”，即德语；其audio_type=0x1。
+												单元流3是Teletext分类，其语言编码也是“deu”，teletext_type=0x1。下面给出了teletext_type值的规定：
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%; text-align:center;'>
+													<thead>
+														<tr style='text-align:center; font-weight:bold; background:#bbb; color:#000;'><td>teletext_type</td><td>描述</td></tr>
+													</thead>
+													<tr><td>0x00</td><td>保留</td></tr>
+													<tr><td>0x01</td><td>initial Teletext page</td></tr>
+													<tr><td>0x02</td><td>Teletext subtitle page</td></tr>
+													<tr><td>0x03</td><td>additional information page</td></tr>
+													<tr><td>0x04</td><td>programme schedule page</td></tr>
+													<tr><td>0x05</td><td>Teletext subtitle page for hearing impaired people，听障人士Teletext字幕</td></tr>
+													<tr><td>0x06 - 0x1F</td><td>保留</td></tr>
+												</table>
+											</div>
+											<a class="feature-image"><img src="images/19.jpg" style="margin-top:-10px" />节目号为16398的节目的单元流2和单元流3</a>
+										
+										</section>
+										
+											
+										<section id='part3'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>CAT表</span></a></h2>
+												<p class='light-text'>Program Map Table</p>
+											</header>
+											<blockquote>
+												"CAT描述了节目的加密方式"
+											</blockquote>
+											<p class='paper'>
+												条件接收表CAT描述了节目的加密方式，它包含了节目的 <abbr title='EMM（Entitlement Management Message），即授权管理信息。描述了用户可看的节目或时间段、用户的付费等。'>EMM</abbr> 识别PID。
+												它给出了一个或多个CA系统、EMM流以及与CA相关的特定参数之间的关系。
+											</p>
+											<p class='paper'>
+												CA描述符既用于规定像EMM这样的系统范围条件接收管理信息，也用于规定像ECM这样的基本流特定信息。
+												<ul class='paper'>
+													<li>如果一个基本流（Elementary Stream）是加扰的，那么包含该基本流的节目信息PMT中需要一个CA描述符</li>
+													<li>如果一个TS流中有任何一个系统范围的条件接收管理信息，则条件接收表中应有CA描述符。</li>
+												</ul>
+											</p>
+											<br>
+											
+											<h3 id='part3_1' class='subtitle-border'>CAT表的结构分析</h3>
+											<p class=''>
+												CAT表主要提供关于Bouquet的信息，Bouquet是一个services的集合。
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;PID = 0x0001
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;table_id = 0x01
+											</p>
+											<p class=''>
+												下表是CAT结构：
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover' style='margin-top:-5px; font-size:70%; text-align:center;'>
+													<thead>
+														<tr style='text-align:center; font-weight:bold; background:#bbb; color:#000;'><td>Syntax(句法结构)</td><td>No. of bits(所占位数)</td><td>Identifier(识别符)</td><td>Note(注释)</td></tr>
+													</thead>
+													<tr style='text-align:left; font-weight:bold;'><td colspan='4'>conditional_access_section(){</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>table_id</td><td>8</td><td>uimsbf</td><td>表标识符</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_syntax_indicator</td><td>1</td><td>bslbf</td><td>段语法指示符，通常设置为“1”</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>"0"</td><td>1</td><td>bslbf</td><td>zero</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved</td><td>2</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_length</td><td>12</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Section_length</h3><p class="pop-text">段长度，12位，指出了此Section的长度，头两位为“00”，值不超过1021</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved</td><td>18</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Version_number</td><td>5</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Version_number</h3><p class="pop-text">sub_table的版本号，值为0~31，当sub_table信息改变时，值加1，若值已为31，则变化后值为0（循环），若curren_next_indicator的值为“1”，version_number指当前sub_table,若curren_next_indicator的值为“0”，version_number指下一个sub_table</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Current_next_indicator</td><td>1</td><td>bslbf</td><td><a data-content='<h3 class="pop-title">Current_next_indicator</h3><p class="pop-text">当前后续指示符，1位，“1”指sub_table是current, “0”指sub_table是next</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_number</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Section_number</h3><p class="pop-text">段号，8位,给出section号，在sub_table中，第一个section其section_number为"0x00"，每增加一个section，section_number加一</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>last_section_number</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">last_section_number</h3><p class="pop-text">最后段号，sub_table中最后一个section的section_number</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>for(i=0;i&lt;N;i++){</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left; font-weight:bold;'>descriptor()</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>}</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>CRC_32</td><td>32</td><td>rpchof</td><td><a data-content='<h3 class="pop-title">CRC_32</h3><p class="pop-text">32位, 表示CRC的值</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-align:left;'>}</td></tr>
+												</table>
+											</div>
+											<p>
+												注意到，CAT表中的Descriptor():<br>
+												<ul class='paper'>
+													<li><span class='bold'>CA identifier descriptor</span>：<a href='#'>查看！！</a></li>
+												</ul>
+											</p>
+											
+											<h3 id='part3_2' class='subtitle-border'>CAT表实例</h3>
+											<p class='paper'>
+												下图是一个CAT表的实例：
+											</p>
+											<a class="feature-image"><img src="images/22.jpg" style="margin-top:-10px" />CAT表一览</a>
+											
+											
+										</section>
+										
+											
+										<section id='part4'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>NIT表</span></a></h2>
+												<p class='light-text'>Network Information Table</p>
+											</header>
+											<blockquote>
+												"NIT描述了数字电视网络中与网络相关的信息"
+											</blockquote>
+											<p class='paper'>
+											NIT描述了数字电视网络中与网络相关的信息，但这个表本身的信息有限，更多的信息是依靠插入表中的描述符来提供的。
+											NIT常用的描述符有：网络名称描述符（network_name_descriptor）、有线传送系统（cable_delivery_system_descriptor）、业务列表描述符（service_list_descriptor）和链接描述符（linkage_descriptor）。
+											</p>
+											<br>
+											
+											<h3 id='part4_1' class='subtitle-border'>NIT表的结构分析</h3>
+											<p class=''>
+												NIT表主要提供物理网络本身的一些信息。
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;PID = 0x0010
+												<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;table_id：
+												<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- discribe actual newwork = 0x40
+												<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- discribe not actual  newwork = 0x41
+											</p>
+											<p class='paper'>
+												网络信息表（NIT）传递了与通过一个给定的网络传输的复用流/TS流的物理结构相关的信息，以及与网络自身特性相关的信息。下表是NIT结构：
+											</p>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover' style='margin-top:-5px; font-size:70%; text-align:center;'>
+													<thead>
+														<tr style='text-align:center; font-weight:bold; background:#bbb; color:#000;'><td>Syntax(句法结构)</td><td>No. of bits(所占位数)</td><td>Identifier(识别符)</td><td>Note(注释)</td></tr>
+													</thead>
+													<tr style='text-align:left; font-weight:bold;'><td colspan='4'>network_information_section(){</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>table_id</td><td>8</td><td>uimsbf</td><td>表标识符</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_syntax_indicator</td><td>1</td><td>bslbf</td><td>段语法指示符，通常设置为"1"</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved_future_use</td><td>1</td><td>bslbf</td><td class='light-text'>预留使用</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved</td><td>2</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_length</td><td>12</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Section_length</h3><p class="pop-text">段长度，12位，指出了此Section的长度，头两位为“00”，值不超过1021</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Network_id</td><td>16</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Network_id</h3><p class="pop-text">网络标识符，16位字段。NIT表所描述的传输系统的网络标识，用以区别其他的传输系统。This is a 16-bit field which serves as a label to identify the delivery system, about which the NIT informs, from any other delivery system.</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved</td><td>2</td><td>bslbf</td><td class='light-text'>保留</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Version_number</td><td>5</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Version_number</h3><p class="pop-text">sub_table的版本号，值为0~31，当sub_table信息改变时，值加1，若值已为31，则变化后值为0（循环），若curren_next_indicator的值为“1”，version_number指当前sub_table,若curren_next_indicator的值为“0”，version_number指下一个sub_table</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Current_next_indicator</td><td>1</td><td>bslbf</td><td><a data-content='<h3 class="pop-title">Current_next_indicator</h3><p class="pop-text">当前后续指示符，1位，“1”指sub_table是current, “0”指sub_table是next</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Section_number</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">Section_number</h3><p class="pop-text">段号，8位,给出section号，在sub_table中，第一个section其section_number为"0x00"，每增加一个section，section_number加一</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>last_section_number</td><td>8</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">last_section_number</h3><p class="pop-text">最后段号，sub_table中最后一个section的section_number</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Reserved_future_use</td><td>4</td><td>bslbf</td><td class='light-text'>预留使用</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>Network_descriptors_length</td><td>12</td><td>uimsbf</td><td>网络描述符长度</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>for(i=0;i&lt;N;i++){</td></tr>
+													<tr style='text-align:left;'><td colspan='3' style='text-indent:6em; text-align:left; font-weight:bold;'>descriptor()</td><td>First descriptor loop</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>}</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>reserved_future_use</td><td>4</td><td>bslbf</td><td>-</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>transport_stream_loop_length</td><td>12</td><td>uimsbf</td><td>传输流循环长度</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>for(i=0;i&lt;N;i++){</td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>transport_stream_id</td><td>16</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">transport_stream_id</h3><p class="pop-text">传输流标识符，16位, 给出TS的识别号</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>original_network_id</td><td>16</td><td>uimsbf</td><td><a data-content='<h3 class="pop-title">original_network_id</h3><p class="pop-text">原始网络标识符，16位，给出originating delivery system中的网络识别号</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>reserved_future_use</td><td>4</td><td>bslbf</td><td class='light-text'>预留使用</td></tr>
+													<tr><td style='text-indent:6em; text-align:left;'>transport_descriptors_length</td><td>12</td><td>uimsbf</td><td>传输流描述符长度</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left;'>for(i=0;i&lt;N;i++){</td></tr>
+													<tr style='text-align:left;'><td colspan='3' style='text-indent:8em; text-align:left; font-weight:bold;'>descriptor()</td><td>Second descriptor loop</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:6em; text-align:left;'>}</td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-indent:4em; text-align:left;'>}</td></tr>
+													<tr><td style='text-indent:4em; text-align:left;'>CRC_32</td><td>32</td><td>rpchof</td><td><a data-content='<h3 class="pop-title">CRC_32</h3><p class="pop-text">32位, 表示CRC的值</p>' style='cursor:pointer;' data-toggle="popover" data-placement="left" data-trigger="click" data-html='true'>注释</a></td></tr>
+													<tr style='text-align:left;'><td colspan='4' style='text-align:left;'>}</td></tr>
+												</table>
+											</div>
+											<br>
+											
+											<h3 id='part4_2' class='subtitle-border'>NIT表中的描述子</h3>
+											<p class='paper'>
+												注意到NIT结构里出现了两个循环，分别成为第一层循环和第二层循环；
+												每层循环都插入了一个描述符，也就是一共插入了两个描述符。
+												这两个描述符的特点如下：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<tbody style='text-align:center;'>
+													<tr><td style='background-color:#bbb; color:#000; font-weight:bold;'>第一层描述符</td><td>作用域是针对整个网络的，如插入网络名称描述符、链接描述符等</td></tr>
+													<tr><td style='background-color:#bbb; color:#000; font-weight:bold;'>第二层描述符</td><td>作用域是第一层循环所代表的一个TS流，如插入有线传输系统描述符</td></tr>
+												</tbody>
+											</table>
+											<p>
+												NIT表各层的Descriptor()包括:<br>
+												<ul>
+													<span class='bold'>第一层(First descriptor loop)</span><br>
+													<li class='paper'><span class=''>Linkage descriptor</span>：<a href='#'>查看！！</a></li>
+													<li class='paper'><span class=''>Multiligual network name descriptor</span>：<a href='#'>查看！！</a></li>
+													<li class='paper'><span class=''>Network name descriptor</span>：<a href='#'>查看！！</a></li>
+												</ul>
+												<ul>
+													<span class='bold'>第二层(Second descriptor loop)</span><br>
+													<li class='paper'>Delivery system descriptor：<a href='#'>查看！！</a></li>
+													<li class='paper'><span class=''>Service list descriptor</span>：<a href='#'>查看！！</a></li>
+													<li class='paper'><span class=''>Frequency list descriptor</span>：<a href='#'>查看！！</a></li>
+												</ul>
+											</p>
+											<ul class='paper'>
+												在SI标准中规定：original_network_id和transport_stream_id两个标识符相结合唯一确定了网络中的TS流。
+												各网络被分配独立的network_id值作为网络的唯一识别码。
+												当NIT表在生成TS流的网络上传输时，network_id和original_network_id将取同一值。
+												此外，NIT表还有如下特点：
+												<br>
+												<li class='paper'>NIT表被切分为网络信息段（network_information_section）</li>
+												<li class='paper'>任何NIT的段都必须由PID为0x0010的TS包传输</li>
+												<li class='paper'>现行网络的NIT表任何段的table_id值应为0x40，且具有相同的table_id_extension即（network_id）；</li>
+												<li class='paper'>现行网络以外的其他网络NIT表的段table_id值应为0x41</li>
+											</ul>
+											<br>
+											
+											<h3 id='part4_3' class='subtitle-border'>NIT表实例</h3>
+											<p class='paper'>
+												在下图中，我们可以看到NIT表的各个信息，如table_id=0x40、network_id=0x3022、NIT版本号(version_number=0x14)等。
+												另外，这里也出现了两层共三个描述子，接下来，我们逐个点开描述子来查看相关信息。
+											</p>
+											<a class="feature-image"><img src="images/12.jpg" style="margin-top:-10px" />NIT表一览</a>
+											
+											<p>
+												<span class='bold'>第一层描述子：network_name_descriptor</span>
+												<br>
+												下图是第一层的network_name_descriptor描述子。其descriptor_tag=0x40，网络名称(network name)为“T-Systems”。
+											</p>
+											<a class="feature-image"><img src="images/13.jpg" style="margin-top:-10px" />第一层：network_name_descriptor描述子</a>
+											
+											<p>
+												<span class='bold'>第二层描述子1：地面传输系统描述子terrestrial_delivery_system_descriptor</span>
+												<br>
+												下图是第二层的第一个描述子terrestrial_delivery_system_descriptor。
+												可以看到，该网络的中心频点(center_frequency)为746MHz，带宽为8MHz。
+												注意，这个位置的描述子分为cable、satellite和terrestrial三种，长度都为13个字节，这使他们之间的转换变得方便；
+												而此案例中，判断描述子是terrestrial的原因，是descriptor_tag的值是0x5a。
+												descriptor_tag的值与描述子类型的对应关系如下：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead style='text-align:center;'>
+													<tr style='background-color:#bbb; color:#000; font-weight:bold;'><td>descriptor_tag</td><td>描述子类型</td><td>说明</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>0x43</td><td>satellite_delivery_system_descriptor</td><td>卫星传输系统描述子</td></tr>
+													<tr><td>0x44</td><td>cable_delivery_system_descriptor</td><td>有线传输系统描述子</td></tr>
+													<tr><td>0x5a</td><td>terrestrial_delivery_system_descriptor</td><td>地面传输系统描述子</td></tr>
+												</tbody>
+											</table>
+											<a class="feature-image"><img src="images/14.jpg" style="margin-top:-10px" />第二层1：terrestrial_delivery_system_descriptor描述子</a>
+											
+											<p>
+												<span class='bold'>第二层描述子2：有线传输系统描述子： cable_delivery_system_descriptor</span>
+												<br>
+												下图是另一个码流的NIT表，该描述子的descriptor_tag=0x44，即有线传输系统（有线电视），所以其携带的传输系统描述子是cable_delivery_system_descriptor。
+												从图中可以看出，该有线电视网络的主频点是259MHz，符码率为6876M，调制方式为64QAM。
+												需要说明的是，这里的64QAM并不是直接给出的，而是按照下表的规定(Modulation scheme for cable)发出的代码：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead style='text-align:center;'>
+													<tr style='background-color:#bbb; color:#000; font-weight:bold;'><td>调制方式（十六进制）</td><td>描述</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>0x00</td><td>未定义</td></tr>
+													<tr><td>0x01</td><td>16 QAM</td></tr>
+													<tr><td>0x02</td><td>32 QAM</td></tr>
+													<tr><td>0x03</td><td>64 QAM</td></tr>
+													<tr><td>0x04</td><td>128 QAM</td></tr>
+													<tr><td>0x05</td><td>256 QAM</td></tr>
+													<tr><td>0x06 - 0xFF</td><td>预留使用</td></tr>
+												</tbody>
+											</table>
+											<a class="feature-image"><img src="images/20.jpg" style="margin-top:-10px" />cable_delivery_system_descriptor，有线传输系统描述子</a>
+											
+											<p>
+												<span class='bold'>第二层描述子3：卫星传输系统描述子： satellite_delivery_system_descriptor</span>
+												<br>
+												下图是另一个码流的NIT表，该描述子的descriptor_tag=0x43，即卫星传输系统，所以其携带的传输系统描述子是satellite_delivery_system_descriptor。
+												从图中可以看出，该频点的信息为11554/H/29950。具体分析可参考该描述子专项说明：<a href='#'>查看！！</a>
+											</p>
+											<a class="feature-image"><img src="images/21.jpg" style="margin-top:-10px" />satellite_delivery_system_descriptor，卫星传输系统描述子</a>
+											
+											<p>
+												<span class='bold'>第二层描述子4：业务列表描述子： service_list_descriptor</span>
+												<br>
+												下图是第二层的第二个描述子service_list_descriptor(业务列表)。它给出了业务根据其id和type排序的一种方式。
+												从图中可以看到，该网络的有四个业务，且四个业务均为数字电视业务。
+												其节目号(service_id)分别为16403、16408、16394和16398。
+												<br><span class='bold'>这里要特别说明的是，service_id 与 PMT表里的program_number相对应（service_type = 0x04 (NVOD reference service)除外）</span>。
+											</p>
+											<a class="feature-image"><img src="images/15.jpg" style="margin-top:-10px" />第二层2：service_list_descriptor描述子</a>
+											
+											<p class='paper'>
+												上面描述子中，有一个service_type字段，它的值可参照下表Service type coding：
+											</p>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead style='text-align:center;'>
+													<tr style='background-color:#bbb; color:#000; font-weight:bold;'><td>service_type</td><td>说明(中文)</td><td>说明(英文)</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>0x00</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x01</td><td title='查看NOTE1'>数字电视业务</td><td>digital television service</td></tr>
+													<tr><td>0x02</td><td title='查看NOTE2'>数字音频广播业务</td><td>digital radio sound service</td></tr>
+													<tr><td>0x03</td><td>图文电视业务</td><td>Teletext service</td></tr>
+													<tr><td>0x04</td><td title='查看NOTE1'>NVOD参考业务</td><td>NVOD reference service</td></tr>
+													<tr><td>0x05</td><td title='查看NOTE1'>NVOD时移业务</td><td>NVOD time-shifted service</td></tr>
+													<tr><td>0x06</td><td>马赛克业务</td><td>mosaic service</td></tr>
+													<tr><td>0x07</td><td>PAL制编码信号</td><td>reserved for future use</td></tr>
+													<tr><td>0x08</td><td>SECAM制编码信号</td><td>reserved for future use</td></tr>
+													<tr><td>0x09</td><td>D/D2-MAC</td><td>reserved for future use</td></tr>
+													<tr><td>0x0A</td><td>调频广播</td><td>advanced codec digital radio sound servic</td></tr>
+													<tr><td>0x0B</td><td>NTSC制信号</td><td>advanced codec mosaic service</td></tr>
+													<tr><td>0x0C</td><td>数据广播业务</td><td>data broadcast service</td></tr>
+													<tr><td>0x0D</td><td>公共接口使用预留</td><td>reserved for Common Interface Usage (EN 50221 [39])</td></tr>
+													<tr><td>0x0E</td><td>RCS映射</td><td>RCS Map (see EN 301 790 [7])</td></tr>
+													<tr><td>0x0F</td><td>RCS FLS</td><td>RCS FLS (see EN 301 790 [7])，RCS FLS</td></tr>
+													<tr><td>0x10</td><td>DVB MHP业务</td><td>DVB MHP service</td></tr>
+													<tr><td>0x11</td><td>预留使用</td><td>MPEG-2 HD digital television service</td></tr>
+													<tr><td>0x12 - 0x15</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x16</td><td>预留使用</td><td>advanced codec SD digital television service</td></tr>
+													<tr><td>0x17</td><td>预留使用</td><td>advanced codec SD NVOD time-shifted service</td></tr>
+													<tr><td>0x18</td><td>预留使用</td><td>advanced codec SD NVOD reference service</td></tr>
+													<tr><td>0x19</td><td>预留使用</td><td>advanced codec HD digital television service</td></tr>
+													<tr><td>0x1A</td><td>预留使用</td><td>advanced codec HD NVOD time-shifted service</td></tr>
+													<tr><td>0x1A</td><td>预留使用</td><td>advanced codec HD NVOD reference service</td></tr>
+													<tr><td>0x1C - 0x7F</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr><td>0x80 - 0xFE</td><td>用户定义</td><td>user defined</td></tr>
+													<tr><td>0xFF</td><td>预留使用</td><td>reserved for future use</td></tr>
+													<tr style='text-align:left; font-weight:bold;'><td colspan='3'>
+														NOTE 1: MPEG-2 SD material should use this type<br>
+														NOTE 2: digital radio sound service<br>
+													</td></tr>
+												</tbody>
+											</table>
+											
+										</section>
+									
+										
+										<section id='partz'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>本章小结</span></a></h2>
+												<p class='light-text'>Summary</p>
+											</header>
+											<p class='paper'>
+												本章通过对PSI各表结构的解析，逐步讲解了PAT表、PMT表、CAT表和NIT表的整体结构，并对各表里出现的描述子(Descriptor)进行了简单的说明。
+												由于本教程的目的只是讲解PSI各表、<span class='bold'>让新手们能有一个形象的概念</span>，
+												在本章里我没有简单粗暴地照搬PSI规范，而是以一条主线的形式从PAT表入手、逐步进入其他表，同时增加了很多实例分析，因此会忽略一些内容(如具体的描述子结构和功能说明)；
+												这只是一种学习的策略，希望新手们从整体结构入手，不要死盯着某一个细节不放。
+												如果要查看更详细的信息，可进入 <a href="../appendix/index.html">资料快查</a> 来查看你需要的信息。
+											</p>
+										</section>
+									
+										
+										<section id='party'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>参考文档</span></a></h2>
+												<p class='light-text'>References</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead>
+													<tr style='background:#bbb; color:#000; text-align:center; font-weight:bold;'><td>#</td><td>文档名称</td><td>作者</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td><a href='http://blog.csdn.net/kkdestiny/article/details/9850587' target='_blank'>《1.从TS流到PAT和PMT》</a></td><td>林晓州</td></tr>
+													<tr><td>2</td><td><a href='http://blog.csdn.net/kkdestiny/article/details/12993971' target='_blank'>《2.PSI/SI深入学习1——预备知识》</a></td><td>林晓州</td></tr>
+													<tr><td>3</td><td><a href='http://blog.csdn.net/kkdestiny/article/details/12994085' target='_blank'>《2.PSI/SI深入学习2——PSI信息解析(PAT,PMT,CAT) 》</a></td><td>林晓州</td></tr>
+													<tr><td>4</td><td><a href='http://blog.csdn.net/kkdestiny/article/details/12994675' target='_blank'>《2.PSI/SI深入学习3——SI信息解析1(NIT,BAT) 》</a></td><td>林晓州</td></tr>
+													<tr><td>5</td><td><a href='../doc/En300468.V1.7.1_Specification for SI in DVB Systems.pdf' target='_blank'>《En300468.V1.7.1_Specification for SI in DVB Systems.pdf》</a></td><td>European Standard</td></tr>
+													<tr><td>6</td><td><a href='../doc/DVB和MPEG-II中的表格.html' target='_blank'>DVB和MPEG-II中的表格</a></td><td>网络</td></tr>
+												</tbody>
+											</table>
+										</section>
+									
+										
+										<section id='partx'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>版本信息</span></a></h2>
+												<p class='light-text'>Version Information</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead>
+													<tr style='background:#bbb; color:#000; text-align:center; font-weight:bold;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td>2013年10月24日</td><td>V1.0</td><td>文档<a href='http://blog.csdn.net/kkdestiny/article/details/12994085' target='_blank'>《2.PSI/SI深入学习2——PSI信息解析(PAT,PMT,CAT) 》</a></td><td>林晓州</td><td>——</td></tr>
+													<tr><td>2</td><td>2016年02月19日</td><td>V2.0</td><td>整合了多个文档资料，对PSI/SI学习所需的知识进行系统的总结。</td><td>林晓州</td><td>——</td></tr>
+													<tr><td>3</td><td>2016年02月22日</td><td>V2.1</td><td>添加参考文档信息。</td><td>林晓州</td><td>——</td></tr>
+													<tr><td>4</td><td>2016年02月22日</td><td>V2.2</td><td>完善NIT表的内容：优化描述子的排版和描述，添加NIT表实例分析</td><td>林晓州</td><td>——</td></tr>
+													<tr><td>5</td><td>2016年02月22日</td><td>V2.3</td><td>添加PAT表、PMT表和CAT表实例分析</td><td>林晓州</td><td>——</td></tr>
+													<tr><td>6</td><td>????</td><td>V2.4</td><td>添加描述子链接</td><td>林晓州</td><td>——</td></tr>
+												</tbody>
+											</table>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="6u 12u(mobile)">
+
+							<!-- Links -->
+								<section>
+									<h2>友情链接</h2>
+									<div>
+										<div class="row">
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://120.25.83.13/konka">海外软件研发资料库</a></li>
+													<li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://120.25.83.13/">OneLib智库</a></li>
+													<li><a href="http://120.25.83.13/OneLib/TaskManager/">OneLib Work</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://html5up.net/">HTML5UP</a></li>
+													<li><a href="http://html5up.net/halcyonic">本页模板：Halcyonic</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+						<div class="6u 12u(mobile)">
+
+							<!-- Blurb -->
+								<section>
+									<h2>PSI/SI专题 简介</h2>
+									<p>
+										此专题根据我在2013年自学PSI/SI相关资料所做的学习笔记(参考<a href='http://blog.csdn.net/kkdestiny' target='_blank'>KKDestiny的博客</a>)，
+										并在2016年2月17日开始再次深入学习。
+										在本次学习过程中，对以前的笔记做了勘误和补充，并增加了2013年至今(2016年)工作中的一些理解。
+										<br><span class='not-select'>——</span> 林晓州，2016年02月17日 于深圳
+									</p>
+								</section>
+
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			
+			<!-- Copyright -->
+			<div id="copyright">
+				&copy;<a href="http://120.25.83.13">OneLib智库</a> · 挖掘自己的财富</a>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/skel-viewport.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			
+			<script src="../assets/js/bootstrap.min.js"></script>
+			
+			<script>
+				$(document).ready(function () {
+					$("#ol_tasklist_guide").affix({
+						offset: {
+							top: 1000
+						}
+					});
+					
+				});
+				
+				$(function () {
+				  $('[data-toggle="popover"]').popover()
+				})
+			</script>
+
+	</body>
+</html>

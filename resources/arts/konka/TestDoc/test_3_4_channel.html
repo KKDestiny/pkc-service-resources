@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>3-4频道和21-69频道 - 数字网络事业部</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+
+     <!-- OneLib style -->
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/onelib.css" rel="stylesheet">
+	
+	<link href="images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	
+
+    <script src="js/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
+        <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+
+<body data-spy="scroll" data-target="#myScrollspy" id='ca_top'>
+	
+	<nav class="navbar navbar-default navbar-inverse">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+      <div class="container-fluid col-md-offset-2">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.onelib.biz/konka/">
+			<img alt="Brand" src="images/structure/logo.ico" style='height:25px; margin-top:-3px;'>
+		  </a>
+		  <a class="navbar-brand" href="http://www.onelib.biz/konka/">
+			<span style='font-family:orbitron-bold; color:#2298DB;'> OneLib</span>
+		  </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="test_diseqc_22k.html">DisEqC和22K</a></li>
+            <li><a href="test_video.html">输出模式</a></li>
+            <li><a href="test_spdif.html">数字音频</a></li>
+            <li class="active"><a href="test_3_4_channel.html">3-4频道</a></li>
+            <li><a href="test_motor.html">马达Motor</a></li>
+            <li><a href="test_scart.html">SCART</a></li>
+            <li><a href="test_dbupdate.html">节目更新</a></li>
+            <li><a href="test_ad.html">广告</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+	
+	
+	<!-- Docs page layout -->
+    <div class="jumbotron" style='margin-top:-20px;'>
+	  <div class="container">
+		  <br>
+		  <p>本文档介绍了数字机顶盒3/4频道和21/69频道输出的测试方法</p>
+	  </div>
+	</div>
+	
+	<div class="container col-md-offset-2 col-md-7 col-xs-12 ">
+
+		<div class="row">
+			<p>
+				3-4和21-69频道是同一类概念，都是将 机顶盒的信号 转为 模拟信号 输出到电视机上，只是输出频率范围不同而已。将机顶盒要显示的内容（不仅仅是视频， 包括菜单）转为模拟信号后输出到电视上，相当于机顶盒是一个模拟信号前端，将原本通过AV或HDMI输出的视频、通过专用的输出口转为模拟信号后输出到了电视机，电视机搜索特定频率即可锁定这个特殊频率，最终显示出来。
+			</p>
+			<p>
+				因为输出后的其实是机顶盒原本输出到AV或HDMI等接口的信号，所以OSD也一样会转化为模拟信号输出到电视机中。
+			</p>
+			<p>
+				这个功能有的机顶盒支持，有的不支持，视具体项目而定。
+			</p>
+			<hr>
+			
+			<h1 id='test_0'>0.准备工作</h1>
+			<h3 id='test_0_0'>0.0 准备盒子</h3>
+			<p>支持3-4频道或21-69频道的盒子：有硬件接口且菜单项中能切换输出频率，如下图：</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/3_4_channel/01.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/3_4_channel/02.png" class="img-thumbnail">
+				</div>
+			</div>
+			<hr>
+			
+			<h3 id='test_0_1'>0.1 同轴线与连接图</h3>
+			<p>下图是连接机顶盒和电视机的线同轴，因为高频头接口可能有所不同，故应以实际接口来确定使用怎样的同轴线；如果实在没有合适线，可以用转接头转换一下</p>
+			<div class='row'>
+				<div class='col-md-12 col-xs-12'>
+					<img src="images/3_4_channel/03.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/3_4_channel/04.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/3_4_channel/05.png" class="img-thumbnail">
+				</div>
+			</div>
+			<hr>
+			
+			<h3 id='test_0_2'>0.2 机顶盒设置</h3>
+			<p>进入机顶盒UHF菜单，选择频道，记下对应的频率</p>
+			<hr>
+			
+			<h3 id='test_0_3'>0.3 电视机搜台</h3>
+			<p>将电视机的信号源切换成“电视”。在菜单中选择手动搜台或自动搜台，以手动搜台为例，调节频率到刚刚记下的机顶盒上的频率。</p>
+			<div class='row'>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/3_4_channel/06.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-6 col-xs-12'>
+					<img src="images/3_4_channel/07.png" class="img-thumbnail">
+				</div>
+				<div class='col-md-12 col-xs-12'>
+					<img src="images/3_4_channel/08.png" class="img-thumbnail">
+				</div>
+			</div>
+			<p>上图是4频道搜索到后，电视机显示出机顶盒的画面</p>
+			
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+
+		<div class="row">
+			<h1 id='test_1'>1.测试主要步骤</h1>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td></tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style='text-align:center;'>1</td>
+						<td>
+							(1) 电视机信号源切换到电视(TV)，机顶盒选择输出3(或21)频道频率输出
+							<br>(2) 电视机搜台到机顶盒输出的频率
+						</td>
+						<td>当频率接近或等于输出频率时，电视机显示机顶盒画面，且画面显示清晰，节目视频画面和声音正常</td>
+						<td>
+							(1) 有些机顶盒有输出制式选择，这个取决于电视机，哪种显示清晰就使用哪个即可
+							<br>(2) 电视机频道不一定要是3, 21频道，只要频率正确即可
+							<br>(3) 待机、断电重启后依然有画面输出	
+						</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>2</td>
+						<td>
+							(1) 切换机顶盒的输出频率为4(或69)频道频率
+							<br>(2) 电视机搜台到机顶盒输出的频率
+						</td>
+						<td>同上</td>
+						<td>同上</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>3</td>
+						<td>
+							(1) 电视机一个频道是3(或21)频道频率，另一个是4(或69)频道频率
+							<br>(2) 机顶盒在3-4(或21-69)频率输出间切换，同时切换到对应的电视机相应频道
+						</td>
+						<td>同上</td>
+						<td>(1)也可使用两台电视机测试</td>
+					</tr>
+					<tr>
+						<td style='text-align:center;'>4</td>
+						<td>
+							对于21-69频道测试，需多测试一些范围内的频率
+						</td>
+						<td>同上</td>
+						<td>---</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+	
+		<div class="row">
+			<h1 id='test_2'>2.版本信息</h1>
+			<br>
+			<table class='table table-condensed table-hover table-bordered'>
+				<thead>
+					<tr style='background:#2298DB; color:snow; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+				</thead>
+				<tbody style='text-align:center;'>
+					<tr><td>1</td><td>2014年06月25日</td><td>V1.0</td><td>创建3-4频道和21-69频道测试帮助</td><td>黄进、林晓州</td><td>郑嘉惠、周厚秋、周宇锋</td></tr>
+					<tr><td>2</td><td>2015年11月23日</td><td>V2.0</td><td>转入网站管理</td><td>林晓州</td><td>——</td></tr>
+				</tbody>
+			</table>
+		</div><!-- /.row -->
+	  
+		<hr class="featurette-divider">
+			
+		<div class="row">
+			<div class="col-md-12 well">
+				<p>
+					<b>OneLib智库 · 分享知识和经验，打造精品个人智库平台</b>
+					<br>Designed By 林晓州
+					<br>qq： 1139904786
+					<br>邮箱： 1139904786@qq.com
+					<br>网址： http://www.onelib.biz
+					<br>©2015 · OneLib智库
+				</p>
+			</div>
+		</div><!-- /.row -->
+		
+		
+
+    </div>
+	
+	  
+	<!-- start guide -->
+	<div class="col-md-3 col-sm-4" id="myScrollspy">
+		<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+			
+			<div style='width:60%; text-align:left; margin-top:10px;'>
+				<b>本页导航</b>
+			</div>
+			
+			<ul class="nav bs-docs-sidenav" style='margin-top:5px;'>
+				<li class="active">
+					<a href="#test_0"><i class='fa fa-tags'></i> 0.准备工作</a>
+					<ul class="nav">
+						<li class=""><a href="#test_0_0"><i class='fa fa-angle-right'></i> 0.0 准备盒子</a></li>
+						<li class=""><a href="#test_0_1"><i class='fa fa-angle-right'></i> 0.1 同轴线与连接图</a></li>
+						<li class=""><a href="#test_0_2"><i class='fa fa-angle-right'></i> 0.2 机顶盒设置</a></li>
+						<li class=""><a href="#test_0_3"><i class='fa fa-angle-right'></i> 0.3 电视机搜台</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#test_1"><i class='fa fa-tags'></i> 2.测试主要步骤</a>
+				</li>
+				<li>
+					<a href="#test_2"><i class='fa fa-tags'></i> 3.版本信息</a>
+				</li>
+			</ul>
+
+			<div style='width:60%; text-align:left; border-top:1px #eee solid; margin-top:15px;'>
+			</div>
+			
+			<a class="back-to-top" onclick=ol_goto('ca_top') style='margin-top:10px;'>
+			  <i class='fa fa-angle-double-up'></i> 返回顶部
+			</a>
+		</nav>
+	</div>
+	<!-- /guide -->
+
+	
+	<footer class="bs-docs-footer col-md-12" role="contentinfo">
+	  <div class="container">
+
+		<p></p>
+		<ul class="bs-docs-footer-links text-muted">
+		  <li>版本：V1.0.0</li>
+		  <li>·</li>
+		  <li>©<a href="http://www.onelib.biz">OneLib智库</a> · 分享知识和经验，打造精品个人智库平台</li>
+		  <li>·</li>
+		  <li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+		</ul>
+	  </div>
+	</footer>
+	
+	<br>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/public.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+            $("#ol_tasklist_guide").affix({
+				offset: {
+					top: 200
+				}
+			});
+
+        });
+		
+	
+	</script>
+
+</body>
+
+</html>

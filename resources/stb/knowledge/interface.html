@@ -1,0 +1,1387 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>接口模块 - PSI/SI专题 | OneLib智库,为您定制私人智库</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/onelib.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link href="../images/structure/logo.ico" media="screen" rel="shortcut icon" type="image/​x-icon">
+	</head>
+	
+	
+	<body class="subpage" data-spy="scroll" data-target="#myScrollspy">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Logo -->
+								<h1>
+									<a href="#" id="logo">
+										<img alt="Brand" src="../images/structure/logo.ico" style='height:30px; margin-top:-3px;'>
+										<span style='font-family:orbitron-bold; color:#2298DB;'> OneLib</span>
+										<span style='font-family:banhei; color:#2298DB;'>智库</span>
+									</a>
+								</h1>
+
+								<!-- Nav -->
+								<nav id="nav">
+									<a href="../index.html">首页</a>
+									<a href="../psisi.html">PSI/SI教程</a>
+									<a href="../knowledge.html">机顶盒知识点</a>
+									<a href="../index.html">资料快查</a>
+								</nav>
+
+							</div>
+						</div>
+					</header>
+				</div>
+
+			<!-- Content -->
+				<div id="content-wrapper">
+					<div id="content">
+						<div class="container">
+							<div class="row">
+								<div class="3u 12u(mobile)">
+
+									<!-- Sidebar -->
+										
+										<section>
+											<header>
+												<h2>机顶盒知识点</h2>
+												<p class='light-text'>资料目录</p>
+											</header>
+											<a class="feature-image"><img src="../images/pic05.jpg" alt="" /></a>
+											<p>
+												这里是机顶盒开发相关的知识点合辑，
+												是走进机顶盒开发的第一步...
+											</p>
+											<ul class="link-list">
+												<li><a href="../knowledge.html" class='bold'>首页</a> <span class='light-text small'>返回首页</span></li>
+												
+												<li><a href="protocol.html"><span class='fa fa-book'></span> 一、格式与协议标准</a></li>
+												<li><a href="interface.html"><span class='fa fa-book'></span> 二、接口模块</a></li>
+												<li><a href="storage.html"><span class='fa fa-book'></span> 三、存储模块</a></li>
+												<li><a href="signal.html"><span class='fa fa-book'></span> 四、信号</a></li>
+												<li><a href="satellite.html"><span class='fa fa-book'></span> 五、卫星相关</a></li>
+												<li><a href="stb.html"><span class='fa fa-book'></span> 六、机顶盒基础</a></li>
+												<li><a href="hardware.html"><span class='fa fa-book'></span> 七、机顶盒硬件</a></li>
+												<li><a href="chip.html"><span class='fa fa-book'></span> 八、芯片厂商</a></li>
+												<li><a href="ca.html"><span class='fa fa-book'></span> 九、CA（条件接收）</a></li>
+												<li><a href="others.html"><span class='fa fa-book'></span> 十、其他资料</a></li>
+											</ul>
+											
+											<br>
+											<p class='author'>
+												<br>
+												本资料集由 林晓州 收集和整理，并提供共享。
+												<br>邮箱： 1139904786@qq.com
+												<br>网址： <a href='http://120.25.83.13' target='_blank'>http://120.25.83.13</a>
+											</p>
+											<br>
+											<p class='copyright'>
+												<span style='font-weight:bold;'>版权声明</span>：未经许可，请勿转载！
+											</p>
+											<br>
+											<p class='website'>
+												<br>
+												©2016 · OneLib智库 · 挖掘自己的财富
+											</p>
+										</section>
+										
+										
+										<section id="myScrollspy" style='padding: 5px;'>
+											<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" id="ol_tasklist_guide">
+												
+												<header style='padding-top:25px; margin:0;'>
+													<h2>本页导航</h2>
+													<p class='light-text'>接口模块</p>
+												</header>
+												
+												<ul class="nav bs-docs-sidenav" style=';'>
+													<li class="active">
+														<a href="#rs232"><span class='fa fa-tags'></span> RS232</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#rs232_1"><span class='fa fa-chevron-right'></span> 作用</a></li>
+															<li class=""><a href="#rs232_2"><span class='fa fa-chevron-right'></span> 特性</a></li>
+															<li class=""><a href="#rs232_3"><span class='fa fa-chevron-right'></span> 结构</a></li>
+															<li class=""><a href="#rs232_4"><span class='fa fa-chevron-right'></span> 标准连线法</a></li>
+															<li class=""><a href="#rs232_5"><span class='fa fa-chevron-right'></span> 简化连线法</a></li>
+															<li class=""><a href="#rs232_6"><span class='fa fa-chevron-right'></span> 只有9针的型号吗</a></li>
+															<li class=""><a href="#rs232_7"><span class='fa fa-chevron-right'></span> 应用举例</a></li>
+															<li class=""><a href="#rs232_8"><span class='fa fa-chevron-right'></span> 机顶盒的RS232</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#rj45"><span class='fa fa-tags'></span> 网口RJ45</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#rj45_1"><span class='fa fa-chevron-right'></span> RJ45网卡接口类型</a></li>
+															<li class=""><a href="#rj45_2"><span class='fa fa-chevron-right'></span> RJ45网线插头的线序</a></li>
+															<li class=""><a href="#rj45_3"><span class='fa fa-chevron-right'></span> RJ45两种线序使用场景</a></li>
+															<li class=""><a href="#rj45_4"><span class='fa fa-chevron-right'></span> 制作一条网线</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#usb"><span class='fa fa-tags'></span> USB</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#usb_1"><span class='fa fa-chevron-right'></span> USB的优势</a></li>
+															<li class=""><a href="#usb_2"><span class='fa fa-chevron-right'></span> USB的不同型号</a></li>
+															<li class=""><a href="#usb_3"><span class='fa fa-chevron-right'></span> USB的引脚</a></li>
+															<li class=""><a href="#usb_4"><span class='fa fa-chevron-right'></span> USB的接口通信</a></li>
+															<li class=""><a href="#usb_5"><span class='fa fa-chevron-right'></span> USB协议的版本</a></li>
+															<li class=""><a href="#usb_6"><span class='fa fa-chevron-right'></span> 机顶盒的USB接口</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#rf"><span class='fa fa-tags'></span> RF射频</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#rf_1"><span class='fa fa-chevron-right'></span> RF接口特点</a></li>
+															<li class=""><a href="#rf_2"><span class='fa fa-chevron-right'></span> RF接口和高频头</a></li>
+															<li class=""><a href="#rf_3"><span class='fa fa-chevron-right'></span> 布局</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#scart"><span class='fa fa-tags'></span> SCART</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#scart_2"><span class='fa fa-chevron-right'></span> SCART引脚图</a></li>
+															<li class=""><a href="#scart_3"><span class='fa fa-chevron-right'></span> 多组SCART</a></li>
+															<li class=""><a href="#scart_4"><span class='fa fa-chevron-right'></span> SCART接口的操作要求</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#cvbs"><span class='fa fa-tags'></span> CVBS</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#cvbs_1"><span class='fa fa-chevron-right'></span> CVBS特点</a></li>
+															<li class=""><a href="#cvbs_2"><span class='fa fa-chevron-right'></span> CVBS内容拓展</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#svideo"><span class='fa fa-tags'></span> S端子</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#svideo_1"><span class='fa fa-chevron-right'></span> 种类</a></li>
+															<li class=""><a href="#svideo_2"><span class='fa fa-chevron-right'></span> 针脚定义</a></li>
+															<li class=""><a href="#svideo_3"><span class='fa fa-chevron-right'></span> 工作原理</a></li>
+															<li class=""><a href="#svideo_4"><span class='fa fa-chevron-right'></span> 优势</a></li>
+															<li class=""><a href="#svideo_5"><span class='fa fa-chevron-right'></span> 不足</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#ypbpr"><span class='fa fa-tags'></span> YPbPr</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#ypbpr_1"><span class='fa fa-chevron-right'></span> 各路信号</a></li>
+															<li class=""><a href="#ypbpr_2"><span class='fa fa-chevron-right'></span> 三路信号是如何工作的</a></li>
+															<li class=""><a href="#ypbpr_3"><span class='fa fa-chevron-right'></span> YPbPr与S端子的区别</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#hdmi"><span class='fa fa-tags'></span> HDMI</a>
+														<ul class="nav" style='margin:0px; padding-bottom:3px;'>
+															<li class=""><a href="#hdmi_1"><span class='fa fa-chevron-right'></span> HDMI有什么优势</a></li>
+															<li class=""><a href="#hdmi_2"><span class='fa fa-chevron-right'></span> HDMI有哪些型号</a></li>
+														</ul>
+													</li>
+													<li>
+														<a href="#partz"><span class='fa fa-tags'></span> 本章小结</a>
+													</li>
+													<li>
+														<a href="#party"><span class='fa fa-tags'></span> 参考文档</a>
+													</li>
+													<li>
+														<a href="#partx"><span class='fa fa-tags'></span>  版本信息</a>
+													</li>
+												</ul>
+											</nav>
+										</section>
+
+								</div>
+								<div class="9u 12u(mobile) important(mobile)">
+
+									<!-- Main Content -->
+										<section>
+											<header>
+												<h2>接口模块</h2>
+												<p class='light-text'>机顶盒的主要接口</p>
+											</header>
+											<p class='paper'>
+												本章主要介绍了机顶盒的各种接口，包括 <span class='bold'>CVBS、RJ45、RS232、S端子、YPbPr、HDMI、RF、Scart、SPDIF以及USB等</span>。
+											</p>
+										</section>
+									
+										
+										
+										<section id='rs232'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>RS232(串口)</span></a></h2>
+												<p class='light-text'>EIA-RS-232C</p>
+											</header>
+											<div class="row">
+												<div class="3u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/01.jpg" alt="" /></a>
+												</div>
+												<div class="9u 12u(mobile)">
+													<p class='paper'>
+														RS232，即推荐标准232(recommend standard 232)，
+														这是美国电子工业协会(EIA)制定的一种异步串行物理接口标准。
+														其全称为“EIA-RS-232C”。
+													</p>
+													<div class='table-responsive'>
+														<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+															<thead>
+																<tr style='font-weight:bold; background:#bbb; color:#000;'><td colspan='2'>EIA-RS-232C</td></tr>
+																<tr style='font-weight:bold; background:#ccc; color:#000;'><td>缩写</td><td>描述</td></tr>
+															</thead>
+															<tr><td>EIA</td><td>美国电子工业协会</td></tr>
+															<tr><td>RS</td><td>推荐标准(Recommended Standard)</td></tr>
+															<tr><td>232</td><td>标识号</td></tr>
+															<tr><td>C</td><td>RS232的最新一次修改(1969)，还有RS232B、RS232A</td></tr>
+														</table>
+													</div>
+												</div>
+											</div>
+											
+											<h3 id='rs232_1' class='subtitle-border'>RS232可以用来做什么</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/02.jpg" alt="" />连接两台电脑</a>
+													<p>RS232可以连接两台电脑，使这两台电脑进行通信。如两台电脑用户进行实时聊天，或一台电脑向另一台传送文件。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/03.jpg" alt="" />连接电脑与单片机</a>
+													<p>RS232可以连接电脑与单片机，使电脑和单片机进行通信。使用电脑控制单片机进行AD采样，单片机会将结果反馈给电脑。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/04.jpg" alt="" />连接两个单片机</a>
+													<p>RS232可以连接两个单片机，使这两个单片机之间进行通信。CDMA模块向GPS模块请求位置信息并接收和显示。</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rs232_2' class='subtitle-border'>RS232有什么特性</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>距离</h2>
+													<p class='text-center'>最远距离为50英尺</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>双向</h2>
+													<p class='text-center'>双向传输，全双工通讯，20kbps</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>负逻辑</h2>
+													<p class='text-center'>采用负逻辑传输数据量</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rs232_3' class='subtitle-border'>RS232接口的结构是怎样的</h3><br>
+											<a class="feature-image"><img src="images/interface/05.png" alt="" /></a>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#bbb; color:#000;'><td colspan='6'>RS232接口的结构</td></tr>
+														<tr style='font-weight:bold; background:#ccc; color:#000;'><td>引脚</td><td>缩写</td><td>描述</td><td>引脚</td><td>缩写</td><td>描述</td></tr>
+													</thead>
+													<tr><td>1</td><td>CD</td><td>载波检测</td><td>6</td><td>DSR</td><td>通讯设备就绪</td></tr>
+													<tr><td>2</td><td>RXD</td><td>接收数据</td><td>7</td><td>RTS</td><td>请求发送</td></tr>
+													<tr><td>3</td><td>TXD</td><td>发送数据</td><td>8</td><td>CTS</td><td>允许发送</td></tr>
+													<tr><td>4</td><td>DTR</td><td>数据终端就绪</td><td>9</td><td>RI</td><td>响铃指示器</td></tr>
+													<tr><td>5</td><td>GND</td><td>信号地</td><td colspan='3'></td></tr>
+												</table>
+											</div>
+											<br>
+											
+											<h3 id='rs232_4' class='subtitle-border'>RS232的标准连线法</h3><br>
+											<a class="feature-image"><img src="images/interface/06.png" alt="" /></a>
+											<p class='paper'>
+												当A端的设备准备好后，发出DTR（数据设备就绪）信号，
+												传至B端的RI（响铃）和DSR（通讯设备就绪）。
+												这样，只要A准备好（DTR），B端就会产生呼叫（RI）并准备好（DSR）。
+											</p>
+											<p class='paper'>
+												注意到A端的RTS（请求发送）、CTS（允许发送）和B端的CD（载波检测）连在一起，
+												则说明A一旦请求发送（RTS）将立即得到允许（CTS），
+												并使B端检测到载波信号（CD）。
+												A端的TXD与B端的RXD相连，A发送，B接收。
+											</p>
+											<br>
+											
+											<h3 id='rs232_5' class='subtitle-border'>RS232的简化连线法</h3><br>
+											<a class="feature-image"><img src="images/interface/07.png" alt="" /></a>
+											<p class='paper'>
+												原来RTS和CTS是用来询问和回答是否可以传输数据。
+												但在这种连接方式下，就成了纯粹告诉对方自己是否可以进行通讯。 
+												此时RTS和DTR都可以用来对数据流进行控制。
+											</p>
+											<p class='paper'>
+												A端的DTR（数据设备就绪）发出信号，
+												当B端准备好后，B端的DTR（数据设备就绪）向A端的DSR（通讯设备就绪）发出信号。
+												接下来就可以通过RTS（请求发送）和DTR（允许发送）来控制通信。
+											</p>
+											<br>
+											
+											<h3 id='rs232_6' class='subtitle-border'>RS232只有9针的型号吗</h3><br>
+											<div class="row">
+												<div class="8u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/08.png" alt="" /></a>
+												</div>
+												<div class="4u 12u(mobile)">
+													<ul class='link-list'>
+														<li>还有25针的型号</li>
+														<li>目前很少人使用25针D型</li>
+														<li>9针和25针连接器间的对应关系如左图所示</li>
+													</ul>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rs232_7' class='subtitle-border'>RS232的应用举例（Java软件层代码）</h3><br>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%;'>
+													<thead>
+														<tr style='font-weight:bold; background:#ccc; color:#000;'><td>代码</td><td>说明</td></tr>
+													</thead>
+													<tr><td class='text-right italic'>CommPortIdentifier s = CommPortIdentifier.getPortIdentifier(“COM2”);</td><td class='text-left'>// 获取COM识别号s：识别号为COM2</td></tr>
+													<tr><td class='text-right italic'>SerialPort  port = (SerialPort) s.open(“Read”, 30);</td><td class='text-left'>// 打开COM2口：只读方式、等待30秒</td></tr>
+													<tr><td class='text-right italic'>port.setSerialPortParams(</td><td class='text-left'>// 配置串口属性</td></tr>
+													<tr><td class='text-right italic'>1200,</td><td class='text-left'>// 波特率（Baud Rate）为1200</td></tr>
+													<tr><td class='text-right italic'>8,</td><td class='text-left'>// 数据位（Data Bits）为8位</td></tr>
+													<tr><td class='text-right italic'>1,</td><td class='text-left'>// 停止位（Stop Bits）</td></tr>
+													<tr><td class='text-right italic'>0</td><td class='text-left'>// 奇偶校验（Parity）</td></tr>
+													<tr><td class='text-right italic'>);</td><td class='text-left'>// 配置完毕</td></tr>
+													<tr><td class='text-right italic'>// ……</td><td class='text-left'>// 其他操作</td></tr>
+													<tr><td colspan='2'>注意到这里有一些比较重要的属性：COM口，波特率，数据位，停止位，校验位；其他还有回调函数等的设置。</td></tr>
+												</table>
+											</div>
+											<br>
+											
+											<h3 id='rs232_8' class='subtitle-border'>机顶盒的RS232接口有什么用</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>升级</h2>
+													<p class='text-center'>通过串口连接电脑和机顶盒进行机顶盒的升级</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>调试</h2>
+													<p class='text-center'>开发阶段对机顶盒调试；提供电路工作情况</p>
+												</div>
+											</div>
+											<br>
+			     									
+										</section>
+										
+									
+										
+										<section id='rj45'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>网口RJ45</span></a></h2>
+												<p class='light-text'>网卡接口RJ45</p>
+											</header>
+											<div class="row">
+												<div class="2u 2u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/rj4501.jpg" alt="" /></a>
+												</div>
+												<div class="10u 12u(mobile) important(mobile)">
+													<p class='paper'>
+														RJ45是IEC(60)603-7标准化的8针插孔或8孔插座，
+														它用于局域网和ADSL用户的设备连接，
+														有两种线序（直通线、交叉线）
+													</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rj45_1' class='subtitle-border'>RJ45网卡接口类型</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>DTE</h2>
+													<a class="feature-image"><img src="images/interface/rj4502.png" alt="" /></a>
+													<ul class='link-list paper'>
+														<li>Data Terminal Equipment</li>
+														<li>类型：数据终端设备</li>
+														<li>应用：路由器以太网接口等</li>
+														<li>特点：“主动通信设备”</li>
+													</ul>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>DCE</h2>
+													<a class="feature-image"><img src="images/interface/rj4503.png" alt="" /></a>
+													<ul class='link-list paper'>
+														<li>Data Communications Equipment</li>
+														<li>类型：数据通信设备</li>
+														<li>应用：交换机等</li>
+														<li>特点：“被动通信设备”</li>
+													</ul>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rj45_2' class='subtitle-border'>RJ45网线插头的线序</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>T568A线序</h2>
+													<a class="feature-image"><img src="images/interface/rj4504.png" alt="" /></a>
+													<ul class='link-list paper'>
+														<li>白/绿：输入数据（+）</li>
+														<li>绿：输入数据（-）</li>
+														<li>白/橙：输出数据（+）</li>
+														<li>蓝：保留为电话使用</li>
+														<li>蓝/白：保留为电话使用</li>
+														<li>橙：输出数据（-）</li>
+														<li>白/棕：保留为电话使用</li>
+														<li>棕：保留为电话使用</li>
+													</ul>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>T568B线序</h2>
+													<a class="feature-image"><img src="images/interface/rj4505.png" alt="" /></a>
+													<ul class='link-list paper'>
+														<li>白/橙：输出数据（+）</li>
+														<li>橙：输出数据（-）</li>
+														<li>白/绿：输入数据（+）</li>
+														<li>蓝：保留为电话使用</li>
+														<li>蓝/白：保留为电话使用</li>
+														<li>绿：输入数据（-）</li>
+														<li>白/棕：保留为电话使用</li>
+														<li>棕：保留为电话使用</li>
+													</ul>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rj45_3' class='subtitle-border'>RJ45两种线序使用场景</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>两端都是B线序</h2>
+													<a class="feature-image"><img src="images/interface/rj4507.png" alt="" /></a>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>对等连接</h2>
+													<a class="feature-image"><img src="images/interface/rj4506.png" alt="" /></a>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rj45_4' class='subtitle-border'>制作一条网线</h3><br>
+											<p>这里以B线序为例，我们平时使用的路由器、电脑接口都可按此线序。</p>
+											<br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>1.剥线</h2>
+													<p>以T568B线序为例，制作网线接口（即水晶头），首先用双绞线剥线器将双绞线塑料外皮剥去2—3cm</p>
+													<a class="feature-image"><img src="images/interface/rj4508.png" alt="" /></a>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>2.排线</h2>
+													<p>绿色线对与蓝色线对放在中间位置，橙色线对与棕色线对靠外，形成左一橙、左二蓝、左三绿、左四棕</p>
+													<a class="feature-image"><img src="images/interface/rj4509.png" alt="" /></a>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>3.理线</h2>
+													<p>小心地剥开每一线对，将线芯按T568B标准排序，将线芯拉直压平、挤紧理顺（朝一个方向紧靠）</p>
+													<a class="feature-image"><img src="images/interface/rj4510.png" alt="" /></a>
+												</div>
+											</div>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>4.剪切</h2>
+													<p>将裸露出的双绞线芯用压线钳、剪刀、斜口钳等工具整齐地剪切，只剩下约13mm的长度</p>
+													<a class="feature-image"><img src="images/interface/rj4511.png" alt="" /></a>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>5.插入</h2>
+													<p>一手以拇指和中指捏住水晶头，金属引脚朝上、弹片朝下。另一手捏住双绞线，插入水晶头直至凹槽顶端</p>
+													<a class="feature-image"><img src="images/interface/rj4512.png" alt="" /></a>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>6.检查</h2>
+													<p>检查水晶头正面，查看线序是否正确；检查水晶头顶部，查看8根线芯是否都顶到顶部</p>
+													<a class="feature-image"><img src="images/interface/rj4513.png" alt="" /></a>
+												</div>
+											</div>
+											<div class="row">
+												<div class="8u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>7.压接</h2>
+													<p>确认无误后，将RJ-45水晶头推入压线钳夹槽后，用力握紧压线钳，将突出在外面的针脚全部压入RJ-45水晶头内，RJ-45水晶头连接完成</p>
+													<a class="feature-image"><img src="images/interface/rj4514.png" alt="" /></a>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>8.检测</h2>
+													<p>同一标准安装另一侧水晶头，完成直通网线的制作。另一侧用T568A标准，则完成一条交叉网线的制作。最后用线序测试仪进行接线检查。</p>
+													<a class="feature-image"><img src="images/interface/rj4515.png" alt="" /></a>
+												</div>
+											</div>
+											<br>
+										</section>
+										
+									
+										
+										<section id='usb'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>USB</span></a></h2>
+												<p class='light-text'>Universal Serial BUS（通用串行总线）</p>
+											</header>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/usb01.png" alt="" /></a>
+												</div>
+												<div class="8u 12u(mobile) important(mobile)">
+													<p class='paper'>
+														USB是即插即用 | 热插拔接口，
+														它定义了外部总线标准，规范了电脑与外部设备的连接和通讯，
+														支持鼠标、调制解调器和键盘等设备，
+														替代串口和并口，电脑必配接口
+													</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='usb_1' class='subtitle-border'>USB的优势</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>使用方便</h2>
+													<p>热插拔：不需要重复“关机-插拔设备-开机”；即插即用：驱动程序和应用软件可以自动启动，无需用户干预，不需要用户配置硬件。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>标准统一</h2>
+													<p>不同于串并口繁杂的标准，使用USB的设备都遵循相同的标准；这样在使用USB的外设时，可以更加便捷，兼容性好</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>连接设备多</h2>
+													<p>可以连接多个设备。 PC上有多个USB接口，每个接口还可以作为USB HUB再同时连接多个设备使用 ( 注：最高可连接至 127 个设备 )</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>高传输速率</h2>
+													<p>USB2.0接口的最高传输率目前可达48Mb／s，比串口快了整整400倍，比并口也快了四十多倍。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>独立供电</h2>
+													<p>USB接口提供了内置电源。USB电源能向低压设备提供5V的电源，新的设备就不需要专门的交流电源。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>支持多媒体</h2>
+													<p>提供对电话的两路数据支持，可支持异步以及等时数据传输,使电话可与PC集成,共享语音邮件及其它特性。</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='usb_2' class='subtitle-border'>USB的不同型号</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>U盘</h2>
+													<a class="feature-image"><img src="images/interface/usb02.png" alt="" /></a>
+													<p>类型：USB（A型）</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>单片机USB</h2>
+													<a class="feature-image"><img src="images/interface/usb06.png" alt="" /></a>
+													<p>类型：USB（B型）</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>MP3播放器</h2>
+													<a class="feature-image"><img src="images/interface/usb05.png" alt="" /></a>
+													<p>类型：Mini USB</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>手机充电口</h2>
+													<a class="feature-image"><img src="images/interface/usb03.png" alt="" /></a>
+													<p>类型：Micro USB</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='usb_3' class='subtitle-border'>USB的引脚</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>A型和B型</h2>
+													<a class="feature-image"><img src="images/interface/usb04.png" alt="" /></a>
+													<p>4脚USB示意图</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>Mini和Micro USB</h2>
+													<a class="feature-image"><img src="images/interface/usb07.png" alt="" /></a>
+													<p>5脚USB示意图</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='usb_4' class='subtitle-border'>USB的接口通信</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>USB电缆</h2>
+													<a class="feature-image"><img src="images/interface/usb08.png" alt="" /></a>
+													<p>一对互相缠绕的数据线和屏蔽层可以避免外界的干扰。</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>USB通信</h2>
+													<a class="feature-image"><img src="images/interface/usb09.png" alt="" /></a>
+													<p>反向不归零编码和差动信号保证数据的完整性并减少噪声干扰。</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='usb_5' class='subtitle-border'>USB协议的版本</h3><br>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%; text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#ccc; color:#000;'><td></td><td>USB 1.0</td><td>USB 1.1</td><td>USB 2.0</td><td>USB 3.0</td></tr>
+													</thead>
+													<tr><td class='bold'>最大传输速率</td><td>1.5Mbps(192KB/s)</td><td>12Mbps(1.5MB/s)</td><td>480Mbps(60MB/s)	</td><td>5Gbps(640MB/s)</td></tr>
+													<tr><td class='bold'>速率</td><td>低速（Low-Speed）</td><td>全速（Full-Speed）</td><td>高速（High-speed）</td><td>超速（Super-Speed）</td></tr>
+													<tr><td class='bold'>最大输出电流</td><td>500mA</td><td>500mA</td><td>500mA</td><td>900mA</td></tr>
+													<tr><td class='bold'>推出时间</td><td>1996年1月</td><td>1998年9月</td><td>2000年4月</td><td>2008年11月</td></tr>
+												</table>
+											</div>
+											<br>
+											
+											<h3 id='usb_6' class='subtitle-border'>机顶盒的USB接口</h3><br>
+											
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>浏览文件</h2>
+													<a class="feature-image"><img src="images/interface/usb10.png" alt="" /></a>
+													<p>可以外接U盘等存储设备以浏览其中的文件名、文件信息等。</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>播放视音频</h2>
+													<a class="feature-image"><img src="images/interface/usb11.png" alt="" /></a>
+													<p>可以播放外接存储设备里的图片、视频或音频文件。</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>存储视音频</h2>
+													<a class="feature-image"><img src="images/interface/usb12.png" alt="" /></a>
+													<p>机顶盒用户在观看电视节目的时候用来存储录制的视音频。</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>升级机顶盒</h2>
+													<a class="feature-image"><img src="images/interface/usb13.png" alt="" /></a>
+													<p>必要的时候可以通过USB对机顶盒进行升级。</p>
+												</div>
+											</div>
+											<br>
+										</section>
+										
+									
+										
+										<section id='rf'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>RF射频</span></a></h2>
+												<p class='light-text'>radio frequency，RF射频接口</p>
+											</header>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/rf01.png" alt="" /></a>
+												</div>
+												<div class="8u 12u(mobile) important(mobile)">
+													<p class='paper'>
+														俗称有线电视接口，
+														它是最早的播放设备连接方式，
+														是视频信号（CVBS）和音频信号（Audio）混合编码。
+													</p>
+													<p class='paper'>
+														早期使用模拟电视信号的时候，通过RF接口来连接信号源和模拟电视；现在使用数字电视信号，则是使用RF接口连接信号源和数字电视机顶盒。
+													</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rf_1' class='subtitle-border'>RF接口特点</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>传输信号</h2>
+													<ul class='link-list text-center'>
+														<li>模拟信号（视音频混合）</li>
+														<li>数字信号（TS流）</li>
+														<li>模拟信号 + 数字信号</li>
+													</ul>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>布局</h2>
+													<ul class='link-list text-center'>
+														<li>传输距离远</li>
+														<li>只需要一根线，美观简易</li>
+														<li>布线完备</li>
+													</ul>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rf_2' class='subtitle-border'>RF接口和高频头</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>传输信号</h2>
+													<a class="feature-image"><img src="images/interface/rf01.png" alt="" /></a>
+													<ul class='link-list text-center'>
+														<li>本质：接口</li>
+														<li>类型：有 <a href="images/interface/rf03.png" target="_blank">各种型号</a> 的接口</li>
+														<li>作用：传输同轴电缆里的射频信号（RF信号）</li>
+													</ul>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>高频头</h2>
+													<a class="feature-image"><img src="images/interface/rf02.png" alt="" /></a>
+													<ul class='link-list text-center'>
+														<li>本质：调谐器</li>
+														<li>类型： <a href="images/interface/rf04.png" target="_blank">模拟高频头</a> 和  <a href="images/interface/rf05.png" target="_blank">数字高频头</a></li>
+														<li>作用：接收射频信号、频道选择、高频信号放大及变频</li>
+													</ul>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='rf_3' class='subtitle-border'>布局</h3><br>
+											<a class="feature-image"><img src="images/interface/rf07.png" alt="" />模拟电视信号与有线电视信号布局</a>
+											<br>
+										</section>
+										
+									
+										
+										<section id='scart'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>SCART</span></a></h2>
+												<p class='light-text'>俗称“扫把头”</p>
+											</header>
+											<a class="feature-image"><img src="images/interface/scart01.jpg" alt="" /></a>
+											<p class='paper'>
+												欧洲大部分音视频设备，
+												它有多组Scart接口，
+												female(孔)，21芯插座，
+												具有视频输入输出、隔行RGB输入、伴音输入输出、s端子输入等信号。
+												上图中，右侧红框内的接口即为SCART接口。
+											</p>
+											<br>
+											
+											<h3 id='scart_2' class='subtitle-border'>SCART引脚图</h3><br>
+											<a class="feature-image"><img src="images/interface/scart02.png" alt="" /></a>
+											<br>
+											
+											<h3 id='scart_3' class='subtitle-border'>多组SCART</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>第一组</h2>
+													<p class='text-center'>
+														两个用于识别信号的管脚：
+														<br>8脚 - 视频/射频信号模式选择
+														<br>16脚 - RGB/视频信号选择
+													</p>
+													<div class='table-responsive'>
+														<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%; text-align:center;'>
+															<thead>
+																<tr style='font-weight:bold; background:#ccc; color:#000;'><td>引脚</td><td>信号</td></tr>
+															</thead>
+															<tr><td>1</td><td>右声道伴音输出信号</td></tr><tr><td>2</td><td>右声道伴音输入信号</td></tr>
+															<tr><td>3</td><td>左声道伴音输出信号</td></tr><tr><td>4</td><td>伴音信号地</td></tr>
+															<tr><td>5</td><td>蓝色信号地</td></tr><tr><td>6</td><td>左声道伴音输入信号</td></tr>
+															<tr><td>7</td><td>蓝色输入信号</td></tr><tr><td>8</td><td>CVBS/射频信号模式选择</td></tr>
+															<tr><td>9</td><td>绿色信号地</td></tr><tr><td>10</td><td>悬空</td></tr>
+															<tr><td>11</td><td>绿色输入信号</td></tr><tr><td>12</td><td>悬空</td></tr>
+															<tr><td>13</td><td>红色信号地</td></tr><tr><td>14</td><td>地</td></tr>
+															<tr><td>15</td><td>红色输入信号</td></tr><tr><td>16</td><td>RGB/CVBS信号选择</td></tr>
+															<tr><td>17</td><td>输入输出视频信号地</td></tr><tr><td>18</td><td>RGB/CVBS信号选择地</td></tr>
+															<tr><td>19</td><td>射频输出信号</td></tr><tr><td>20</td><td>CVBS输入信号</td></tr>
+															<tr><td>21</td><td>公用地（外壳）</td></tr>
+														</table>
+													</div>
+													<h2 class='bold text-center'>RGB/CVBS信号</h2>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>第二组</h2>
+													<p class='text-center'>无识别信号，根据实际信号手动切换OSD；一般包含了视频／亮度信号输入和色度信号输入等</p>
+													<div class='table-responsive'>
+														<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%; text-align:center;'>
+															<thead>
+																<tr style='font-weight:bold; background:#ccc; color:#000;'><td>引脚</td><td>信号</td></tr>
+															</thead>
+															<tr><td>1</td><td>右声道伴音输出信号</td></tr><tr><td>2</td><td>右声道伴音输入信号</td></tr>
+															<tr><td>3</td><td>左声道伴音输出信号</td></tr><tr><td>4</td><td>伴音信号地</td></tr>
+															<tr><td>5</td><td>蓝色信号地</td></tr><tr><td>6</td><td>左声道伴音输入信号</td></tr>
+															<tr><td>7</td><td>——</td></tr><tr><td>8</td><td>视频/射频信号模式选择</td></tr>
+															<tr><td>9</td><td>通用地</td></tr><tr><td>10</td><td>悬空</td></tr>
+															<tr><td>11</td><td>——</td></tr><tr><td>12</td><td>悬空</td></tr>
+															<tr><td>13</td><td>色度信号地</td></tr><tr><td>14</td><td>地</td></tr>
+															<tr><td>15</td><td>色度输入信号</td></tr><tr><td>16</td><td>——</td></tr>
+															<tr><td>17</td><td>视频亮度信号地</td></tr><tr><td>18</td><td>——</td></tr>
+															<tr><td>19</td><td>射频输出信号</td></tr><tr><td>20</td><td>视频/亮度输入信号</td></tr>
+															<tr><td>21</td><td>通用地（外壳）</td></tr>
+														</table>
+													</div>
+													<h2 class='bold text-center'>亮度-色度信号</h2>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>第三组</h2>
+													<p class='text-center'>如果包含第三路Scart接口，则大致与第一组Scart接口的定义相同，只是将射频输出更改为监视器输出。</p>
+													<div class='table-responsive'>
+														<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%; text-align:center;'>
+															<thead>
+																<tr style='font-weight:bold; background:#ccc; color:#000;'><td>引脚</td><td>信号</td></tr>
+															</thead>
+															<tr><td>1</td><td>右声道伴音输出信号</td></tr><tr><td>2</td><td>右声道伴音输入信号</td></tr>
+															<tr><td>3</td><td>左声道伴音输出信号</td></tr><tr><td>4</td><td>伴音信号地</td></tr>
+															<tr><td>5</td><td>蓝色信号地</td></tr><tr><td>6</td><td>左声道伴音输入信号</td></tr>
+															<tr><td>7</td><td>蓝色输入信号</td></tr><tr><td>8</td><td>视频射频信号模式选择</td></tr>
+															<tr><td>9</td><td>绿色信号地</td></tr><tr><td>10</td><td>悬空</td></tr>
+															<tr><td>11</td><td>绿色输入信号</td></tr><tr><td>12</td><td>悬空</td></tr>
+															<tr><td>13</td><td>红色信号地</td></tr><tr><td>14</td><td>地</td></tr>
+															<tr><td>15</td><td>红色输入信号</td></tr><tr><td>16</td><td>RGB/视频信号选择</td></tr>
+															<tr><td>17</td><td>输入输出视频信号地</td></tr><tr><td>18</td><td>RGB/视频信号选择地</td></tr>
+															<tr><td>19</td><td>监视器输出信号</td></tr><tr><td>20</td><td>视频输入信号</td></tr>
+															<tr><td>21</td><td>公用地（外壳）</td></tr>
+														</table>
+													</div>
+													<h2 class='bold text-center'>监视器</h2>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='scart_4' class='subtitle-border'>SCART接口的操作要求</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>自动切换SCART通道</h2>
+													<a class="feature-image"><img src="images/interface/scart03.png" alt="" /></a>
+													<p class='paper'>正常收看电视节目或AV通道时，若是SCART 有信号输入，则必须自动切换到相应的SCART通道并正常显示；其他通道下，则不作自动切换通道。</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>自动返回电视频道</h2>
+													<a class="feature-image"><img src="images/interface/scart04.png" alt="" /></a>
+													<p class='paper'>在SCART 通道下按频道＋－，则直接回到TV下并执行了频道增减；若是在SCART 通道下按数字键，则要求直接切换到该数字的频道。</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>无SCART信号源</h2>
+													<a class="feature-image"><img src="images/interface/scart05.png" alt="" /></a>
+													<p class='paper'>SCART 通道下若是识别到8脚的电平变为低电平（0～2V）。例如：SCART信号源关机时，要求自动切换到TV通道。</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>SCART优先</h2>
+													<a class="feature-image"><img src="images/interface/scart06.png" alt="" /></a>
+													<p class='paper'>若是开机前SCART有信号输入，则开机时应自动设在SCART通道；同时输入多路SCART信号时，则设置在SCART1 (在TV或AV通道下关机）</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>固定模式</h2>
+													<a class="feature-image"><img src="images/interface/scart07.png" alt="" /></a>
+													<p class='paper'>如果SCART接口的输入信号为16:9格式（即Pin 8 is 6V），则可选的显示模式不包括4:3模式，且每次切换到此通道，显示模式均为16:9。</p>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>显示模式</h2>
+													<a class="feature-image"><img src="images/interface/scart08.png" alt="" /></a>
+													<p class='paper'>例如，用户正以Panorama观看TV节目，此时，SCART通道接入16:9格式的信号，则系统自动切换到SCART通道并以16:9显示</p>
+												</div>
+											</div>
+											<br>
+											
+										</section>
+										
+									
+										
+										<section id='cvbs'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>CVBS</span></a></h2>
+												<p class='light-text'>composite video broadcast signal，复合视频接口</p>
+											</header>
+											<a class="feature-image"><img src="images/interface/scart01.jpg" alt="" /></a>
+											<p class='paper'>
+												它是一种模拟波形，
+												包含色差，亮度，同步信号，
+												是第一代视频显示输出方式，CVBS可以连接机顶盒和电视机。上图中，黄色的接口即为CVBS接口。
+											</p>
+											<br>
+											
+											<h3 id='cvbs_1' class='subtitle-border'>CVBS特点</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>CVBS与AV接口</h2>
+													<a class="feature-image"><img src="images/interface/cvbs01.png" alt="" /></a>
+													<p class='paper'>AV接口 = CVBS + R + L。即AV接口是包含视音频的接口，除了CVBS复合视频接口外，还包括音频接口Audio-R和Audio-L。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>亮度·色度</h2>
+													<a class="feature-image"><img src="images/interface/cvbs02.png" alt="" /></a>
+													<p class='paper'>亮度与同步信号合称亮度信号Y；色调与色饱和度转换成色差信号，经一定转换调制在色副载波上，已调色差信号即为色度信号C。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>合成·分离</h2>
+													<a class="feature-image"><img src="images/interface/cvbs03.png" alt="" /></a>
+													<p class='paper'>先将亮度色度合成，到达后再分离。传输前需要把色度信号与亮度信号“合成”在一个信号里，在传输后再将色度信号与亮度信号“分离”开来，送到显示电路处理。</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>信号质量</h2>
+													<p class='paper'>通过CVBS传输电视信号的质量。传输的图像质量相对射频电视广播信号要好一些，但相对其它视频信号还是比较差的。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>制式</h2>
+													<p class='paper'>复合视频信号有不同的制式。由于行频、场频与色度信号的编码方式不同复合视频信号又有PAL、NTSC、SECAM制式之分。</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='cvbs_2' class='subtitle-border'>CVBS内容拓展</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>HSB颜色模型</h2>
+													<a class="feature-image"><img src="images/interface/cvbs04.png" alt="" /></a>
+													<p class=''>
+														H（Hue，色调、色相）<br>
+														S（Saturation，色饱和度）<br>
+														B（Brightness，亮度）
+													</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>RGB颜色模型</h2>
+													<a class="feature-image" href='images/interface/cvbs05.png' target='_blank'><img src="images/interface/cvbs05.png" alt="" /></a>
+													<p class=''>
+														（点击图片查看说明）
+													</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>各种制式</h2>
+													<a class="feature-image"><img src="images/interface/cvbs06.png" alt="" /></a>
+													<p class=''>
+														PAL制式：逐行倒相+正交调制<br>
+														NTSC制式：平衡调制+正交调制<br>
+														SECAM制式：色差信号逐行轮换传输
+													</p>
+												</div>
+											</div>
+											<br>
+										</section>
+										
+									
+										
+										<section id='svideo'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>S端子</span></a></h2>
+												<p class='light-text'>Separate Video</p>
+											</header>
+											<a class="feature-image"><img src="images/interface/svideo01.png" alt="" /></a>
+											<p class='paper'>
+												S端子, 即S-Video,其全称是Separate Video，或称“独立视讯端子”将视频数据分成两个单独的讯号（光亮度和色度）模拟视频讯号的接口。
+												S端子（常见型）实际上是一种五芯接口，由两路视频亮度信号、两路视频色度信号和一路公共屏蔽地线共五条芯线组成。
+												它 <span class='bold'>将亮度和色度分离传输，避免了相互干扰，其最大分辨率为1024 x 768</span>。
+											</p>
+											<br>
+											
+											<h3 id='svideo_1' class='subtitle-border'>S端子的种类介绍</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/svideo02.jpg" alt="" /></a>
+													<p>常见的S-Video端子。电视机、影碟机、投影仪</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/svideo03.jpg" alt="" /></a>
+													<p>单独分离输出RCA信号（复合信号）。7针S-video接口主要用在显卡上</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/svideo04.jpg" alt="" /></a>
+													<p>具备色差输出YPbPr或YCbCr。目前市场流行的ATI和Navidia显卡</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='svideo_2' class='subtitle-border'>S端子针脚定义</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>4针S-video引脚定义</h2>
+													<a class="feature-image"><img src="images/interface/svideo05.gif" alt="" /></a>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>7针S-video引脚定义</h2>
+													<a class="feature-image"><img src="images/interface/svideo06.png" alt="" /></a>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>9针S-video引脚定义</h2>
+													<a class="feature-image"><img src="images/interface/svideo07.png" alt="" /></a>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													注意：
+													<ul class='link-list'>
+														<li>①有部分显卡7针s端子与标准不一样 <a href='images/interface/svideo09.png' target='_blank'>查看</a></li>
+														<li>②7针接口即能分离出一路4针标准S端子信号，又能分离出一路标准的AV视频信号。</li>
+														<li>③7针的S-Video接口可以直接使用4针S端子线，不必另行购买连接线。</li>
+														<li>④9针S-Video端口把7针的下部的空档位变成了2个针脚位而已。
+														只要显卡色差输出针脚定义规范，无论是7针还是9针的S端子都可以使用 <a href='images/interface/svideo08.jpg' target='_blank'>ATI9针S端子转色差线</a> 输出色差，因为标准色差输出针脚都在上部。</li>
+														<li>⑤S端子线为单根多芯结构，长度一般在3M之内，最长不能超过5M</li>
+													</ul>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='svideo_3' class='subtitle-border'>S端子的工作原理</h3><br>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/svideo10.jpg" alt="" /></a>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>S端子工作原理</h2>
+													<p class='paper'>
+														将视频数据分成光亮度讯号和色度讯号，
+														避免了传输时的相互干扰，
+														传送的模拟视频讯号。
+													</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='svideo_4' class='subtitle-border'>S端子的优势</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>解决信号重叠</h2>
+													<p>两种讯号分开，使光亮度的讯号有更大的带宽，从而解决了讯号重叠的问题</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>传送更多讯息</h2>
+													<p>由于分开传输，影像讯号转送更多的讯息，图像在低失真的情况下，原画再生</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>提高清晰度</h2>
+													<p>同AV 接口相比，无需光亮色分离和解码，避免了图像失真，提高图像清晰度</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='svideo_5' class='subtitle-border'>S端子的不足</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>品质不足</h2>
+													<p>品质上而言，S-Video是component讯号中最差的一种，远不如其他更为复杂的component影像讯号（如RGB）</p>
+												</div>
+												<div class="8u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>兼容性差</h2>
+													<p>S-Video与更高阶component影像的差别在于，讯号合为一条讯号进行传送，色度的讯号须先编码，而且NTSC、PAL或SECAM等影像讯号透过S-Video进行传送时皆有不同的编码方式。所以为了使讯号间达到完全兼容性，必须兼顾S-Video接头与色度编码方式两者的兼容性。</p>
+												</div>
+											</div>
+											<br>
+											
+										</section>
+										
+									
+										
+										<section id='ypbpr'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>YPbPr</span></a></h2>
+												<p class='light-text'>色差分量接口</p>
+											</header>
+											<a class="feature-image"><img src="images/interface/ypbpr01.png" alt="" /></a>
+											<p class='paper'>
+												它是传输视频信号的接口，
+												美国电子工业协会EIA-770.2a标准，
+												包含了亮度信号+蓝色差信号+红色差信号，
+												图像质量高于CVBS和S端子
+											</p>
+											<br>
+											
+											<h3 id='ypbpr_1' class='subtitle-border'>YPbPr的各路信号</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>Y信号</h2>
+													<a class="feature-image"><img src="images/interface/ypbpr02.png" alt="" /></a>
+													<ul class='link-list'>
+														<li><span class='bold'>Y信号</span>：亮度信号</li>
+														<li><span class='bold'>黑白电平基准比</span>：0</li>
+														<li><span class='bold'>幅值范围</span>：消隐电平0V~视频幅度峰值电平700mV</li>
+														<li><span class='bold'>PS</span>：包含一幅值为-300mV同步脉冲</li>
+													</ul>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'><span class='blue'>Pr信号</span></h2>
+													<a class="feature-image"><img src="images/interface/ypbpr03.png" alt="" /></a>
+													<ul class='link-list'>
+														<li><span class='blue bold'>Pb信号</span>：蓝色差信号</li>
+														<li><span class='blue bold'>变换公式</span>：PB =（B-Y）/1.772</li>
+														<li><span class='blue bold'>变换后幅值范围</span>：消隐电平(0V)为中心，最大峰值为±350mV内</li>
+														<li><span class='blue bold'>PS</span>：有正负极性的视频信号</li>
+													</ul>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'><span class='red'>Pr信号</span></h2>
+													<a class="feature-image"><img src="images/interface/ypbpr04.png" alt="" /></a>
+													<ul class='link-list'>
+														<li><span class='red bold'>Pr信号</span>：红色差信号</li>
+														<li><span class='red bold'>变换公式</span>：PR =（R-Y）/1.402</li>
+														<li><span class='red bold'>变换后幅值范围</span>：消隐电平(0V)为中心，最大峰值为±350mV内</li>
+														<li><span class='red bold'>PS</span>：有正负极性的视频信号</li>
+													</ul>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='ypbpr_2' class='subtitle-border'>YPBPR三路信号是如何工作的</h3><br>
+											<a class="feature-image"><img src="images/interface/ypbpr05.png" alt="" /></a>
+											<p class='paper'>
+												三路信号需要同步，彼此相差5ns内。
+											</p>
+											<p class='paper'>
+												详情参看 <a href='http://www.doc88.com/p-5708784531736.html' target='_blank'>YPbPr模拟分量视频信号接口</a>
+											</p>
+											<br>
+											
+											<h3 id='ypbpr_3' class='subtitle-border'>YPbPr与S端子的区别</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>清晰度更高</h2>
+													<p class='paper'>YPbPr端口将模拟信号Y、PB、PR分开，使用三条独立电缆传输，其清晰度有更好的提高。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>避免图像失真</h2>
+													<p class='paper'>YPbPr多传输PB、PR两种信号，避免了两路色差混合解码并再次分离的过程，避免图像失真。</p>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>信号互不干扰</h2>
+													<p class='paper'>YPbPr用三条线缆独立传输，并且每条线缆都采用了很好的屏蔽措施，保证了信号间在传输之间互不产生干扰。</p>
+												</div>
+											</div>
+											<br>
+											
+										</section>
+										
+									
+										
+										<section id='hdmi'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>HDMI</span></a></h2>
+												<p class='light-text'>High Definition Multimedia Interface，HDMI</p>
+											</header>
+											<div class="row">
+												<div class="6u 12u(mobile) important(mobile)">
+													<a class="feature-image"><img src="images/interface/hdmi01.png" alt="" /></a>
+												</div>
+												<div class="6u 12u(mobile) important(mobile)">
+													<p class='paper'>
+														数字化视音频接口（HDMI）可同时传送音频和视频信号，
+														它传送的是数字信号，
+														其视音频高质量、易用和高智能，
+														最高数据传输速度能达到5Gbps
+													</p>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='hdmi_1' class='subtitle-border'>HDMI有什么优势</h3><br>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>易用性</h2>
+													<ul class='link-list text-center'>
+														<li>接口体积小</li>
+														<li>传输距离远（15米）</li>
+														<li>只需要一根线即可</li>
+													</ul>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>高智能</h2>
+													<ul class='link-list text-center'>
+														<li>自动配置</li>
+														<li>自动为显示器输送合适格式</li>
+														<li>双向通信</li>
+													</ul>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>高质量</h2>
+													<ul class='link-list text-center'>
+														<li>无需A/D和D/A转换，无损失</li>
+														<li>消除分量视频中柔和度和拖尾现象</li>
+														<li>1080p视频尤为明显</li>
+													</ul>
+												</div>
+											</div>
+											<div class="row">
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>版权保护</h2>
+													<ul class='link-list text-center'>
+														<li>宽带数字内容保护(HDCP)</li>
+														<li>防止未经授权复制</li>
+														<li>“撤销密钥”应对密钥或算法破解</li>
+													</ul>
+												</div>
+												<div class="4u 12u(mobile) important(mobile)">
+													<h2 class='bold text-center'>其他优势</h2>
+													<ul class='link-list text-center'>
+														<li>满足1080P的分辨率</li>
+														<li>支持DVD Audio等数字音频格式</li>
+														<li>支持八声道96kHz或立体声192kHz</li>
+													</ul>
+												</div>
+											</div>
+											<br>
+											
+											<h3 id='hdmi_2' class='subtitle-border'>HDMI有哪些型号</h3><br>
+											<div class='table-responsive'>
+												<table class='table table-condensed table-hover table-bordered' style='margin-top:-5px; font-size:70%; text-align:center;'>
+													<thead>
+														<tr style='font-weight:bold; background:#ccc; color:#000;'><td></td><td>类型A</td><td>类型B</td><td>类型C</td><td>类型D</td></tr>
+													</thead>
+													<tr>
+														<td style='width:4%;' class='bold'>图片</td>
+														<td style='width:24%;'><a class="feature-image"><img style='height:100px; width:100%;' src="images/interface/hdmi02.jpg" alt="" /></a></td>
+														<td style='width:24%;'><a class="feature-image"><img style='height:100px; width:100%;' src="images/interface/hdmi03.jpg" alt="" /></a></td>
+														<td style='width:24%;'><a class="feature-image"><img style='height:100px; width:100%;' src="images/interface/hdmi04.jpg" alt="" /></a></td>
+														<td style='width:24%;'><a class="feature-image"><img style='height:100px; width:100%;' src="images/interface/hdmi05.jpg" alt="" /></a></td>
+													</tr>
+													<tr><td class='bold'>应用场合</td><td>平板电视或视频设备</td><td>专业场合</td><td>小设备，应用范围很小</td><td>便携和车载设备</td></tr>
+													<tr><td class='bold'>特点</td><td>最常见，现在几乎都使用这种</td><td>极罕见，带宽很大</td><td>尺寸小，比A型小了1/3</td><td>最新类型，尺寸更小</td></tr>
+													<tr><td class='bold'>尺寸</td><td>19针，宽13.90mm，厚4.45mm</td><td>29针，宽21.30mm</td><td>19针，宽10.42mm，厚2.4mm</td><td>近似与miniUSB</td></tr>
+												</table>
+											</div>
+											<br>
+											
+										</section>
+									
+									
+										
+										<section id='partz'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>本章小结</span></a></h2>
+												<p class='light-text'>Summary</p>
+											</header>
+											<p class='paper'>
+												本章资料是我在2013年入职康佳集团前收集、入职后整理的资料，
+												这次整理资料特地把这些资料纳入管理。
+											</p>
+										</section>
+									
+									
+										
+										<section id='party'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>参考文档</span></a></h2>
+												<p class='light-text'>References</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead>
+													<tr style='background:#bbb; color:#000; text-align:center;'><td>#</td><td>文档名称</td><td>作者</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td>接口模块知识点收集</td><td>林晓州、莫敦悦、曲宝玲、陈双民、赵宇翔</td></tr>
+												</tbody>
+											</table>
+										</section>
+									
+										
+										<section id='partx'>
+											<header>
+												<h2 class='title-border'><a><span class='titleName'>版本信息</span></a></h2>
+												<p class='light-text'>Version Information</p>
+											</header>
+											<table class='table table-condensed table-hover table-bordered' style='font-size:70%;'>
+												<thead>
+													<tr style='background:#bbb; color:#000; text-align:center;'><td>#</td><td>发布日期</td><td>版本</td><td>更新内容</td><td>作者</td><td>审核</td></tr>
+												</thead>
+												<tbody style='text-align:center;'>
+													<tr><td>1</td><td>2016年03月01日</td><td>V1.0</td><td>整合资料</td><td>林晓州</td><td>——</td></tr>
+												</tbody>
+											</table>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="6u 12u(mobile)">
+
+							<!-- Links -->
+								<section>
+									<h2>友情链接</h2>
+									<div>
+										<div class="row">
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://120.25.83.13/konka">海外软件研发资料库</a></li>
+													<li><a href="http://www.konka.com">康佳集团股份有限公司</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://120.25.83.13/">OneLib智库</a></li>
+													<li><a href="http://120.25.83.13/OneLib/TaskManager/">OneLib Work</a></li>
+												</ul>
+											</div>
+											<div class="4u 12u(mobile)">
+												<ul class="link-list last-child">
+													<li><a href="http://html5up.net/">HTML5UP</a></li>
+													<li><a href="http://html5up.net/halcyonic">本页模板：Halcyonic</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</section>
+
+						</div>
+						<div class="6u 12u(mobile)">
+
+							<!-- Blurb -->
+								<section>
+									<h2>PSI/SI专题 简介</h2>
+									<p>
+										此专题根据我在2013年自学PSI/SI相关资料所做的学习笔记(参考<a href='http://blog.csdn.net/kkdestiny' target='_blank'>KKDestiny的博客</a>)，
+										并在2016年2月17日开始再次深入学习。
+										在本次学习过程中，对以前的笔记做了勘误和补充，并增加了2013年至今(2016年)工作中的一些理解。
+										<br><span class='not-select'>——</span> 林晓州，2016年02月17日 于深圳
+									</p>
+								</section>
+
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			
+			<!-- Copyright -->
+			<div id="copyright">
+				&copy;<a href="http://120.25.83.13">OneLib智库</a> · 挖掘自己的财富</a>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/skel-viewport.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+			
+			<script src="../assets/js/bootstrap.min.js"></script>
+			
+			<script>
+				$(document).ready(function () {
+					$("#ol_tasklist_guide").affix({
+						offset: {
+							top: 1150
+						}
+					});
+				
+					$(function () {
+					  $('[data-toggle="popover"]').popover()
+					})
+
+				});
+			</script>
+
+	</body>
+</html>
