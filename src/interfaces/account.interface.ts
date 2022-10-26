@@ -3,7 +3,7 @@
  * @LastEditors: linxiaozhou.com
  * @Description: file content
  */
-export interface IAccount {
+export interface AccountType {
   /**
    * 姓名
    */

@@ -3,6 +3,7 @@
  * @LastEditors: linxiaozhou.com
  * @Description: file content
  */
+import path from "path";
 import express from "express";
 import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
@@ -18,6 +19,8 @@ import routes from "./routes";
 import specs from "./specs";
 import winstonInstance from "./config/winston";
 
+import protectMiddleware from "./middlewares/protected.middleware";
+
 const app = express();
 
 app.use(
@@ -29,6 +32,18 @@ app.use(
     credentials: false,
   })
 );
+
+app.set("views", path.join(__dirname, "./views"));
+app.set("view engine", "ejs");
+
+// Public Resources
+app.use(`${config.APP_STATICS_PATH}/`, express.static(path.join(__dirname, "../assets")));
+app.use(`${config.APP_BOOKS_PATH}/`, express.static(path.join(__dirname, "../resources/books")));
+app.use(`${config.APP_ARTS_PATH}/`, express.static(path.join(__dirname, "../resources/arts")));
+
+// Protected Resources
+app.use(`${config.APP_PROTECTED_PATH}/`, protectMiddleware, express.static(path.join(__dirname, "../resources/protects")));
+
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -61,12 +76,6 @@ if (config.NODE_ENV === "development") {
 
 app.get("/favicon.ico", (req, res) => res.status(204));
 app.get(`${config.APP_ROUTE}health-check`, (req, res) => res.send(`ok-${config.APP_NAME}`));
-app.get(`${config.APP_ROUTE}`, (req, res) =>
-  res.status(200).json({
-    name: config.APP_NAME,
-    version: config.APP_VERSION,
-  })
-);
 
 // mount all routes on / path
 app.use(config.APP_ROUTE, routes);

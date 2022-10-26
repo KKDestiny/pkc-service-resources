@@ -5,14 +5,14 @@
  */
 import { NextFunction, Request, Response } from "express";
 
-import { IAccount } from "../interfaces/account.interface";
+import { AccountType } from "../interfaces/account.interface";
 import APIError from "../utils/apierror.util";
 import accountModel from "../repositories/account.repository";
 
 async function login(req: Request, res: Response, next: NextFunction) {
   try {
     const { name, password } = req.body;
-    const result: IAccount = await accountModel.load({ criteria: { name } });
+    const result: AccountType = await accountModel.load({ criteria: { name } });
     if (!result) {
       throw new APIError("account is not existed", 400);
     }

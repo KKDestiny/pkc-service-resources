@@ -14,10 +14,14 @@ const pkginfo = readPkg.sync();
 const schema = Joi.object({
   NODE_ENV: Joi.string().valid("development", "production", "experiment", "test").default("development"),
 
-  APP_PORT: Joi.number().default(3000),
+  APP_PORT: Joi.number().default(6003),
   APP_NAME: Joi.string().default("service-demo"),
   APP_ROUTE: Joi.string().default("/"),
   APP_VERSION: Joi.string().default(`v${pkginfo.version || "1.0.0"}`),
+
+  APP_STATICS_PATH: Joi.string().default("/"),
+  APP_BOOKS_PATH: Joi.string().default("/"),
+  APP_ARTS_PATH: Joi.string().default("/"),
 
   APP_MONGO_DEBUG_MODE: Joi.boolean().default(false),
   APP_MONGO_HOST: Joi.string().default("127.0.0.1"),
@@ -26,6 +30,10 @@ const schema = Joi.object({
   APP_MONGO_AUTH: Joi.string().default(""),
   APP_MONGO_USER: Joi.string().default(""),
   APP_MONGO_PASS: Joi.string().default(""),
+
+  BLOG_SERVICE_ENDPOINT: Joi.string().default("http://localhost:6002/blog"),
+  TASKS_SERVICE_ENDPOINT: Joi.string().default("http://localhost:6004/tasks"),
+  PERSONAL_SERVICE_ENDPOINT: Joi.string().default("http://localhost:6005/personal"),
 
   APP_REDIS_HOST: Joi.string().default("127.0.0.1"),
   APP_REDIS_PORT: Joi.number().default(6379),
