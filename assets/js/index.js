@@ -8,6 +8,8 @@ globals.setGlobal("axios", axios);
 
 globals.setGlobal("APP_ROUTE", APP_ROUTE);
 globals.setGlobal("APP_STATICS_PATH", APP_STATICS_PATH);
+globals.setGlobal("APP_BOOKS_PATH", APP_BOOKS_PATH);
+globals.setGlobal("APP_ARTS_PATH", APP_ARTS_PATH);
 
 const HomeInst = new HomePageClass({ singleAPPMode: true });
 
