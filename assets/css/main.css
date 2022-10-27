@@ -1071,6 +1071,9 @@ pre {
   .pkc-main-block.top-block {
     margin-top: -52px;
   }
+  .pkc-main-block-more {
+    padding-top: 60px;
+  }
 
   .art-modal {
     position: fixed;

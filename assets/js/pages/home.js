@@ -158,7 +158,7 @@ class HomePageClass extends PageBaseClass {
     const panel = `
       <div class="row justify-content-around pkc-panel-block" style="background-image: url('${this.APP_STATICS_PATH}/images/logo-bg.png');">
         <div class="col-10" style=";">
-          <div class="pkc-main-block top-block">
+          <div class="pkc-main-block pkc-main-block-more top-block">
             <div class="pkc-content" style="font-size: 2.8em;">
               资源分享中心
             </div>
