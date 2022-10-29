@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src * 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+
+    <title>汤圆直播 tangyuan.live</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/lin.css" />
+    <style>
+      .bp-content {
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block bp-content" style="text-align: center; overflow-x: hidden">
+      <img src="./img/logo.png" style="width: 120px" />
+
+      <div style="margin-top: 20px; font-size: 2em">汤圆直播 tangyuan.live</div>
+      <div style="margin-top: 10px; font-size: 1em; color: #aaa">Powered By linxiaozhou.com</div>
+
+      <div id="user-info" style="margin-top: 30px"></div>
+
+      <div style="text-align: center; width: 100%; padding: 10px 10%">
+        <p class="text-muted">
+          汤圆直播是一组由直播业务管理模块和RTMP服务模块组成的系统 简易直播平台，实现了用户管理、主播管理等完整的一套业务。<br />
+          <br />
+        </p>
+
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <p style="font-weight: bold">Node.js + MongoDB + Redis + Bootstrap4.0</p>
+            <p class="text-muted">
+              它使用Node.js(Express框架)实现了整个系统，数据库为MongoDB+Redis， 前端框架使用了当前最为流行的Bootstrap(4.0)，并由作者进行定制化修改。
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <p style="font-weight: bold">推流码认证与监控</p>
+            <p class="text-muted">
+              通过OBS等推流软件，将主播的视频推送到RTMP服务器， 实现了对主播的直播。而通过推流码的认证机制，阻止了
+              非认证主播进行非法推流；管理员也可随时禁止直播违法内容 的主播，做到了实时监控。
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <p style="font-weight: bold">Redis状态维护</p>
+            <p class="text-muted">增加使用Redis数据库来作为缓存服务器， 加速了一些常用数据的查询速度， 实现了业务模块和RTMP服务模块的数据交互。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

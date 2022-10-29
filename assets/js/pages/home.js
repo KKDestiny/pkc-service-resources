@@ -29,6 +29,32 @@ class HomePageClass extends PageBaseClass {
   }
 
   /**
+   * 我的简历
+   */
+  getResumes() {
+    const html = `
+      <div class="col-10" style=";">
+        <div class="pkc-main-block top-block">
+          <div class="pkc-title">我的简历</div>
+          
+          <div class="row" style=";">
+            <div class="col-4">
+              <div class="small-text" style="margin: 6px;">最新</div>
+              <div class="book-item" onclick="globals.simpleDark('暂不支持下载，可以看看我的历史简历或转入我的个人网站看看')">最新简历</div>
+            </div>
+            <div class="col-4">
+              <div class="small-text" style="margin: 6px;">历史简历</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_BOOKS_PATH}/resumes/林晓州的个人简历-20200204-v4.pdf')">2020年2月</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    const clicks = () => {};
+    return { html, clicks };
+  }
+
+  /**
    * 精品资料
    */
   getGoodBooks() {
@@ -60,19 +86,25 @@ class HomePageClass extends PageBaseClass {
           
           <div class="row" style=";">
             <div class="col-4">
+              <div class="small-text" style="margin: 6px;">手机APP</div>
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/task')">拾者</div>
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/babycare')">宝护</div>
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy-apk')">好孕APK</div>
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/lin')">孤岛笔记</div>
             </div>
             <div class="col-4">
-            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">AMSS TOOLBOX</div>
-            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy')">好孕</div>
-            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/kcms')">KCMS</div>
-            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/easypm')">EasyPM</div>
-            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/easyebc')">EasyEBC</div>
+              <div class="small-text" style="margin: 6px;">电脑软件</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">AMSS TOOLBOX</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy')">好孕</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/kcms')">KCMS</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/easypm')">EasyPM</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/easyebc')">EasyEBC</div>
             </div>
             <div class="col-4">
+              <div class="small-text" style="margin: 6px;">网站&综合系统</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">OneLib智库</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">爱吐纳</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">汤圆直播</div>
             </div>
           </div>
         </div>
@@ -94,6 +126,7 @@ class HomePageClass extends PageBaseClass {
           <div class="row" style=";">
             <div class="col-4">
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/b5-jquery-gantt')">任务甘特图</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/hanzi')">寻找键盘上失落的文字</div>
             </div>
             <div class="col-4">
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/KONKA_STB_Manual_Guide')">机顶盒说明书</div>
@@ -102,7 +135,6 @@ class HomePageClass extends PageBaseClass {
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/TestDoc')">机顶盒测试教程</div>
             </div>
             <div class="col-4">
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/hanzi')">寻找键盘上失落的文字</div>
             </div>
           </div>
         </div>
@@ -157,6 +189,7 @@ class HomePageClass extends PageBaseClass {
     }
     this.needRefresh = true;
 
+    const { html: resumes, clicks: clicksResumes } = this.getResumes();
     const { html: goodBooks, clicks: clicksGoodBooks } = this.getGoodBooks();
     const { html: gallerys, clicks: clicksGallerys } = this.getGallerys();
     const { html: footer, clicks: clicksFooter } = this.getFooterBlock();
@@ -174,6 +207,9 @@ class HomePageClass extends PageBaseClass {
             </div>
           </div>
         </div>
+        
+        <!-- 我的简历 -->
+        ${resumes}
         
         <!-- 精品资料 -->
         ${goodBooks}
