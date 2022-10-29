@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>EasyPM · 优雅地管理你的工作</title>
+
+    <!-- Meta Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <!-- Meta description and keywords -->
+    <meta name="description" content="林晓州" />
+    <meta name="keywords" content="EasyPM,Redmine,Work,linxiaozhou" />
+
+    <!-- Shortcut icons And Apple touch icon -->
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./favicon.ico" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="scrollbar body-main">
+    <div class="not-select logo">
+      <div class="logo-area">
+        <div class="wisloading-logo-elem c-dot"></div>
+        <div class="wisloading-logo-elem v-left"></div>
+        <div class="wisloading-logo-elem h-top"></div>
+        <div class="wisloading-logo-elem v-right"></div>
+        <div class="wisloading-logo-elem h-bottom"></div>
+        <div style="position: absolute; left: 100px; top: -60px"><img src="./images/logo_slogan.png" style="height: 440px" /></div>
+        <div style="position: absolute; top: 360px; text-align: center; font-size: 2.2em; left: 0px; width: 1000px; color: #bbb">
+          一款基于Electron的跨平台桌面应用
+        </div>
+      </div>
+      <div class="zanshang">
+        <span class="big-icon red" style="width: 200px" onclick="EPM_ShowQR()">赞赏</span>
+        <div style="margin-top: 26px; font-size: 1.1em">
+          <span onclick="OL_Global_OpenNewTab('https://www.linxiaozhou.com')" class="hover-white">开发者首页</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section preface"></div>
+
+    <div class="section" style="text-align: center; height: auto">
+      <div class="row section-content">
+        <div class="col-md-12">
+          <div class="section-title">EasyPM是什么？</div>
+          <div class="section-info" style="text-align: left">
+            EasyPM是一款基于Electron的跨平台客户端，通过任务(issues)、项目(projects)和工时记录(time entries)等实现了对日常工作记录、管理和分析的功能。
+          </div>
+          <div class="section-info" style="text-align: left">
+            EasyPM接入了Redmine系统，全部数据来自Redmine，在本地仅做了非Redmine系统管理的PDCA、软件设置等数据的管理。
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mask-image">
+            <div class="mask-image-inner">
+              <img src="./images/main.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-3">
+          <div class="title-info">1人</div>
+          <div class="subtitle-info">开发者</div>
+        </div>
+        <div class="col-md-3">
+          <div class="title-info">158小时<sup>1</sup></div>
+          <div class="subtitle-info">开发时间</div>
+        </div>
+        <div class="col-md-3">
+          <div class="title-info">562次</div>
+          <div class="subtitle-info">代码提交</div>
+        </div>
+        <div class="col-md-3">
+          <div class="title-info">2个</div>
+          <div class="subtitle-info">对接系统<sup>2</sup></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-7">
+          <img src="./images/intro/report.png" class="prety-image" style="width: 100%" />
+        </div>
+        <div class="col-md-5 subtitle-block">
+          <div class="title-info">工作分析</div>
+          <div class="subtitle-info">提供日报、周报、月报或指定日期区间的报告，支持分析耗时记录并生成各类数据报表</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-12">
+          <img src="./images/intro/testtask2.png" style="width: 100%" />
+        </div>
+        <div class="col-md-12 subtitle-block">
+          <div class="title-info">测试任务</div>
+          <div class="subtitle-info">针对测试任务进行了定制，对接了KCMS系统的测试管理模块，支持使用测试用例<sup>4</sup> 进行管理</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-7">
+          <img src="./images/intro/buglist.png" style="width: 100%" />
+        </div>
+        <div class="col-md-5 subtitle-block">
+          <div class="title-info">Bug管理</div>
+          <div class="subtitle-info">支持规范化管理bug列表，包括创建bug、处理bug和关闭bug，支持指派bug给其他用户</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-6 subtitle-block">
+          <div class="title-info">项目分析</div>
+          <div class="subtitle-info">提供项目耗时统计、主要工作统计</div>
+          <img src="./images/intro/analyze-project1.png" class="prety-image" style="width: 100%; margin-top: 40px" />
+        </div>
+        <div class="col-md-6">
+          <img src="./images/intro/analyze-project.png" class="" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-5">
+          <img src="./images/intro/analyze-task.png" class="prety-image" style="width: 100%" />
+        </div>
+        <div class="col-md-7 subtitle-block">
+          <div class="title-info">任务分析</div>
+          <div class="subtitle-info">针对耗时较多的任务进行工时分析</div>
+          <img src="./images/intro/analyze-task1.png" class="prety-image" style="width: 100%; margin-top: 40px" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-12">
+          <img src="./images/intro/auto-report.png" class="" style="width: 100%" />
+        </div>
+        <div class="col-md-12 subtitle-block">
+          <div class="title-info">自动工作报告</div>
+          <div class="subtitle-info">每月第一次打开客户端，自动汇总上个月的工作情况；每周、每天第一次打开客户端也会汇总上周、昨天的工作</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content" style="margin-top: 20px">
+        <div class="col-md-12 subtitle-block">
+          <div class="title-info">更多</div>
+        </div>
+      </div>
+      <div class="row section-content">
+        <div class="col-md-4 subtitle-block">
+          <div class="title-info">PDCA<sup>3</sup></div>
+          <div class="subtitle-info">支持PDCA工作法，拖拽进PDCA Box的任务如果没有完成，第二天会自动列入PDCA计划中</div>
+        </div>
+        <div class="col-md-4 subtitle-block">
+          <div class="title-info">便捷</div>
+          <div class="subtitle-info">针对Redmine操作复杂、上手困难等问题，进行了全面的优化</div>
+        </div>
+        <div class="col-md-4 subtitle-block">
+          <div class="title-info">查询</div>
+          <div class="subtitle-info">支持按问题id查询，支持按关键词查询</div>
+        </div>
+      </div>
+      <div class="row section-content">
+        <div class="col-md-4 subtitle-block">
+          <div class="title-info">多种视图</div>
+          <div class="subtitle-info">支持树形图列表、普通列表形式显示任务列表</div>
+        </div>
+        <div class="col-md-4 subtitle-block">
+          <div class="title-info">升级检查</div>
+          <div class="subtitle-info">支持自动和手动两种方式进行软件更新检查</div>
+        </div>
+        <div class="col-md-4 subtitle-block">
+          <div class="title-info">筛选条件</div>
+          <div class="subtitle-info">支持多种条件筛选任务：按类型、按项目、按关键词、按指派等</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-12">
+          <div class="section-title">开发历程</div>
+        </div>
+      </div>
+      <div class="row section-content" style="margin-top: 20px">
+        <div class="col-md-4 subtitle-block">
+          <img src="./images/start.png" style="max-width: 36%; margin-bottom: 16px" />
+          <div class="title-info">启动</div>
+          <div class="subtitle-info">2019年02月</div>
+          <div class="time-line-divider"></div>
+        </div>
+        <div class="col-md-4 subtitle-block">
+          <img src="./images/code.png" style="max-width: 36%; margin-bottom: 16px" />
+          <div class="title-info">开发</div>
+          <div class="subtitle-info">2019年02月 - 04月</div>
+          <div class="time-line-divider"></div>
+        </div>
+        <div class="col-md-4 subtitle-block">
+          <img src="./images/release.png" style="max-width: 36%; margin-bottom: 16px" />
+          <div class="title-info">发布</div>
+          <div class="subtitle-info">2019年04月05日</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section not-select" style="text-align: center">
+      <div class="row section-content">
+        <div class="col-md-12">
+          <div class="section-title">技术亮点</div>
+        </div>
+      </div>
+      <div class="row section-content" style="margin-top: 20px">
+        <div class="col-md-12">
+          <div class="col-md-4 subtitle-block">
+            <div class="title-info">Electron</div>
+            <div class="subtitle-info">使用 JavaScript, HTML 和 CSS 构建跨平台的桌面应用</div>
+          </div>
+          <div class="col-md-4 subtitle-block">
+            <div class="title-info">Render进程</div>
+            <div class="subtitle-info">优化了KCMS客户端<sup>5</sup>存在的Render进程缺陷</div>
+          </div>
+          <div class="col-md-4 subtitle-block">
+            <div class="title-info">await/async</div>
+            <div class="subtitle-info">全部采用await/async方式书写异步代码，避免『回调地狱』</div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-4 subtitle-block">
+            <div class="title-info">移植性</div>
+            <div class="subtitle-info">设计了与网站一致的层级，IPC监听的Channel等同于网站的路由，具备良好的移植性</div>
+          </div>
+          <div class="col-md-4 subtitle-block">
+            <div class="title-info">Logo</div>
+            <div class="subtitle-info">设计了全部Logo，并用css3实现动画效果</div>
+          </div>
+        </div>
+        <div class="col-md-12"></div>
+      </div>
+
+      <div class="row section-content" style="text-align: left; margin-top: 100px">
+        <div class="col-md-12 subtitle-block">
+          <div class="subtitle-info">说明</div>
+          <div class="hint-info">*1.数据来源于通过EasyPM或直接登记在Redmine的工时统计</div>
+          <div class="hint-info">*2.对接的两个系统为：开源的Redmine系统和自主开发的项目追踪和管理系统KPM</div>
+          <div class="hint-info">*3.PDCA指的是: 计划（Plan）→执行（Do）→检查（Check）→调整（Action）</div>
+          <div class="hint-info">*4.需要Redmine系统新建一个自定义属性</div>
+          <div class="hint-info">*5.2019年初为深圳康佳信息网络有限公司开发的客户端，接入了公司的知识管理系统KCMS</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="quest2020-section"
+      class="section"
+      style="display: none; text-align: center; background: #fff; color: #343434; padding-top: 180px; padding-bottom: 240px"
+    >
+      <div class="row section-content">
+        <div class="col-md-12">
+          <div class="section-title text-inverse" id="quest2020-question">md5{海内存知己天涯若比邻}</div>
+          <div class="subtitle-info text-inverse">QUEST - LINXIAOZHOU - 2020</div>
+          <div class="subtitle-info text-inverse" id="quest2020-status">??</div>
+          <div class="subtitle-info text-inverse" style="font-size: 70%">
+            https://www.linxiaozhou.com/quest/<input id="quest-2020-seed" /><a class="btn btn-sm" onclick="Quest2020_Go()">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function Quest2020_Go() {
+        var code = document.getElementById("quest-2020-seed").value;
+        if (code === "") {
+          code = "nothing";
+        }
+        const url = "https://www.linxiaozhou.com/quest/" + code;
+        console.log(url);
+        window.location.href = url;
+      }
+    </script>
+
+    <div class="section not-select body-bottom" style="text-align: center">
+      ©2019 EasyPM · 优雅地管理你的工作 | <span onclick="OL_Global_OpenNewTab('https://www.linxiaozhou.com')" class="hover-white">林晓州</span> 出品
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-2.1.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      // 启动页面 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+      window.onload = function () {
+        $(".wisloading-logo-elem").addClass("change");
+        WisLoading();
+
+        $("img").attr("draggable", "false");
+        $(".fly-right").addClass("shown");
+        $("#quest2020-status").html("活动已结束");
+        $("#quest2020-section").show();
+        $("#quest2020-question").html(msg.data.question);
+      };
+
+      var wisloadingLogoTimer = null;
+      var wisloadingLogoChange = false;
+      function WisLoading() {
+        if (wisloadingLogoChange) {
+          $(".wisloading-logo-elem").removeClass("change");
+          wisloadingLogoChange = false;
+        } else {
+          $(".wisloading-logo-elem").addClass("change");
+          wisloadingLogoChange = true;
+        }
+
+        wisloadingLogoTimer = setTimeout(function () {
+          WisLoading();
+        }, 1000);
+      }
+
+      function OL_Global_OpenNewTab(url) {
+        var el = document.createElement("a");
+        document.body.appendChild(el);
+        el.href = url;
+        el.target = "_blank";
+        el.click();
+        document.body.removeChild(el);
+      }
+
+      function EPM_ShowQR() {
+        $("#easypm_popup").remove();
+
+        var mask = "<div class='mask'></div>";
+        var info = "<div class='mask-info'><img class='mask-info-qr' src='' /></div>";
+        var popup = "<div id='easypm_popup' onclick=\"EPM_HideQR()\">\
+								" + mask + "\
+								" + info + "\
+							</div>";
+
+        $("body").append(popup);
+        setTimeout(function () {
+          $(".mask").addClass("shown");
+          $(".mask-info-qr").attr("src", "./images/zanshang.png");
+          $(".mask-info-qr").css("border-radius", "1000px");
+        }, 200);
+      }
+
+      function EPM_HideQR() {
+        $(".mask-info-qr").remove();
+        $(".mask").removeClass("shown");
+        setTimeout(function () {
+          $("#easypm_popup").remove();
+        }, 200);
+      }
+    </script>
+  </body>
+</html>

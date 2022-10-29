@@ -60,15 +60,19 @@ class HomePageClass extends PageBaseClass {
           
           <div class="row" style=";">
             <div class="col-4">
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy')">好孕</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy-apk')">好孕APK</div>
-            </div>
-            <div class="col-4">
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/lin')">孤岛笔记</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/task')">拾者</div>
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/babycare')">宝护</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy-apk')">好孕APK</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/lin')">孤岛笔记</div>
             </div>
             <div class="col-4">
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/hanzi')">寻找键盘上失落的文字</div>
+            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">AMSS TOOLBOX</div>
+            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy')">好孕</div>
+            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/kcms')">KCMS</div>
+            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/easypm')">EasyPM</div>
+            <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/easyebc')">EasyEBC</div>
+            </div>
+            <div class="col-4">
             </div>
           </div>
         </div>
@@ -96,6 +100,9 @@ class HomePageClass extends PageBaseClass {
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/KONKA_STB_Upgrade_Program_Proposal_For_Client')">机顶盒大网升级建议书</div>
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/StringProcess')">字符串处理工具</div>
               <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/TestDoc')">机顶盒测试教程</div>
+            </div>
+            <div class="col-4">
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/hanzi')">寻找键盘上失落的文字</div>
             </div>
           </div>
         </div>

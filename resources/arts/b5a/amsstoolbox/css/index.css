@@ -1,0 +1,141 @@
+body {
+  -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+  background-color: #222;
+  font-family: system-ui, -apple-system, -apple-system-font, "Segoe UI",
+    "Roboto", sans-serif;
+  font-size: 12px;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  /* Padding to avoid the "unsafe" areas behind notches in the screen */
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-right, 0px);
+  width: 100%;
+  color: #fff;
+}
+
+.render-background {
+  background: #fff;
+  padding: 10px 20px;
+}
+.render-hover-icon {
+  color: #888;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.render-hover-icon:hover {
+  color: #000;
+}
+.render-hover-text {
+  color: #333;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.render-hover-text:hover {
+  color: #000;
+}
+
+.render-number {
+  color: #4600c5;
+}
+.render-string {
+  color: #0b5b15;
+}
+.render-boolean {
+  color: #db811a;
+}
+.render-format {
+  color: #333;
+}
+.render-comments {
+  font-size: 0.85em;
+  color: #888;
+}
+.render-example {
+  font-size: 0.75em;
+  color: #888;
+  font-style: italic;
+}
+
+.render-schedule {
+  color: #7627df;
+}
+
+/*夜间模式*/
+.render-background.night {
+  background: #343434;
+  color: #fff;
+}
+
+.render-hover-icon.night {
+  color: #888;
+}
+.render-hover-icon.night:hover {
+  color: #fff;
+}
+.render-hover-text.night {
+  color: #eee;
+}
+.render-hover-text.night:hover {
+  color: #fff;
+}
+
+.render-number.night {
+  color: #a681eb;
+}
+.render-string.night {
+  color: #13c529;
+}
+.render-boolean.night {
+  color: #db811a;
+}
+.render-format.night {
+  color: #aaa;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.swagger-tab {
+  cursor: pointer;
+  padding-right: 2px;
+  color: #888;
+  transition: none;
+}
+.swagger-tab:hover {
+  color: #000;
+}
+.swagger-tab.active {
+  color: #000;
+  background: none;
+  border: none;
+  font-weight: 600;
+}
+
+.swagger-tab-li:not(:first-child)::before {
+  content: " | ";
+}
+
+.render-toolbox {
+  position: relative;
+  top: 0px;
+  text-align: right;
+  font-size: 0.8em;
+  right: -10px;
+  -webkit-user-select: none;
+}
+.render-toolbox-item {
+  border-radius: 8px;
+  transition: all 0.3s;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.075);
+  cursor: pointer;
+  display: inline-block;
+}
+.render-toolbox-item.night:hover {
+  background: rgba(255, 255, 255, 0.175);
+}
+.render-toolbox-item:hover {
+  background: rgba(0, 0, 0, 0.175);
+}
