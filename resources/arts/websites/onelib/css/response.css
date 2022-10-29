@@ -1,0 +1,20 @@
+@media (max-width: 1000px) {
+  body {
+    transition: all 0.3s;
+    overflow-y: auto;
+    top: 40px;
+    height: calc(100% - 40px);
+    padding: 20px 40px;
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .chart-input {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .main-block {
+    margin-top: 200px;
+  }
+}

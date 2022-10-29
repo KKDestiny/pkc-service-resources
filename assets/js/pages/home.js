@@ -79,6 +79,10 @@ class HomePageClass extends PageBaseClass {
    * 陈列柜
    */
   getGallerys() {
+    const apksPath = `${this.APP_ARTS_PATH}/apks`;
+    const desktopsPath = `${this.APP_ARTS_PATH}/desktops`;
+    const websitesPath = `${this.APP_ARTS_PATH}/websites`;
+
     const html = `
       <div class="col-10" style=";">
         <div class="pkc-main-block top-block">
@@ -87,24 +91,62 @@ class HomePageClass extends PageBaseClass {
           <div class="row" style=";">
             <div class="col-4">
               <div class="small-text" style="margin: 6px;">手机APP</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/task')">拾者</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/babycare')">宝护</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy-apk')">好孕APK</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/lin')">孤岛笔记</div>
+              <div class="book-item" onclick="globals.goto('${apksPath}/task')">
+                拾者
+                <img src='${apksPath}/task/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${apksPath}/babycare')">
+                宝护
+                <img src='${apksPath}/babycare/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${apksPath}/better-pregnancy-apk')">
+                好孕APK
+                <img src='${apksPath}/better-pregnancy-apk/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${apksPath}/lin')">
+                孤岛笔记
+                <img src='${apksPath}/lin/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
             </div>
+
             <div class="col-4">
               <div class="small-text" style="margin: 6px;">电脑软件</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">AMSS TOOLBOX</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/better-pregnancy')">好孕</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/kcms')">KCMS</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/easypm')">EasyPM</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/easyebc')">EasyEBC</div>
+              <div class="book-item" onclick="globals.goto('${desktopsPath}/amsstoolbox')">
+                AMSS TOOLBOX
+                <img src='${desktopsPath}/amsstoolbox/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${desktopsPath}/better-pregnancy')">
+                好孕
+                <img src='${desktopsPath}/better-pregnancy/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${desktopsPath}/easypm')">
+                EasyPM
+                <img src='${desktopsPath}/easypm/favicon.ico' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${desktopsPath}/easyebc')">
+                EasyEBC
+                <img src='${desktopsPath}/easyebc/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
             </div>
+
             <div class="col-4">
               <div class="small-text" style="margin: 6px;">网站&综合系统</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">OneLib智库</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">爱吐纳</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/amsstoolbox')">汤圆直播</div>
+              <div class="book-item" onclick="globals.goto('${websitesPath}/onelib')">
+                OneLib智库
+                <img src='${websitesPath}/onelib/favicon.ico' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${websitesPath}/kcms')">
+                KCMS
+                <img src='${websitesPath}/kcms/favicon.ico' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${websitesPath}/aituna')">
+                爱吐纳
+                <img src='${websitesPath}/aituna/favicon.ico' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${websitesPath}/tangyuanlive')">
+                汤圆直播
+                <img src='${websitesPath}/tangyuanlive/favicon.ico' style="height: 20px;" class="float-end" />
+              </div>
             </div>
           </div>
         </div>
@@ -125,14 +167,14 @@ class HomePageClass extends PageBaseClass {
           
           <div class="row" style=";">
             <div class="col-4">
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/b5a/b5-jquery-gantt')">任务甘特图</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/hanzi')">寻找键盘上失落的文字</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/smallthings/b5-jquery-gantt')">任务甘特图</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/smallthings/hanzi')">寻找键盘上失落的文字</div>
             </div>
             <div class="col-4">
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/KONKA_STB_Manual_Guide')">机顶盒说明书</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/KONKA_STB_Upgrade_Program_Proposal_For_Client')">机顶盒大网升级建议书</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/StringProcess')">字符串处理工具</div>
-              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/konka/TestDoc')">机顶盒测试教程</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/smallthings/konka/KONKA_STB_Manual_Guide')">机顶盒说明书</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/smallthings/konka/KONKA_STB_Upgrade_Program_Proposal_For_Client')">机顶盒大网升级建议书</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/smallthings/konka/StringProcess')">字符串处理工具</div>
+              <div class="book-item" onclick="globals.goto('${this.APP_ARTS_PATH}/smallthings/konka/TestDoc')">机顶盒测试教程</div>
             </div>
             <div class="col-4">
             </div>

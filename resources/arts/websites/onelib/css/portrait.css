@@ -1,0 +1,48 @@
+@media all and (orientation: portrait) {
+  body {
+    padding: 10px 0px;
+    overflow-x: hidden;
+  }
+
+  .bp-nav {
+    margin-top: 19px;
+  }
+
+  .portrait-full {
+    width: 100%;
+  }
+  .portrait-padding-top {
+    padding-top: 10px;
+  }
+
+  .checklist-page-group-1 {
+    width: 100%;
+  }
+  .checklist-page-item-1 {
+    width: 100%;
+  }
+
+  .main-body {
+    padding: 10px 0px;
+  }
+
+  .p-block-1 {
+    padding: 10px 0px;
+  }
+
+  .checklist-block {
+    padding: 0px 0px;
+  }
+
+  .table-block {
+    padding: 10px 0px;
+  }
+
+  .basic-block {
+    padding: 10px 0px;
+  }
+
+  .home-btn {
+    display: none;
+  }
+}
