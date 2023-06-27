@@ -91,6 +91,10 @@ class HomePageClass extends PageBaseClass {
           <div class="row" style=";">
             <div class="col-4">
               <div class="small-text" style="margin: 6px;">手机APP</div>
+              <div class="book-item" onclick="globals.goto('${apksPath}/onelib')">
+                OneLib智库（手机端）
+                <img src='${apksPath}/onelib/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
               <div class="book-item" onclick="globals.goto('${apksPath}/task')">
                 拾者
                 <img src='${apksPath}/task/img/logo.png' style="height: 20px;" class="float-end" />
@@ -111,6 +115,18 @@ class HomePageClass extends PageBaseClass {
 
             <div class="col-4">
               <div class="small-text" style="margin: 6px;">电脑软件</div>
+              <div class="book-item" onclick="globals.goto('${desktopsPath}/onelib')">
+                OneLib智库（电脑端）
+                <img src='${desktopsPath}/onelib/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${desktopsPath}/github')">
+                Github APP（电脑端）
+                <img src='${desktopsPath}/github/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
+              <div class="book-item" onclick="globals.goto('${desktopsPath}/amss-mixbudget')">
+                精细预算编制和诊断工具
+                <img src='${desktopsPath}/amss-mixbudget/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
               <div class="book-item" onclick="globals.goto('${desktopsPath}/amsstoolbox')">
                 AMSS TOOLBOX
                 <img src='${desktopsPath}/amsstoolbox/img/logo.png' style="height: 20px;" class="float-end" />
@@ -131,8 +147,12 @@ class HomePageClass extends PageBaseClass {
 
             <div class="col-4">
               <div class="small-text" style="margin: 6px;">网站&综合系统</div>
+              <div class="book-item" onclick="globals.goto('${websitesPath}/personal-2022')">
+                个人网站（2022版）
+                <img src='${websitesPath}/personal-2022/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
               <div class="book-item" onclick="globals.goto('${websitesPath}/onelib')">
-                OneLib智库
+                OneLib智库（2016版）
                 <img src='${websitesPath}/onelib/favicon.ico' style="height: 20px;" class="float-end" />
               </div>
               <div class="book-item" onclick="globals.goto('${websitesPath}/kcms')">
@@ -208,6 +228,9 @@ class HomePageClass extends PageBaseClass {
         </div>
         <div style="margin-top: 6px;">
           <a class="hover-text" href='https://beian.miit.gov.cn/' target="_blank">${this.beianhao}</a>
+        </div>
+        <div style="margin-top: 6px;">
+          <a class="hover-text" href='https://linxiaozhou.com' target="_blank">林晓州</a>
         </div>
       </div>
     `;

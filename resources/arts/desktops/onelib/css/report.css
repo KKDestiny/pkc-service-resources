@@ -1,0 +1,131 @@
+.bp-footer {
+  position: fixed;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+tr > th,
+tr > td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.qrcode-svg {
+  transition: all 0.3s;
+  width: 100px;
+}
+.qrcode-svg:hover {
+  transform: scale(1.8);
+}
+
+.basic-info-title {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.basic-info-data {
+  font-size: 1.2em;
+}
+
+.checklist-page-group-1 {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #e22aa2;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 8px #e22aa2 solid;
+}
+
+.checklist-page-item-1 {
+  padding: 10px 16px;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  cursor: auto;
+  border: 1px rgba(238, 238, 238, 1) solid;
+  margin-left: 10px;
+}
+.checklist-page-item-1:hover {
+  background: none;
+}
+
+.bp-nav {
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: #666;
+  display: flex;
+  text-align: center;
+  z-index: 1000;
+}
+.bp-nav-elem {
+  width: 100px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.bp-nav-elem.logo {
+  width: 70px;
+  padding: 6px 6px;
+}
+.bp-nav-elem.logo > img {
+  height: 36px;
+}
+.bp-nav-elem.active {
+  color: #e22aa2;
+  font-weight: 600;
+  background-color: #000;
+  border-bottom: 4px #e22aa2 solid;
+}
+.bp-nav-elem:hover {
+  background-color: #111;
+}
+.bp-nav-elem.logo:hover {
+  background-color: #222;
+}
+
+.toc {
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  width: 100px;
+  height: auto;
+  text-align: right;
+  background: #333;
+  z-index: 600;
+}
+.toc-header {
+  font-size: 1.2em;
+  margin-top: 14px;
+}
+.toc-elem {
+  padding: 2px 6px;
+  font-size: 0.9em;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.toc-elem:hover {
+  color: #e22aa2;
+}
+
+.go-to-top {
+  position: fixed;
+  bottom: 40px;
+  z-index: 600;
+  right: 20px;
+  font-size: 2em;
+  color: #666;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.go-to-top:hover {
+  color: #fff;
+}
