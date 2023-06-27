@@ -127,6 +127,10 @@ class HomePageClass extends PageBaseClass {
                 精细预算编制和诊断工具
                 <img src='${desktopsPath}/amss-mixbudget/img/logo.png' style="height: 20px;" class="float-end" />
               </div>
+              <div class="book-item" onclick="globals.goto('${desktopsPath}/eyecloud')">
+                云眼
+                <img src='${desktopsPath}/eyecloud/img/logo.png' style="height: 20px;" class="float-end" />
+              </div>
               <div class="book-item" onclick="globals.goto('${desktopsPath}/amsstoolbox')">
                 AMSS TOOLBOX
                 <img src='${desktopsPath}/amsstoolbox/img/logo.png' style="height: 20px;" class="float-end" />
