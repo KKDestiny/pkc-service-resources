@@ -10,13 +10,15 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "build": "npx rimraf dist && babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
+    "build-server": "npx rimraf dist && babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
+    "build-assets": "npx rimraf assets && babel assets-src --extensions \".x\" --out-dir assets --copy-files --no-copy-ignored && npm run obfus-assets",
+    "build": "npm run build-server & npm run build-assets",
     "clean": "npx rimraf dist build node_modules coverage logs yarn.lock",
     "watch:server": "npx kill-port 6003 && npx nodemon --exec npx babel-node --extensions \".js,.ts\" src/server.ts --watch src",
     "serve": "npm run build && pm2 start ./ecosystem.config.js",
     "start": "npm-run-all --parallel watch:*",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpileOnly --ignore-watch node_modules --no-notify src/server.ts",
-    "obfus": "npx javascript-obfuscator dist --output dist --exclude 'dist/seeders/*, dist/migrations/*' --config obfuscator.config.json",
+    "obfus-assets": "npx javascript-obfuscator assets-src/js --output assets/js --config obfuscator.config.json --exclude assets-src/js/libs",
     "swagger": "npx babel-node --extensions \".js,.ts\" scripts/gen-swagger.ts",
     "postman": "npx babel-node --extensions \".js,.ts\" scripts/gen-postman.ts",
     "schemas": "npx babel-node --extensions \".js,.ts\" scripts/gen-schemas.ts",

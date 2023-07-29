@@ -13,6 +13,7 @@ const pkginfo = readPkg.sync();
 
 const schema = Joi.object({
   NODE_ENV: Joi.string().valid("development", "production", "experiment", "test").default("development"),
+  APP_DEBUG_MODE: Joi.boolean().default(false),
 
   APP_PORT: Joi.number().default(6003),
   APP_NAME: Joi.string().default("service-demo"),

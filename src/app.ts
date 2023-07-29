@@ -37,7 +37,13 @@ app.set("views", path.join(__dirname, "./views"));
 app.set("view engine", "ejs");
 
 // Public Resources
-app.use(`${config.APP_STATICS_PATH}/`, express.static(path.join(__dirname, "../assets")));
+if (config.APP_DEBUG_MODE) {
+  // 开发模式直接使用原始js文件
+  app.use(`${config.APP_STATICS_PATH}/`, express.static(path.join(__dirname, "../assets-src")));
+} else {
+  // 生产环境要用加扰后的文件
+  app.use(`${config.APP_STATICS_PATH}/`, express.static(path.join(__dirname, "../assets")));
+}
 app.use(`${config.APP_BOOKS_PATH}/`, express.static(path.join(__dirname, "../resources/books")));
 app.use(`${config.APP_ARTS_PATH}/`, express.static(path.join(__dirname, "../resources/arts")));
 
