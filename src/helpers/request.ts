@@ -52,3 +52,7 @@ export default function createRequest(headers = {}, options = {}) {
 
 // Base Services
 export const createAccountsRequest = token => createRequest({ Authorization: token }, { baseURL: `${config.API_ACCOUNTS_ENDPOINT}` });
+
+/** AppKey 鉴权用：带 X-App-Id/X-App-Key + 审计头（HMAC 签名） */
+export const createAccountsAppRequest = headers =>
+  createRequest(headers, { baseURL: `${config.API_ACCOUNTS_ENDPOINT}` });

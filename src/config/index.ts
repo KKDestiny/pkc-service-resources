@@ -20,6 +20,9 @@ const schema = Joi.object({
   APP_ROUTE: Joi.string().default("/"),
   APP_VERSION: Joi.string().default(`v${pkginfo.version || "1.0.0"}`),
 
+  // 审计元数据 HMAC 密钥；与 account 服务保持一致。留空时不发送审计路由。
+  APP_AUDIT_HMAC_SECRET: Joi.string().allow("").default(""),
+
   APP_STATICS_PATH: Joi.string().default("/"),
   APP_BOOKS_PATH: Joi.string().default("/"),
   APP_ARTS_PATH: Joi.string().default("/"),
